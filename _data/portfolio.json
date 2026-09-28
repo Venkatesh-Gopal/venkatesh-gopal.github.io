@@ -1,0 +1,210 @@
+{
+  "en": {
+    "nav": ["About", "Projects", "Experience", "Skills", "Contact"],
+    "skip": "Skip to content",
+    "role": "FEA Engineer",
+    "region": "Netherlands & Germany",
+    "availability": "Open to roles & freelance projects",
+    "theme": "Switch colour theme",
+    "footer": "Finite element analysis · Structural mechanics · Experimental validation",
+    "eyebrow": "MECHANICAL ENGINEERING / FEA",
+    "headline": "Understanding structures.<br><em>Through simulation.</em>",
+    "intro": "I’m Venkatesh Gopal, a mechanical engineer working in finite element analysis and computational mechanics. I connect numerical modelling with experimental evidence to understand how structures and materials behave under load.",
+    "view": "Explore projects",
+    "contact": "Let’s connect",
+    "focus": "RESEARCH & ENGINEERING FOCUS",
+    "mesh": "Illustrative mesh · not simulation results",
+    "selected": "Selected work",
+    "selected_desc": "Three areas where structural mechanics meets experimental investigation.",
+    "all": "View all projects",
+    "read": "Explore the project",
+    "about_title": "Engineering grounded in evidence.",
+    "about_body": "I hold an MSc in Computational Sciences in Engineering from TU Braunschweig, where I have also worked as a Research Associate. My interests centre on finite element modelling, structural behaviour and comparison with experimental observations.",
+    "about_end": "I’m looking for FEA and structural analysis roles and freelance engineering projects in the Netherlands and Germany.",
+    "projects_title": "Projects",
+    "projects_intro": "Research topics spanning steel repairs, adhesive fracture and lightweight cellular materials. These summaries describe the scope of my work without claiming unpublished performance figures.",
+    "experience_title": "Research meets engineering.",
+    "experience_intro": "A background in computational engineering, with a focus on structural mechanics and experimental comparison.",
+    "work_label": "RESEARCH EXPERIENCE",
+    "work_title": "Research Associate",
+    "university": "TU Braunschweig",
+    "work_body": "Research background in finite element analysis and computational mechanics, with project work covering steel repair monitoring, fibre-reinforced adhesives and honeycomb paperboard.",
+    "education_label": "EDUCATION",
+    "degree": "MSc · Computational Sciences in Engineering",
+    "education_body": "An academic foundation for investigating engineering problems through numerical modelling and computational methods.",
+    "interests_title": "Where I want to contribute",
+    "interests_body": "FEA and structural analysis roles, or freelance engineering projects where numerical modelling and experimental evidence support engineering decisions.",
+    "skills_title": "A focus on structural behaviour.",
+    "skills_intro": "Methods and research areas reflected in my engineering projects.",
+    "groups": [
+      ["01", "Numerical modelling", ["Finite element analysis (FEA / FEM)", "Computational mechanics", "Extended finite element method (XFEM)"]],
+      ["02", "Structures & materials", ["Structural mechanics", "Fibre-reinforced adhesives", "Honeycomb paperboard"]],
+      ["03", "Experimental comparison", ["Experimental validation", "Distributed fibre optic sensing", "Steel patch repair monitoring"]]
+    ],
+    "languages": "Languages",
+    "language_values": [
+      ["English", "Fluent"],
+      ["German", "B2"],
+      ["Dutch", "Learning"]
+    ],
+    "contact_title": "Let’s talk engineering.",
+    "contact_intro": "I’m open to FEA and structural analysis roles, as well as freelance engineering projects in the Netherlands and Germany.",
+    "contact_label": "PROFESSIONAL PROFILE",
+    "github": "View my GitHub profile",
+    "contact_body": "Explore my public work and profile on GitHub.",
+    "opportunities": "Areas of interest",
+    "opp_values": ["Finite element analysis", "Structural analysis", "Simulation and experimental validation"],
+    "back": "All projects",
+    "overview": "Project overview",
+    "methods": "Research focus",
+    "related": "More projects",
+    "notfound": "Page not found",
+    "notfoundbody": "This page may have moved. Return to the portfolio to continue.",
+    "home": "Back to About",
+    "projects": [
+      {
+        "slug": "steel-repair",
+        "title": "Monitoring steel patch repairs",
+        "category": "STRUCTURAL MONITORING",
+        "short": "Distributed fibre optic sensing applied to steel patch repairs.",
+        "body": "This project concerns monitoring steel patch repairs using distributed fibre optic sensing. It brings together structural mechanics and experimental observations to investigate the behaviour of repaired steel structures.",
+        "tags": ["Steel repairs", "Fibre optic sensing", "Experimental comparison"],
+        "focus": [
+          "Steel patch repairs as a structural engineering application.",
+          "Distributed fibre optic sensing for monitoring.",
+          "Interpretation of experimental observations in a structural mechanics context."
+        ]
+      },
+      {
+        "slug": "adhesive-fracture",
+        "title": "Fracture in fibre-reinforced adhesives",
+        "category": "COMPUTATIONAL FRACTURE",
+        "short": "XFEM analysis of fracture behaviour in fibre-reinforced adhesives.",
+        "body": "This project explores fibre-reinforced adhesives through extended finite element analysis (XFEM). The focus is on fracture behaviour and the use of numerical modelling to investigate the mechanical response of adhesive materials.",
+        "tags": ["XFEM", "Adhesives", "Fracture mechanics"],
+        "focus": [
+          "Fibre-reinforced adhesives as the material system.",
+          "Extended finite element analysis (XFEM).",
+          "Investigation of fracture and mechanical behaviour."
+        ]
+      },
+      {
+        "slug": "honeycomb",
+        "title": "Mechanics of honeycomb paperboard",
+        "category": "LIGHTWEIGHT STRUCTURES",
+        "short": "Mechanical analysis of a lightweight cellular material.",
+        "body": "This project investigates the mechanical response of honeycomb paperboard. It connects the behaviour of a cellular structure with questions in structural mechanics and numerical modelling.",
+        "tags": ["Cellular structures", "Paperboard", "Mechanical response"],
+        "focus": [
+          "Honeycomb paperboard as a lightweight structural material.",
+          "Mechanical response under loading.",
+          "The relationship between cellular geometry and structural behaviour."
+        ]
+      }
+    ]
+  },
+  "de": {
+    "nav": ["Über mich", "Projekte", "Berufserfahrung", "Kompetenzen", "Kontakt"],
+    "skip": "Zum Inhalt springen",
+    "role": "FEM-Ingenieur",
+    "region": "Niederlande & Deutschland",
+    "availability": "Offen für Stellen & freiberufliche Projekte",
+    "theme": "Farbschema wechseln",
+    "footer": "Finite-Elemente-Analyse · Strukturmechanik · Experimentelle Validierung",
+    "eyebrow": "MASCHINENBAU / FEM",
+    "headline": "Strukturen verstehen.<br><em>Durch Simulation.</em>",
+    "intro": "Ich bin Venkatesh Gopal, Maschinenbauingenieur mit Schwerpunkt Finite-Elemente-Analyse und numerische Mechanik. Ich verbinde numerische Modelle mit experimentellen Erkenntnissen, um das Verhalten von Strukturen und Werkstoffen unter Belastung zu untersuchen.",
+    "view": "Projekte entdecken",
+    "contact": "Kontakt aufnehmen",
+    "focus": "FORSCHUNG & TECHNISCHE SCHWERPUNKTE",
+    "mesh": "Schematisches Netz · keine Simulationsergebnisse",
+    "selected": "Ausgewählte Projekte",
+    "selected_desc": "Drei Themen an der Schnittstelle von Strukturmechanik und experimenteller Untersuchung.",
+    "all": "Alle Projekte ansehen",
+    "read": "Projekt entdecken",
+    "about_title": "Ingenieurarbeit auf fundierter Grundlage.",
+    "about_body": "Ich habe einen MSc in Computational Sciences in Engineering an der TU Braunschweig erworben und dort als wissenschaftlicher Mitarbeiter gearbeitet. Meine Interessen liegen in der Finite-Elemente-Modellierung, dem Strukturverhalten und dem Vergleich mit experimentellen Beobachtungen.",
+    "about_end": "Ich suche Stellen in der FEM- und Strukturanalyse sowie freiberufliche Ingenieurprojekte in den Niederlanden und Deutschland.",
+    "projects_title": "Projekte",
+    "projects_intro": "Forschungsthemen rund um Stahlreparaturen, Bruchverhalten von Klebstoffen und leichte Zellstrukturen. Die Zusammenfassungen beschreiben meine Themengebiete, ohne unveröffentlichte Leistungskennzahlen zu behaupten.",
+    "experience_title": "Forschung trifft Ingenieurpraxis.",
+    "experience_intro": "Ein Hintergrund im Computational Engineering mit Schwerpunkt Strukturmechanik und experimenteller Vergleich.",
+    "work_label": "FORSCHUNGSERFAHRUNG",
+    "work_title": "Wissenschaftlicher Mitarbeiter",
+    "university": "TU Braunschweig",
+    "work_body": "Forschungshintergrund in der Finite-Elemente-Analyse und numerischen Mechanik. Zu meinen Projektthemen gehören die Überwachung von Stahlreparaturen, faserverstärkte Klebstoffe und Wabenpappe.",
+    "education_label": "STUDIUM",
+    "degree": "MSc · Computational Sciences in Engineering",
+    "education_body": "Eine wissenschaftliche Grundlage zur Untersuchung technischer Fragestellungen mithilfe numerischer Modelle und rechnergestützter Methoden.",
+    "interests_title": "Hier möchte ich beitragen",
+    "interests_body": "FEM- und Strukturanalyse in einer Festanstellung oder in freiberuflichen Projekten, bei denen numerische Modelle und experimentelle Erkenntnisse technische Entscheidungen unterstützen.",
+    "skills_title": "Strukturverhalten im Fokus.",
+    "skills_intro": "Methoden und Forschungsthemen aus meinen Ingenieurprojekten.",
+    "groups": [
+      ["01", "Numerische Modellierung", ["Finite-Elemente-Analyse (FEA / FEM)", "Numerische Mechanik", "Erweiterte Finite-Elemente-Methode (XFEM)"]],
+      ["02", "Strukturen & Werkstoffe", ["Strukturmechanik", "Faserverstärkte Klebstoffe", "Wabenpappe"]],
+      ["03", "Experimenteller Vergleich", ["Experimentelle Validierung", "Verteilte faseroptische Sensorik", "Überwachung von Stahlreparaturen"]]
+    ],
+    "languages": "Sprachen",
+    "language_values": [
+      ["Englisch", "Fließend"],
+      ["Deutsch", "B2"],
+      ["Niederländisch", "Im Aufbau"]
+    ],
+    "contact_title": "Sprechen wir über Engineering.",
+    "contact_intro": "Ich bin offen für Stellen in der FEM- und Strukturanalyse sowie für freiberufliche Ingenieurprojekte in den Niederlanden und Deutschland.",
+    "contact_label": "BERUFLICHES PROFIL",
+    "github": "Mein GitHub-Profil ansehen",
+    "contact_body": "Entdecken Sie meine öffentlichen Arbeiten und mein Profil auf GitHub.",
+    "opportunities": "Interessengebiete",
+    "opp_values": ["Finite-Elemente-Analyse", "Strukturanalyse", "Simulation und experimentelle Validierung"],
+    "back": "Alle Projekte",
+    "overview": "Projektüberblick",
+    "methods": "Forschungsschwerpunkte",
+    "related": "Weitere Projekte",
+    "notfound": "Seite nicht gefunden",
+    "notfoundbody": "Diese Seite wurde möglicherweise verschoben. Kehren Sie zum Portfolio zurück.",
+    "home": "Zurück zu Über mich",
+    "projects": [
+      {
+        "slug": "steel-repair",
+        "title": "Überwachung von Stahlreparaturen",
+        "category": "STRUKTURÜBERWACHUNG",
+        "short": "Verteilte faseroptische Sensorik zur Überwachung von Reparaturen mit Stahlpatches.",
+        "body": "Dieses Projekt befasst sich mit der Überwachung von Reparaturen mit Stahlpatches mithilfe verteilter faseroptischer Sensorik. Es verbindet Strukturmechanik und experimentelle Beobachtungen zur Untersuchung reparierter Stahlstrukturen.",
+        "tags": ["Stahlreparaturen", "Faseroptische Sensorik", "Experimenteller Vergleich"],
+        "focus": [
+          "Reparaturen mit Stahlpatches als strukturmechanische Anwendung.",
+          "Verteilte faseroptische Sensorik zur Überwachung.",
+          "Einordnung experimenteller Beobachtungen im strukturmechanischen Kontext."
+        ]
+      },
+      {
+        "slug": "adhesive-fracture",
+        "title": "Bruchverhalten faserverstärkter Klebstoffe",
+        "category": "NUMERISCHE BRUCHMECHANIK",
+        "short": "XFEM-Analyse des Bruchverhaltens faserverstärkter Klebstoffe.",
+        "body": "Dieses Projekt untersucht faserverstärkte Klebstoffe mit der erweiterten Finite-Elemente-Methode (XFEM). Im Mittelpunkt stehen das Bruchverhalten und die numerische Untersuchung der mechanischen Reaktion von Klebstoffen.",
+        "tags": ["XFEM", "Klebstoffe", "Bruchmechanik"],
+        "focus": [
+          "Faserverstärkte Klebstoffe als Werkstoffsystem.",
+          "Erweiterte Finite-Elemente-Analyse (XFEM).",
+          "Untersuchung des Bruchverhaltens und der mechanischen Eigenschaften."
+        ]
+      },
+      {
+        "slug": "honeycomb",
+        "title": "Mechanik von Wabenpappe",
+        "category": "LEICHTBAUSTRUKTUREN",
+        "short": "Mechanische Analyse eines leichten zellularen Werkstoffs.",
+        "body": "Dieses Projekt untersucht das mechanische Verhalten von Wabenpappe. Es verknüpft das Verhalten einer Zellstruktur mit Fragestellungen der Strukturmechanik und numerischen Modellierung.",
+        "tags": ["Zellstrukturen", "Wabenpappe", "Mechanisches Verhalten"],
+        "focus": [
+          "Wabenpappe als leichter Strukturwerkstoff.",
+          "Mechanisches Verhalten unter Belastung.",
+          "Zusammenhang zwischen Zellgeometrie und Strukturverhalten."
+        ]
+      }
+    ]
+  }
+}

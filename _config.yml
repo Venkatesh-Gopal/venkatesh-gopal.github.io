@@ -7,16 +7,14 @@ first_name: Venkatesh
 middle_name:
 last_name: Gopal
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Open to FEA roles and freelance projects in the Netherlands and Germany.
+description: >
+  Venkatesh Gopal — FEA engineer. Structural mechanics, numerical modelling and experimental validation.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  Venkatesh Gopal · FEA and structural mechanics.
+keywords: FEA, FEM, structural mechanics, computational mechanics, engineering portfolio
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: VG
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://venkatesh-gopal.github.io # the base hostname & protocol for your site
@@ -173,17 +171,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -230,6 +218,30 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _pages/About.md
+  - _pages/Projects.md
+  - _pages/experience.md
+  - _pages/skills.md
+  - _pages/contact.md
+  - _pages/profiles.md
+  - _pages/plugins.md
+  - _posts/
+  - _projects/
+  - _books/
+  - _news/
+  - _teachings/
+  - test/
+  - lighthouse_results/
+  - PORTFOLIO_NOTES.md
+  - assets/rendercv/
+  - assets/pdf/example_pdf.pdf
+  - assets/json/resume.json
+  - assets/html/
+  - assets/plotly/
+  - assets/jupyter/
+  - assets/video/
+  - assets/audio/
+  - assets/bibliography/
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
@@ -356,8 +368,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Gopal]
+  first_name: [Venkatesh]
 
   style: apa
   locale: en
