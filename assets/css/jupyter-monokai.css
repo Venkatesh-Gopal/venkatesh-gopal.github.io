@@ -133,14 +133,6 @@ div#notebook {
   border: none;
 }
 
-.navbar-nav > li > .dropdown-menu {
-  margin-top: 0px;
-}
-
-.navbar-nav {
-  margin: 0;
-}
-
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(1, 1);
@@ -166,16 +158,6 @@ div#notebook {
     -webkit-transform: scale(1, 1);
     opacity: 0.8;
   }
-}
-
-.fa {
-  display: inline-block;
-  font:
-    normal normal normal 10pt/1 "FontAwesome",
-    sans-serif;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .dropdown-menu {
@@ -289,14 +271,6 @@ div#notebook {
   background-color: #546745 !important;
   border-color: #546745 !important;
   transition: 200ms ease !important;
-}
-
-
-.btn-sm {
-  font-size: inherit;
-  font-weight: normal;
-  height: inherit;
-  line-height: inherit;
 }
 
 button.close {
@@ -445,12 +419,9 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 pre,
 code,
 form,
-legend,
 input,
 button,
 textarea,
@@ -594,14 +565,6 @@ input.raw_input {
   margin: 0em 0.25em;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-audio,
-video {
-  display: inline;
-  vertical-align: middle;
-  align-content: center;
-  margin-left: 20%;
 }
 
 
