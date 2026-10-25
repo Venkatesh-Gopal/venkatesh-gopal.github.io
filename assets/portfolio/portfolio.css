@@ -863,3 +863,342 @@ main:focus {
     width: 100%;
   }
 }
+
+/* Broader engineering profile: preserve the original sage/green identity. */
+.hero {
+  grid-template-columns: 1.2fr 1fr;
+}
+.hero h1 {
+  font-size: clamp(2.65rem, 4.35vw, 4.2rem);
+}
+.hero-context {
+  margin-top: 16px;
+  font-size: 14px;
+  max-width: 60ch;
+}
+.personality {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--accent);
+}
+.hero-figure {
+  align-self: center;
+  min-height: 480px;
+}
+.figure-note {
+  padding: 12px 24px 0;
+  font:
+    italic 1.55rem/1.3 Georgia,
+    serif;
+  color: #254638;
+  max-width: 18ch;
+}
+.hero-figure img {
+  margin: -8px 0 -20px;
+}
+.focus-strip > p:last-child {
+  max-width: 63ch;
+}
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 28px;
+}
+.capability {
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.capability h3 {
+  margin: 16px 0;
+  font-size: 1.4rem;
+}
+.capability p {
+  font-size: 14px;
+}
+.hero-copy,
+.skill-card,
+.contact-card,
+.contact-details,
+.timeline article > div {
+  min-width: 0;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: anywhere;
+}
+[lang="de"] h1,
+[lang="de"] h2,
+[lang="de"] h3 {
+  hyphens: auto;
+}
+.availability {
+  align-items: baseline;
+}
+.availability span {
+  align-self: center;
+}
+.question-panel {
+  border-left: 3px solid var(--accent);
+  padding: 8px 0 8px 25px;
+  margin-bottom: 42px;
+  max-width: 850px;
+}
+.question-panel h2 {
+  font-size: clamp(1.4rem, 2.1vw, 1.9rem);
+  margin-top: 15px;
+  line-height: 1.35;
+}
+.project-significance {
+  max-width: 800px;
+  padding-top: 36px;
+}
+.project-significance p {
+  margin: 20px 0;
+}
+.timeline ul {
+  padding-left: 18px;
+  color: var(--muted);
+}
+.section-label {
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 8px 0 22px;
+}
+.professional-development {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+.professional-development h2 {
+  font-size: 1.4rem;
+  margin: 14px 0;
+}
+.working-method {
+  margin: 45px 0;
+}
+.working-method ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 35px;
+  padding-left: 23px;
+  margin-top: 25px;
+  color: var(--muted);
+}
+.training-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+.training-grid article {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.training-grid h3 {
+  font-size: 1.25rem;
+  margin: 12px 0;
+}
+.email-address {
+  display: inline-block;
+  margin-top: 22px;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.contact-actions {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 24px;
+}
+.contact-card .contact-actions .button {
+  margin-top: 0;
+}
+.region-description {
+  margin-top: 12px;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 20px;
+}
+.footer-links a {
+  color: var(--accent);
+}
+.footer-links p {
+  flex-basis: 100%;
+  text-align: right;
+}
+@media (min-width: 651px) and (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr 0.85fr;
+    gap: 28px;
+  }
+  .hero h1 {
+    font-size: 2.9rem;
+  }
+  .hero-figure {
+    min-height: 380px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 9vw, 3.5rem);
+  }
+  .hero-figure {
+    min-height: 0;
+    max-height: none;
+  }
+  .figure-note {
+    font-size: 1.45rem;
+    max-width: none;
+  }
+  .hero-figure img {
+    height: 260px;
+  }
+  .capability-grid,
+  .training-grid,
+  .working-method ol {
+    grid-template-columns: 1fr;
+  }
+  .capability-grid {
+    gap: 0;
+  }
+  .capability {
+    padding: 25px 0;
+  }
+  .footer-links {
+    justify-content: flex-start;
+  }
+  .footer-links p {
+    text-align: left;
+  }
+  .question-panel {
+    padding-left: 18px;
+  }
+  .page-heading h1 {
+    font-size: clamp(2.1rem, 8.5vw, 2.8rem);
+  }
+  .timeline h2 {
+    font-size: 1.55rem;
+  }
+}
+@media print {
+  .hero {
+    display: block;
+  }
+  .contact-actions {
+    display: block;
+  }
+  .capability-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .callout,
+  .project-card,
+  .skill-card,
+  .timeline article {
+    break-inside: avoid;
+  }
+}
+
+/* Skills: compact cards and readable tags using the existing type and palette. */
+.skills-chip-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+.skill-chip-card {
+  padding: 25px;
+}
+.skill-chip-card .number {
+  font-size: 23px;
+}
+.skill-chip-card h2 {
+  font-size: 1.3rem;
+  margin: 18px 0 14px;
+  line-height: 1.25;
+}
+.skill-description {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.skill-group {
+  margin-top: 22px;
+}
+.skill-group h3 {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.skill-chip-card .tags {
+  margin-top: 10px;
+  gap: 7px;
+}
+.skill-chip-card .tags li {
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
+  background: var(--bg);
+}
+.skill-language-list {
+  list-style: none;
+  padding: 0 !important;
+  margin: 25px 0 0;
+}
+.skill-language-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  margin: 0;
+  font-size: 14px;
+}
+.skill-language-list strong {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 500;
+}
+@media (max-width: 1199px) {
+  .skills-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .skills-chip-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-chip-card {
+    padding: 26px;
+  }
+  .skill-chip-card h2 {
+    font-size: 1.5rem;
+  }
+  .skill-chip-card .tags li {
+    font-size: 12px;
+  }
+}
+@media print {
+  .skills-chip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
