@@ -1202,7 +1202,83 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-/* Hide the availability line on English and German homepages */
-.hero .availability {
-  display: none;
+
+/* Homepage refresh: clear sans-serif typography and outcome-focused copy. */
+.hero-copy {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+.hero h1 {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  font-size: clamp(2.6rem, 4.3vw, 4rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  margin: 22px 0 26px;
+}
+.hero h1 em {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  color: var(--accent);
+}
+.hero .lead {
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 54ch;
+}
+.hero-context {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.75;
+  max-width: 58ch;
+}
+.hero-expertise .tags {
+  margin-top: 23px;
+  gap: 8px;
+}
+.hero-expertise .tags li {
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 6px 11px;
+  border-radius: 999px;
+  color: var(--accent);
+}
+.hero-domains {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+.hero .actions {
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: clamp(2.35rem, 4.6vw, 3.25rem);
+  }
+}
+@media (max-width: 650px) {
+  .hero h1 {
+    font-size: clamp(2.2rem, 8.5vw, 3.35rem);
+  }
+  .hero .lead {
+    font-size: 16px;
+  }
+  .hero-context {
+    font-size: 14px;
+  }
+}
+
+/* Ownership statement in the approved homepage introduction. */
+.hero-approach {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--accent);
+  max-width: 62ch;
 }
