@@ -8,8 +8,8 @@
     "theme": "Switch colour theme",
     "footer": "Mechanical design · Simulation · Validation",
     "eyebrow": "MECHANICAL ENGINEERING / DESIGN · SIMULATION · VALIDATION",
-    "headline": "Complex mechanics.<br><em>Clear decisions.</em>",
-    "intro": "I’m Venkatesh Gopal, a mechanical engineer connecting design, simulation, and physical testing to understand how products behave—and help teams decide what to improve.",
+    "headline": "Own the challenge.<br><em>Engineer the outcome.</em>",
+    "intro": "I’m Venkatesh Gopal, a mechanical engineer with an M.Sc. in Computational Sciences in Engineering from TU Braunschweig, Germany.",
     "view": "Explore my work",
     "contact": "Let’s connect",
     "focus": "DESIGN. SIMULATE. TEST. IMPROVE.",
@@ -111,7 +111,7 @@
         "significance": "Measurements become useful when they help explain structural behaviour. This project connects a sensing approach with an engineering application, focusing on what observations can reveal about the response of a repair."
       }
     ],
-    "intro_more": "From structural and thermomechanical analysis to material modelling and Python automation, I bring computational thinking to practical engineering questions.",
+    "intro_more": "I tackle engineering problems through design, simulation, testing, and automation—connecting physical behaviour with practical decisions that move development forward.",
     "personality": "Curious about what bends, what breaks, and what we can build better.",
     "figure_note": "Good questions make better models.",
     "focus_values": "Mechanical design · Structural analysis · Experimental validation · Python automation",
@@ -305,7 +305,13 @@
         "tools": ["HyperMesh", "HyperGraph"],
         "methods": ["Meshing", "Contacts & boundary conditions", "Load-case definition", "Preprocessing", "Post-processing", "Results interpretation"]
       }
-    ]
+    ],
+    "hero_expertise": ["FEA & CFD", "Mechanical Design", "Python Automation", "AI & Surrogate Modelling"],
+    "hero_domains": "Different industries. The same commitment to sound engineering—from automotive and aerospace to home appliances, energy systems, and beyond.",
+    "hero_contact": "Let’s build something better",
+    "hero_eyebrow": "MECHANICAL ENGINEER / COMPUTATIONAL ENGINEER",
+    "hero_evidence": "My experience spans material-model calibration, drop-test simulation, structural analysis, and Python-based CAE automation. I bring a questioning mindset, a structured approach, and a focus on making the findings useful.",
+    "hero_approach": "My approach: take ownership, challenge assumptions, and turn insight into action."
   },
   "de": {
     "nav": ["Startseite", "Projekte", "Berufserfahrung", "Kompetenzen", "Kontakt"],
@@ -316,8 +322,8 @@
     "theme": "Farbschema wechseln",
     "footer": "Konstruktion · Simulation · Validierung",
     "eyebrow": "MASCHINENBAU / KONSTRUKTION · SIMULATION · VALIDIERUNG",
-    "headline": "Komplexe Mechanik.<br><em>Klare Entscheidungen.</em>",
-    "intro": "Ich bin Venkatesh Gopal, Maschinenbauingenieur. Ich verbinde Konstruktion, Simulation und Versuche, um das Verhalten von Produkten zu verstehen und fundierte Entwicklungsentscheidungen zu unterstützen.",
+    "headline": "Herausforderungen angehen.<br><em>Lösungen entwickeln.</em>",
+    "intro": "Ich bin Venkatesh Gopal, Maschinenbauingenieur mit einem M.Sc. in Computational Sciences in Engineering von der TU Braunschweig, Deutschland.",
     "view": "Meine Arbeit entdecken",
     "contact": "Kontakt aufnehmen",
     "focus": "KONSTRUIEREN. SIMULIEREN. PRÜFEN. VERBESSERN.",
@@ -419,7 +425,7 @@
         "significance": "Messungen werden dann nützlich, wenn sie Strukturverhalten erklären. Dieses Projekt verbindet einen Sensorikansatz mit einer ingenieurtechnischen Anwendung und untersucht, was Beobachtungen über das Verhalten einer Reparatur aussagen können."
       }
     ],
-    "intro_more": "Von Struktur- und thermomechanischen Analysen über Werkstoffmodellierung bis zur Python-Automatisierung: Ich nutze numerische Methoden für praktische ingenieurtechnische Fragestellungen.",
+    "intro_more": "Ich gehe technische Herausforderungen mit Konstruktion, Simulation, Versuchen und Automatisierung an. Dabei verbinde ich physikalisches Verhalten mit praktischen Entscheidungen, die die Entwicklung voranbringen.",
     "personality": "Neugierig darauf, was sich verformt, was versagt und was wir besser bauen können.",
     "figure_note": "Gute Fragen führen zu besseren Modellen.",
     "focus_values": "Mechanische Konstruktion · Strukturanalyse · Experimentelle Validierung · Python-Automatisierung",
@@ -625,6 +631,12 @@
         "tools": ["HyperMesh", "HyperGraph"],
         "methods": ["Vernetzung", "Kontakte & Randbedingungen", "Lastfalldefinition", "Preprocessing", "Postprocessing", "Ergebnisinterpretation"]
       }
-    ]
+    ],
+    "hero_expertise": ["FEM & CFD", "Mechanische Konstruktion", "Python-Automatisierung", "KI & Ersatzmodellierung"],
+    "hero_domains": "Unterschiedliche Branchen. Derselbe Anspruch an fundierte Ingenieurarbeit: von Automobilindustrie und Luftfahrt bis zu Hausgeräten, Energiesystemen und darüber hinaus.",
+    "hero_contact": "Gemeinsam etwas verbessern",
+    "hero_eyebrow": "MASCHINENBAUINGENIEUR / COMPUTATIONAL ENGINEER",
+    "hero_evidence": "Meine Erfahrung umfasst die Kalibrierung von Materialmodellen, Falltestsimulationen, Strukturanalysen und Python-basierte CAE-Automatisierung. Ich hinterfrage Annahmen, arbeite strukturiert und lege Wert auf praktisch nutzbare Ergebnisse.",
+    "hero_approach": "Meine Arbeitsweise: Verantwortung übernehmen, Annahmen hinterfragen und Erkenntnisse in konkrete Schritte übersetzen."
   }
 }

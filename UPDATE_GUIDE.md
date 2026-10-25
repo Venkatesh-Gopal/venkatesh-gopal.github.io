@@ -1,6 +1,6 @@
 # Website update — English and German
 
-This small archive contains only the 28 changed or new files. Apply it to your existing repository or an extracted copy of your original ZIP. It has not been pushed or deployed.
+This small archive contains only the changed or new files. Apply it to your existing repository or an extracted copy of your original ZIP. It has not been pushed or deployed.
 
 ## Apply the update
 
