@@ -1,19 +1,15 @@
-# Bilingual portfolio update
+# Bilingual engineering portfolio
 
-The portfolio now has five navigation sections in English and German, three project detail pages in each language, and a custom 404 page. Language links retain the current page. The pages work without JavaScript; JavaScript adds only a persistent colour theme toggle. Assets are local and no external fonts or translation services are loaded.
-
-English remains at `/`; German starts at `/de/`. Existing English section URLs are preserved. The site remains an al-folio/Jekyll project and retains its deployment workflow.
+English is served at `/`; German starts at `/de/`. There are five main navigation items and three project detail pages in each language. Language links retain the current page. The existing Jekyll project and publishing workflow are preserved.
 
 ## Content provenance
 
-Biography, qualifications, language levels and project topics come from the uploaded `_pages/About.md`. Employment dates, numerical results, software proficiency, email and LinkedIn were not supplied and have not been invented. Project graphics are explicitly labelled illustrations, not analysis results. The supplied portraits and CV are Einstein demo assets; they are not presented as Venkatesh's photo or CV. GitHub is the only supplied professional profile.
+The uploaded website source and twelve English/German resumes inform the biography, work history, qualifications, tools, language levels, email, and LinkedIn profile. The engineering profile spans mechanical design, structural and thermomechanical analysis, material modelling, testing, and Python automation. The website's existing steel-repair project is retained without inventing personal responsibilities or results.
+
+No disputed numerical performance figures, work-authorisation scope, managerial responsibilities, or unverified outcomes are published. Part-time research and the short-term March 2026 contract are identified. Project graphics are explicitly labelled illustrations, not simulation results. Template portraits and CV assets are not presented as the user's photo or resume.
 
 ## Implementation
 
-`_data/portfolio.json` contains the English and German copy. `bin/build_portfolio.py` generates the complete HTML pages, with `layout: null` so that no theme templates are overridden. Custom CSS, JavaScript and SVGs live in `assets/portfolio/`. Original demo source files are retained but excluded from the public build. The starter integration workflow is replaced with portfolio-specific checks because the upstream tests require publishing the demo pages.
+`_data/portfolio.json` is the bilingual content source. `bin/build_portfolio.py` generates the complete HTML pages with `layout: null`, preserving existing routes. CSS, JavaScript, and illustrations live in `assets/portfolio/`. The deployment and portfolio-check workflows regenerate pages before the Jekyll build. `bin/preview_portfolio.py` supports a portfolio-only preview without Jekyll.
 
-## Validation
-
-All 16 pages passed static checks for internal links, paired language metadata, HTML language attributes and demo-content exclusion. JavaScript syntax, the starter style contract and repository-wide Prettier formatting passed. The CSS includes desktop and mobile layouts. Browser execution failed in this environment, so responsive rendering, interactive theme behaviour and visual appearance could not be verified in a running browser. Ruby/Bundler is unavailable in the editing environment, so the complete Jekyll build and plugin audit could not be run locally. The GitHub deployment workflow retains the real Jekyll build, and the portfolio check workflow validates its output.
-
-This archive is an edited repository snapshot. It has not been pushed to GitHub or deployed to the live website.
+See `UPDATE_GUIDE.md` for installation, editing, changed files, and validation limitations. This archive has not been pushed to GitHub or deployed.
