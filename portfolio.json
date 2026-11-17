@@ -60,18 +60,41 @@
     "projects": [
       {
         "slug": "adhesive-fracture",
-        "title": "Understanding fracture in reinforced adhesives",
-        "category": "COMPUTATIONAL FRACTURE",
-        "short": "Exploring crack initiation and propagation through extended finite element modelling.",
+        "title": "Fracture modelling of reinforced adhesives",
+        "category": "STRUCTURAL INTEGRITY / COMPUTATIONAL FRACTURE",
+        "short": "Abaqus XFEM study of crack paths and tensile response in short-glass-fibre-reinforced adhesive specimens.",
         "body": "This project investigates the fracture behaviour of fibre-reinforced adhesives using the extended finite element method, or XFEM. The focus is on examining the mechanical response of adhesive materials and the development of cracks.",
-        "tags": ["XFEM", "Abaqus", "Adhesives", "Fracture mechanics"],
+        "tags": ["Abaqus", "XFEM", "Fracture mechanics", "Material behaviour"],
         "focus": [
           "Examine the mechanical response of the adhesive system under loading.",
           "Use XFEM to investigate crack initiation and propagation.",
           "Interpret the predicted response alongside the assumptions behind the analysis."
         ],
         "question": "How can numerical modelling help explain where cracking begins and how it develops in a reinforced adhesive material?",
-        "significance": "Understanding fracture helps engineers evaluate how adhesive systems carry load and where failure may develop. The model becomes useful when its predictions are connected with the material, loading conditions, and evidence available."
+        "significance": "Understanding fracture helps engineers evaluate how adhesive systems carry load and where failure may develop. The model becomes useful when its predictions are connected with the material, loading conditions, and evidence available.",
+        "case_study": {
+          "intro": "A material-level study of crack initiation and propagation in a short-glass-fibre-reinforced epoxy adhesive, with wind-turbine blade bonding as the application context.",
+          "focus_title": "Analysis focus",
+          "focus": "Compare predicted crack paths and tensile responses with experiments across four fibre orientations. Examine where the directional material description captures the behaviour and where it needs improvement.",
+          "caption": "Schematic fracture illustration. Not simulation output.",
+          "setup_title": "Study at a glance",
+          "setup_headers": ["Item", "Scope"],
+          "setup_rows": [
+            ["Material", "Epoxy adhesive containing short glass fibres."],
+            ["Model", "Notched material specimen analysed with 3D Abaqus XFEM."],
+            ["Orientations", "0°, 30°, 60° and 90°."],
+            ["Comparisons", "Crack paths and tensile stress–strain response."]
+          ],
+          "results_title": "Main findings",
+          "result_headers": ["Comparison", "Finding"],
+          "result_rows": [
+            ["Crack paths", "Qualitative correspondence at 0° and 90°; substantial discrepancies at 30° and 60°."],
+            ["Tensile response", "Predicted strains differed substantially from the experimental measurements."]
+          ],
+          "conclusion_title": "Engineering interpretation",
+          "conclusion": "The simplified directional stiffness description was a priority for improvement. The comparison shows why a plausible crack path alone is insufficient to establish the model’s predictive quality.",
+          "note": "Results refer to the published specimen study, which credits J. Philipp with the XFEM simulation. The model represents adhesive material, rather than a complete bonded blade."
+        }
       },
       {
         "slug": "honeycomb",
@@ -120,30 +143,46 @@
           "conclusion": "MAT 274 was the stronger starting point for the investigated compression case. Material-level agreement alone did not establish the board’s crushing response.",
           "calibration_title": "Surrogate-based parameter calibration",
           "calibration": "To address the MAT 58 mismatch, I used bounded material parameters and D-optimal sampling to define LS-DYNA evaluations. LS-OPT built metamodels from those results and used Curve Mapping to assess agreement with the experimental target. The described SRSM workflow refined the search region through domain reduction.",
-          "calibration_limit": "The supplied material documents the method, without a final parameter set or quantified optimisation improvement.",
-          "details_title": "Scope and sources",
-          "details": [
-            "These findings concern specimen compression. They do not establish whole-dishwasher drop performance. Humidity and air inside the cells remained further research topics.",
-            "The presentation reports five paper tests in each direction and five selected board tests, with averaged curves. MD denotes machine direction; CD denotes cross direction.",
-            "Source: Venkatesh Gopal, master’s thesis presentation, slides 11–26; Section 5.5, “Optimization of Parameters in LS-OPT”. The formulation comparisons are not identified as before-and-after optimisation results.",
-            "Curve Mapping measures mismatch with experiments. Surrogate prediction accuracy requires separate solver comparisons."
-          ]
+          "calibration_limit": "The supplied material documents the method, without a final parameter set or quantified optimisation improvement."
         }
       },
       {
         "slug": "steel-repair",
-        "title": "A closer look at steel repairs",
-        "category": "STRUCTURAL MONITORING",
-        "short": "Exploring distributed fibre optic sensing to investigate the behaviour of steel patch repairs.",
+        "title": "FEM of bonded steel reinforcement",
+        "category": "BONDED STRUCTURES / MECHANICAL AND THERMAL ANALYSIS",
+        "short": "Mechanical and thermal–mechanical finite element work on bonded steel structures, with strain measurements providing research context.",
         "body": "This project concerns monitoring steel patch repairs using distributed fibre optic sensing. It brings together structural mechanics and experimental observations to investigate how repaired structures behave and how measurements can support their interpretation.",
-        "tags": ["Steel repairs", "Fibre optic sensing", "Experimental comparison"],
+        "tags": ["FEM", "Bonded structures", "Thermal loading", "Structural mechanics"],
         "focus": [
           "Consider the steel patch repair as a structural system responding to load.",
           "Explore distributed fibre optic sensing as a method for monitoring structural response.",
           "Connect experimental observations with the mechanics of the repaired structure."
         ],
         "question": "How can distributed measurements help us understand the response of a repaired steel structure under load?",
-        "significance": "Measurements become useful when they help explain structural behaviour. This project connects a sensing approach with an engineering application, focusing on what observations can reveal about the response of a repair."
+        "significance": "Measurements become useful when they help explain structural behaviour. This project connects a sensing approach with an engineering application, focusing on what observations can reveal about the response of a repair.",
+        "case_study": {
+          "intro": "Mechanical and thermal–mechanical investigation of bonded steel structures, using steel-patch reinforcement as the engineering application.",
+          "focus_title": "My contribution",
+          "focus": "My documented scope covered mechanical and thermal–mechanical FEM. The study concerns load transfer and deformation in bonded structures; published strain measurements provide the experimental research context.",
+          "caption": "Schematic steel-patch illustration. Not simulation output.",
+          "setup_title": "Project at a glance",
+          "setup_headers": ["Item", "Scope"],
+          "setup_rows": [
+            ["Application", "Bonded steel-patch reinforcement of steel structures."],
+            ["Analysis scope", "Mechanical and thermal–mechanical finite element modelling."],
+            ["Research context", "Distributed fibre optic sensing of strain in a repaired structure."],
+            ["Engineering question", "How do loading, load transfer and local damage affect the repair’s response?"]
+          ],
+          "results_title": "Findings from the experimental context",
+          "result_headers": ["Observation", "Engineering relevance"],
+          "result_rows": [
+            ["Load redistribution", "Published strain measurements illustrate how the response varies along the bonded repair."],
+            ["Progressive damage", "Published observations show damage development that must be considered when interpreting local strain changes."]
+          ],
+          "conclusion_title": "Engineering focus",
+          "conclusion": "Connect structural response with the mechanics of the bonded repair. Distinguish changes caused by loading from those associated with damage when interpreting the measurements.",
+          "note": "The observations above are published experimental context. The supplied project material contains no numerical FEM result plots or quantified model-validation outcome."
+        }
       }
     ],
     "intro_more": "I tackle engineering problems through design, simulation, testing, and automation—connecting physical behaviour with practical decisions that move development forward.",
@@ -409,18 +448,41 @@
     "projects": [
       {
         "slug": "adhesive-fracture",
-        "title": "Bruchverhalten faserverstärkter Klebstoffe verstehen",
-        "category": "NUMERISCHE BRUCHMECHANIK",
-        "short": "Rissinitiierung und Rissausbreitung mit der erweiterten Finite-Elemente-Methode untersuchen.",
+        "title": "Bruchmodellierung verstärkter Klebstoffe",
+        "category": "STRUKTURINTEGRITÄT / NUMERISCHE BRUCHMECHANIK",
+        "short": "Abaqus-XFEM-Untersuchung von Risspfaden und Zugverhalten in kurzglasfaserverstärkten Klebstoffproben.",
         "body": "Dieses Projekt untersucht das Bruchverhalten faserverstärkter Klebstoffe mit der erweiterten Finite-Elemente-Methode, kurz XFEM. Im Mittelpunkt stehen die mechanische Reaktion der Klebstoffe und die Entwicklung von Rissen.",
-        "tags": ["XFEM", "Abaqus", "Klebstoffe", "Bruchmechanik"],
+        "tags": ["Abaqus", "XFEM", "Bruchmechanik", "Werkstoffverhalten"],
         "focus": [
           "Die mechanische Reaktion des Klebstoffsystems unter Belastung untersuchen.",
           "Rissinitiierung und -ausbreitung mit XFEM analysieren.",
           "Die prognostizierte Reaktion im Zusammenhang mit den Modellannahmen einordnen."
         ],
         "question": "Wie kann numerische Modellierung erklären, wo Risse in einem faserverstärkten Klebstoff entstehen und wie sie sich entwickeln?",
-        "significance": "Ein besseres Verständnis des Bruchverhaltens hilft, die Lastübertragung und mögliche Versagensstellen in Klebstoffsystemen zu bewerten. Aussagekräftig wird das Modell durch den Bezug zu Werkstoff, Belastung und verfügbaren Versuchsdaten."
+        "significance": "Ein besseres Verständnis des Bruchverhaltens hilft, die Lastübertragung und mögliche Versagensstellen in Klebstoffsystemen zu bewerten. Aussagekräftig wird das Modell durch den Bezug zu Werkstoff, Belastung und verfügbaren Versuchsdaten.",
+        "case_study": {
+          "intro": "Untersuchung der Rissinitiierung und Rissausbreitung in einem kurzglasfaserverstärkten Epoxidklebstoff auf Materialebene. Klebungen in Windenergie-Rotorblättern bilden den Anwendungskontext.",
+          "focus_title": "Analyseschwerpunkt",
+          "focus": "Vergleich berechneter Risspfade und Zugantworten mit Versuchen für vier Faserorientierungen. Bewertung, wo die richtungsabhängige Materialbeschreibung das Verhalten erfasst und wo sie verbessert werden muss.",
+          "caption": "Schematische Bruchdarstellung. Kein Simulationsergebnis.",
+          "setup_title": "Untersuchung im Überblick",
+          "setup_headers": ["Aspekt", "Umfang"],
+          "setup_rows": [
+            ["Werkstoff", "Epoxidklebstoff mit kurzen Glasfasern."],
+            ["Modell", "Gekerbte Materialprobe, untersucht mit 3D-XFEM in Abaqus."],
+            ["Orientierungen", "0°, 30°, 60° und 90°."],
+            ["Vergleiche", "Risspfade und Spannungs-Dehnungs-Verhalten unter Zug."]
+          ],
+          "results_title": "Wesentliche Ergebnisse",
+          "result_headers": ["Vergleich", "Ergebnis"],
+          "result_rows": [
+            ["Risspfade", "Qualitative Übereinstimmung bei 0° und 90°; deutliche Abweichungen bei 30° und 60°."],
+            ["Zugantwort", "Die berechneten Dehnungen wichen deutlich von den experimentellen Messungen ab."]
+          ],
+          "conclusion_title": "Technische Einordnung",
+          "conclusion": "Die vereinfachte Beschreibung der richtungsabhängigen Steifigkeit war ein Ansatzpunkt für Verbesserungen. Ein plausibler Risspfad allein belegt noch keine ausreichende Vorhersagequalität des Modells.",
+          "note": "Die Ergebnisse stammen aus der veröffentlichten Probenstudie, die J. Philipp die XFEM-Simulation zuordnet. Das Modell bildet Klebstoffmaterial ab, kein vollständiges geklebtes Rotorblatt."
+        }
       },
       {
         "slug": "honeycomb",
@@ -472,30 +534,49 @@
           "conclusion": "MAT 274 war für den untersuchten Drucklastfall der geeignetere Ausgangspunkt. Eine Übereinstimmung auf Materialebene belegte allein noch keine korrekte Stauchantwort der Platte.",
           "calibration_title": "Ersatzmodellbasierte Parameterkalibrierung",
           "calibration": "Um die Abweichungen bei MAT 58 zu verringern, definierte ich Parametergrenzen und wählte mit einer D-optimalen Versuchsplanung LS-DYNA-Berechnungen aus. LS-OPT erstellte daraus Metamodelle und bewertete die Übereinstimmung mit der experimentellen Zielkurve über Curve Mapping. Der beschriebene SRSM-Ablauf verfeinerte den Suchbereich durch Bereichsverkleinerung.",
-          "calibration_limit": "Die bereitgestellten Unterlagen dokumentieren das Verfahren, enthalten jedoch keinen abschließenden Parametersatz und keine bezifferte Optimierungsverbesserung.",
-          "details_title": "Geltungsbereich und Quellen",
-          "details": [
-            "Die Ergebnisse betreffen die Stauchung von Proben. Sie belegen nicht das Fallverhalten eines vollständigen Geschirrspülers. Feuchtigkeit und Luft in den Zellen blieben weitere Untersuchungsfelder.",
-            "Die Präsentation nennt fünf Papierversuche je Richtung und fünf ausgewählte Plattenversuche mit gemittelten Kurven. MD bezeichnet die Maschinenrichtung, CD die Querrichtung.",
-            "Quelle: Venkatesh Gopal, Präsentation zur Masterarbeit, Folien 11–26; Abschnitt 5.5, „Optimization of Parameters in LS-OPT“. Die Materialmodellvergleiche sind nicht als Ergebnisse vor und nach einer Optimierung gekennzeichnet.",
-            "Curve Mapping bewertet die Abweichung vom Versuch. Die Vorhersagegenauigkeit des Ersatzmodells erfordert gesonderte Solververgleiche."
-          ]
+          "calibration_limit": "Die bereitgestellten Unterlagen dokumentieren das Verfahren, enthalten jedoch keinen abschließenden Parametersatz und keine bezifferte Optimierungsverbesserung."
         }
       },
       {
         "slug": "steel-repair",
-        "title": "Stahlreparaturen genauer betrachten",
-        "category": "STRUKTURÜBERWACHUNG",
-        "short": "Verteilte faseroptische Sensorik zur Untersuchung des Verhaltens von Reparaturen mit Stahlpatches.",
+        "title": "FEM geklebter Stahlverstärkungen",
+        "category": "GEKLEBTE STRUKTUREN / MECHANISCHE UND THERMISCHE ANALYSE",
+        "short": "Mechanische und thermomechanische FEM-Arbeit an geklebten Stahlstrukturen mit Dehnungsmessungen als Forschungskontext.",
         "body": "Dieses Projekt befasst sich mit der Überwachung von Reparaturen mit Stahlpatches durch verteilte faseroptische Sensorik. Es verbindet Strukturmechanik und experimentelle Beobachtungen, um das Verhalten reparierter Strukturen und die Aussagekraft der Messungen zu untersuchen.",
-        "tags": ["Stahlreparaturen", "Faseroptische Sensorik", "Experimenteller Vergleich"],
+        "tags": ["FEM", "Geklebte Strukturen", "Thermische Belastung", "Strukturmechanik"],
         "focus": [
           "Die Reparatur mit Stahlpatches als belastetes Struktursystem betrachten.",
           "Verteilte faseroptische Sensorik als Methode zur Überwachung des Strukturverhaltens untersuchen.",
           "Experimentelle Beobachtungen mit der Mechanik der reparierten Struktur verbinden."
         ],
         "question": "Wie können verteilte Messungen helfen, die Reaktion einer reparierten Stahlstruktur unter Belastung zu verstehen?",
-        "significance": "Messungen werden dann nützlich, wenn sie Strukturverhalten erklären. Dieses Projekt verbindet einen Sensorikansatz mit einer ingenieurtechnischen Anwendung und untersucht, was Beobachtungen über das Verhalten einer Reparatur aussagen können."
+        "significance": "Messungen werden dann nützlich, wenn sie Strukturverhalten erklären. Dieses Projekt verbindet einen Sensorikansatz mit einer ingenieurtechnischen Anwendung und untersucht, was Beobachtungen über das Verhalten einer Reparatur aussagen können.",
+        "case_study": {
+          "intro": "Mechanische und thermomechanische Untersuchung geklebter Stahlstrukturen am Anwendungsbeispiel einer Verstärkung mit Stahlpatches.",
+          "focus_title": "Mein Beitrag",
+          "focus": "Mein dokumentierter Aufgabenbereich umfasste mechanische und thermomechanische FEM. Im Mittelpunkt stehen Lastübertragung und Verformung geklebter Strukturen. Veröffentlichte Dehnungsmessungen bilden den experimentellen Forschungskontext.",
+          "caption": "Schematische Stahlpatch-Darstellung. Kein Simulationsergebnis.",
+          "setup_title": "Projekt im Überblick",
+          "setup_headers": ["Aspekt", "Umfang"],
+          "setup_rows": [
+            ["Anwendung", "Verstärkung von Stahlstrukturen durch geklebte Stahlpatches."],
+            ["Analyseumfang", "Mechanische und thermomechanische Finite-Elemente-Modellierung."],
+            ["Forschungskontext", "Verteilte faseroptische Dehnungsmessung an einer reparierten Struktur."],
+            ["Fragestellung", "Wie beeinflussen Belastung, Lastübertragung und lokale Schädigung das Verhalten der Reparatur?"]
+          ],
+          "results_title": "Erkenntnisse aus dem experimentellen Kontext",
+          "result_headers": ["Beobachtung", "Technische Bedeutung"],
+          "result_rows": [
+            ["Lastumlagerung", "Veröffentlichte Dehnungsmessungen verdeutlichen die örtlichen Unterschiede entlang der geklebten Reparatur."],
+            [
+              "Fortschreitende Schädigung",
+              "Veröffentlichte Beobachtungen zeigen eine Schadensentwicklung, die bei der Deutung lokaler Dehnungsänderungen berücksichtigt werden muss."
+            ]
+          ],
+          "conclusion_title": "Technischer Schwerpunkt",
+          "conclusion": "Das Strukturverhalten mit der Mechanik der geklebten Reparatur verbinden. Bei der Auswertung der Messungen zwischen belastungsbedingten Änderungen und Einflüssen der Schädigung unterscheiden.",
+          "note": "Die genannten Beobachtungen bilden veröffentlichten experimentellen Kontext ab. Die bereitgestellten Projektunterlagen enthalten keine numerischen FEM-Ergebnisgrafiken und kein beziffertes Validierungsergebnis."
+        }
       }
     ],
     "intro_more": "Ich gehe technische Herausforderungen mit Konstruktion, Simulation, Versuchen und Automatisierung an. Dabei verbinde ich physikalisches Verhalten mit praktischen Entscheidungen, die die Entwicklung voranbringen.",

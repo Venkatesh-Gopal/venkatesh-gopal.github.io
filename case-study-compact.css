@@ -1,0 +1,69 @@
+/* Applied only to the two concise project case studies. */
+.compact-case-heading h1 {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+.compact-case .detail-art figcaption {
+  padding: 16px 22px;
+}
+.compact-case .compact-case-section {
+  padding: 36px 0;
+  border-bottom: 1px solid var(--line);
+}
+.compact-case .detail-grid + .compact-case-section {
+  margin-top: 36px;
+  border-top: 1px solid var(--line);
+}
+.compact-case .compact-case-section h2 {
+  margin-bottom: 22px;
+}
+.compact-case .compact-case-section > p {
+  max-width: 900px;
+}
+.compact-case .compact-case-table {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.compact-case table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 560px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.compact-case th,
+.compact-case td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.compact-case th {
+  background: var(--soft);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+}
+.compact-case td {
+  color: var(--muted);
+}
+.compact-case td:first-child {
+  width: 23%;
+  color: var(--ink);
+  font-weight: 600;
+}
+.compact-case .compact-case-note {
+  margin-top: 22px;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  .compact-case .compact-case-section {
+    padding: 28px 0;
+  }
+  .compact-case th,
+  .compact-case td {
+    padding: 13px;
+  }
+}
