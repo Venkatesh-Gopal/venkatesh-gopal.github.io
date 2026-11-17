@@ -60,9 +60,9 @@
     "projects": [
       {
         "slug": "adhesive-fracture",
-        "title": "Fracture modelling of reinforced adhesives",
+        "title": "Fracture Modelling & Failure Assessment",
         "category": "STRUCTURAL INTEGRITY / COMPUTATIONAL FRACTURE",
-        "short": "Abaqus XFEM study of crack paths and tensile response in short-glass-fibre-reinforced adhesive specimens.",
+        "short": "Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.",
         "body": "This project investigates the fracture behaviour of fibre-reinforced adhesives using the extended finite element method, or XFEM. The focus is on examining the mechanical response of adhesive materials and the development of cracks.",
         "tags": ["Abaqus", "XFEM", "Fracture mechanics", "Material behaviour"],
         "focus": [
@@ -73,7 +73,7 @@
         "question": "How can numerical modelling help explain where cracking begins and how it develops in a reinforced adhesive material?",
         "significance": "Understanding fracture helps engineers evaluate how adhesive systems carry load and where failure may develop. The model becomes useful when its predictions are connected with the material, loading conditions, and evidence available.",
         "case_study": {
-          "intro": "A material-level study of crack initiation and propagation in a short-glass-fibre-reinforced epoxy adhesive, with wind-turbine blade bonding as the application context.",
+          "intro": "Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.",
           "focus_title": "Analysis focus",
           "focus": "Compare predicted crack paths and tensile responses with experiments across four fibre orientations. Examine where the directional material description captures the behaviour and where it needs improvement.",
           "caption": "Schematic fracture illustration. Not simulation output.",
@@ -98,9 +98,9 @@
       },
       {
         "slug": "honeycomb",
-        "title": "Honeycomb paperboard: testing and simulation",
+        "title": "Material Characterisation & Nonlinear Simulation",
         "category": "MATERIAL MODELLING / PACKAGING MECHANICS",
-        "short": "Material testing, LS-DYNA compression modelling and parameter calibration in LS-OPT for BSH dishwasher packaging.",
+        "short": "Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material behaviour, demonstrated through a honeycomb paperboard study.",
         "body": "For my master’s thesis at BSH, I investigated the mechanical behaviour of honeycomb paperboard for dishwasher packaging. I characterised the liner and core paper, compared two LS-DYNA material models and assessed the response of the assembled board under compression.",
         "tags": ["LS-DYNA", "MAT 58 / MAT 274", "LS-OPT", "Surrogate modelling"],
         "focus": [
@@ -118,7 +118,7 @@
         "significance": "The board-level comparison favoured MAT 274 for the investigated compression case. It also showed why agreement with paper tests alone does not establish a reliable prediction of the board’s crushing response.",
         "case_study": {
           "eyebrow": "MASTER’S THESIS / BSH DISHWASHER PACKAGING",
-          "intro": "I investigated honeycomb paperboard for dishwasher packaging at BSH, combining material testing, LS-DYNA simulations and parameter calibration with LS-OPT.",
+          "intro": "Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material behaviour, demonstrated through a honeycomb paperboard study.",
           "illustration": "Schematic honeycomb structure. Illustration, not simulation output.",
           "work_title": "My contribution",
           "work": "I characterised liner and core paper, developed MAT 58 and MAT 274 material cards, and compared single-element and honeycomb board simulations with experiments. I also applied surrogate-based inverse modelling to calibrate MAT 58 parameters.",
@@ -148,9 +148,9 @@
       },
       {
         "slug": "steel-repair",
-        "title": "FEM of bonded steel reinforcement",
+        "title": "Structural & Thermomechanical Analysis",
         "category": "BONDED STRUCTURES / MECHANICAL AND THERMAL ANALYSIS",
-        "short": "Mechanical and thermal–mechanical finite element work on bonded steel structures, with strain measurements providing research context.",
+        "short": "Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the application.",
         "body": "This project concerns monitoring steel patch repairs using distributed fibre optic sensing. It brings together structural mechanics and experimental observations to investigate how repaired structures behave and how measurements can support their interpretation.",
         "tags": ["FEM", "Bonded structures", "Thermal loading", "Structural mechanics"],
         "focus": [
@@ -161,7 +161,7 @@
         "question": "How can distributed measurements help us understand the response of a repaired steel structure under load?",
         "significance": "Measurements become useful when they help explain structural behaviour. This project connects a sensing approach with an engineering application, focusing on what observations can reveal about the response of a repair.",
         "case_study": {
-          "intro": "Mechanical and thermal–mechanical investigation of bonded steel structures, using steel-patch reinforcement as the engineering application.",
+          "intro": "Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the application.",
           "focus_title": "My contribution",
           "focus": "My documented scope covered mechanical and thermal–mechanical FEM. The study concerns load transfer and deformation in bonded structures; published strain measurements provide the experimental research context.",
           "caption": "Schematic steel-patch illustration. Not simulation output.",
@@ -448,9 +448,9 @@
     "projects": [
       {
         "slug": "adhesive-fracture",
-        "title": "Bruchmodellierung verstärkter Klebstoffe",
+        "title": "Bruchmodellierung & Versagensbewertung",
         "category": "STRUKTURINTEGRITÄT / NUMERISCHE BRUCHMECHANIK",
-        "short": "Abaqus-XFEM-Untersuchung von Risspfaden und Zugverhalten in kurzglasfaserverstärkten Klebstoffproben.",
+        "short": "Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.",
         "body": "Dieses Projekt untersucht das Bruchverhalten faserverstärkter Klebstoffe mit der erweiterten Finite-Elemente-Methode, kurz XFEM. Im Mittelpunkt stehen die mechanische Reaktion der Klebstoffe und die Entwicklung von Rissen.",
         "tags": ["Abaqus", "XFEM", "Bruchmechanik", "Werkstoffverhalten"],
         "focus": [
@@ -461,7 +461,7 @@
         "question": "Wie kann numerische Modellierung erklären, wo Risse in einem faserverstärkten Klebstoff entstehen und wie sie sich entwickeln?",
         "significance": "Ein besseres Verständnis des Bruchverhaltens hilft, die Lastübertragung und mögliche Versagensstellen in Klebstoffsystemen zu bewerten. Aussagekräftig wird das Modell durch den Bezug zu Werkstoff, Belastung und verfügbaren Versuchsdaten.",
         "case_study": {
-          "intro": "Untersuchung der Rissinitiierung und Rissausbreitung in einem kurzglasfaserverstärkten Epoxidklebstoff auf Materialebene. Klebungen in Windenergie-Rotorblättern bilden den Anwendungskontext.",
+          "intro": "Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.",
           "focus_title": "Analyseschwerpunkt",
           "focus": "Vergleich berechneter Risspfade und Zugantworten mit Versuchen für vier Faserorientierungen. Bewertung, wo die richtungsabhängige Materialbeschreibung das Verhalten erfasst und wo sie verbessert werden muss.",
           "caption": "Schematische Bruchdarstellung. Kein Simulationsergebnis.",
@@ -486,9 +486,9 @@
       },
       {
         "slug": "honeycomb",
-        "title": "Papierwabenplatten: Versuche und Simulation",
+        "title": "Werkstoffcharakterisierung & nichtlineare Simulation",
         "category": "MATERIALMODELLIERUNG / VERPACKUNGSMECHANIK",
-        "short": "Materialversuche, LS-DYNA-Drucksimulationen und Parameterkalibrierung mit LS-OPT für BSH-Geschirrspülerverpackungen.",
+        "short": "Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten.",
         "body": "In meiner Masterarbeit bei BSH untersuchte ich das mechanische Verhalten von Papierwabenplatten für Geschirrspülerverpackungen. Ich charakterisierte Decklagen- und Kernpapier, verglich zwei LS-DYNA-Materialmodelle und bewertete das Druckverhalten der gesamten Wabenplatte.",
         "tags": ["LS-DYNA", "MAT 58 / MAT 274", "LS-OPT", "Ersatzmodellierung"],
         "focus": [
@@ -506,7 +506,7 @@
         "significance": "Der Vergleich auf Plattenebene fiel für den untersuchten Drucklastfall zugunsten von MAT 274 aus. Er zeigte auch, warum eine Übereinstimmung mit Papierversuchen allein noch keine zuverlässige Vorhersage der Stauchantwort der Platte belegt.",
         "case_study": {
           "eyebrow": "MASTERARBEIT / BSH-GESCHIRRSPÜLERVERPACKUNGEN",
-          "intro": "Bei BSH untersuchte ich Papierwabenplatten für Geschirrspülerverpackungen. Dazu verband ich Materialversuche, LS-DYNA-Simulationen und die Parameterkalibrierung mit LS-OPT.",
+          "intro": "Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten.",
           "illustration": "Schematische Wabenstruktur. Illustration, kein Simulationsergebnis.",
           "work_title": "Mein Beitrag",
           "work": "Ich charakterisierte Decklagen- und Kernpapier, entwickelte die Materialkarten MAT 58 und MAT 274 und verglich Einzelelement- und Wabenplattensimulationen mit Versuchen. Zusätzlich setzte ich eine ersatzmodellbasierte inverse Modellierung zur Kalibrierung der MAT-58-Parameter ein.",
@@ -539,9 +539,9 @@
       },
       {
         "slug": "steel-repair",
-        "title": "FEM geklebter Stahlverstärkungen",
+        "title": "Strukturmechanische & thermomechanische Analyse",
         "category": "GEKLEBTE STRUKTUREN / MECHANISCHE UND THERMISCHE ANALYSE",
-        "short": "Mechanische und thermomechanische FEM-Arbeit an geklebten Stahlstrukturen mit Dehnungsmessungen als Forschungskontext.",
+        "short": "Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von Stahlverstärkungen.",
         "body": "Dieses Projekt befasst sich mit der Überwachung von Reparaturen mit Stahlpatches durch verteilte faseroptische Sensorik. Es verbindet Strukturmechanik und experimentelle Beobachtungen, um das Verhalten reparierter Strukturen und die Aussagekraft der Messungen zu untersuchen.",
         "tags": ["FEM", "Geklebte Strukturen", "Thermische Belastung", "Strukturmechanik"],
         "focus": [
@@ -552,7 +552,7 @@
         "question": "Wie können verteilte Messungen helfen, die Reaktion einer reparierten Stahlstruktur unter Belastung zu verstehen?",
         "significance": "Messungen werden dann nützlich, wenn sie Strukturverhalten erklären. Dieses Projekt verbindet einen Sensorikansatz mit einer ingenieurtechnischen Anwendung und untersucht, was Beobachtungen über das Verhalten einer Reparatur aussagen können.",
         "case_study": {
-          "intro": "Mechanische und thermomechanische Untersuchung geklebter Stahlstrukturen am Anwendungsbeispiel einer Verstärkung mit Stahlpatches.",
+          "intro": "Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von Stahlverstärkungen.",
           "focus_title": "Mein Beitrag",
           "focus": "Mein dokumentierter Aufgabenbereich umfasste mechanische und thermomechanische FEM. Im Mittelpunkt stehen Lastübertragung und Verformung geklebter Strukturen. Veröffentlichte Dehnungsmessungen bilden den experimentellen Forschungskontext.",
           "caption": "Schematische Stahlpatch-Darstellung. Kein Simulationsergebnis.",

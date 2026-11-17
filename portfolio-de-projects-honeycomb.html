@@ -1,6 +1,6 @@
 ---
 layout: null
-title: "Papierwabenplatten: Versuche und Simulation"
+title: "Werkstoffcharakterisierung & nichtlineare Simulation"
 permalink: /de/projects/honeycomb/
 lang: de
 sitemap: true
@@ -11,20 +11,20 @@ sitemap: true
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Papierwabenplatten: Versuche und Simulation · Venkatesh Gopal</title>
+    <title>Werkstoffcharakterisierung &amp; nichtlineare Simulation · Venkatesh Gopal</title>
     <meta
       name="description"
-      content="Materialversuche, LS-DYNA-Drucksimulationen und Parameterkalibrierung mit LS-OPT für BSH-Geschirrspülerverpackungen."
+      content="Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten."
     />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/de/projects/honeycomb/" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/projects/honeycomb/" />
     <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de/projects/honeycomb/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Papierwabenplatten: Versuche und Simulation · Venkatesh Gopal" />
+    <meta property="og:title" content="Werkstoffcharakterisierung &amp; nichtlineare Simulation · Venkatesh Gopal" />
     <meta
       property="og:description"
-      content="Materialversuche, LS-DYNA-Drucksimulationen und Parameterkalibrierung mit LS-OPT für BSH-Geschirrspülerverpackungen."
+      content="Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten."
     />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/de/projects/honeycomb/" />
     <link rel="icon" href="{{ site.baseurl }}/assets/portfolio/favicon.svg" type="image/svg+xml" />
@@ -63,10 +63,10 @@ sitemap: true
       <a class="back-link" href="{{ site.baseurl }}/de/projects/">← Alle Projekte</a>
       <section class="page-heading honeycomb-heading">
         <p class="eyebrow">MASTERARBEIT / BSH-GESCHIRRSPÜLERVERPACKUNGEN</p>
-        <h1>Papierwabenplatten: Versuche und Simulation</h1>
+        <h1>Werkstoffcharakterisierung &amp; nichtlineare Simulation</h1>
         <p class="lead">
-          Bei BSH untersuchte ich Papierwabenplatten für Geschirrspülerverpackungen. Dazu verband ich Materialversuche, LS-DYNA-Simulationen und die
-          Parameterkalibrierung mit LS-OPT.
+          Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am
+          Beispiel von Papierwabenplatten.
         </p>
       </section>
       <div class="honeycomb-content">
@@ -183,26 +183,6 @@ sitemap: true
             Optimierungsverbesserung.
           </p>
         </section>
-        <details class="honeycomb-sources">
-          <summary>Geltungsbereich und Quellen</summary>
-          <ul>
-            <li>
-              Die Ergebnisse betreffen die Stauchung von Proben. Sie belegen nicht das Fallverhalten eines vollständigen Geschirrspülers. Feuchtigkeit
-              und Luft in den Zellen blieben weitere Untersuchungsfelder.
-            </li>
-            <li>
-              Die Präsentation nennt fünf Papierversuche je Richtung und fünf ausgewählte Plattenversuche mit gemittelten Kurven. MD bezeichnet die
-              Maschinenrichtung, CD die Querrichtung.
-            </li>
-            <li>
-              Quelle: Venkatesh Gopal, Präsentation zur Masterarbeit, Folien 11–26; Abschnitt 5.5, „Optimization of Parameters in LS-OPT“. Die
-              Materialmodellvergleiche sind nicht als Ergebnisse vor und nach einer Optimierung gekennzeichnet.
-            </li>
-            <li>
-              Curve Mapping bewertet die Abweichung vom Versuch. Die Vorhersagegenauigkeit des Ersatzmodells erfordert gesonderte Solververgleiche.
-            </li>
-          </ul>
-        </details>
         <section class="project-significance">
           <a class="text-link" href="{{ site.baseurl }}/de/contact/">Über eine verwandte Fragestellung sprechen ↗</a>
         </section>
@@ -215,9 +195,9 @@ sitemap: true
               <span>01</span><img src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture.svg" alt="" width="600" height="360" loading="lazy" />
             </div>
             <div class="card-copy">
-              <p class="eyebrow">NUMERISCHE BRUCHMECHANIK</p>
-              <h3>Bruchverhalten faserverstärkter Klebstoffe verstehen</h3>
-              <p>Rissinitiierung und Rissausbreitung mit der erweiterten Finite-Elemente-Methode untersuchen.</p>
+              <p class="eyebrow">STRUKTURINTEGRITÄT / NUMERISCHE BRUCHMECHANIK</p>
+              <h3>Bruchmodellierung &amp; Versagensbewertung</h3>
+              <p>Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.</p>
               <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
             </div></a
           ><a class="project-card" href="{{ site.baseurl }}/de/projects/steel-repair/">
@@ -225,9 +205,12 @@ sitemap: true
               <span>03</span><img src="{{ site.baseurl }}/assets/portfolio/steel-repair.svg" alt="" width="600" height="360" loading="lazy" />
             </div>
             <div class="card-copy">
-              <p class="eyebrow">STRUKTURÜBERWACHUNG</p>
-              <h3>Stahlreparaturen genauer betrachten</h3>
-              <p>Verteilte faseroptische Sensorik zur Untersuchung des Verhaltens von Reparaturen mit Stahlpatches.</p>
+              <p class="eyebrow">GEKLEBTE STRUKTUREN / MECHANISCHE UND THERMISCHE ANALYSE</p>
+              <h3>Strukturmechanische &amp; thermomechanische Analyse</h3>
+              <p>
+                Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von
+                Stahlverstärkungen.
+              </p>
               <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
             </div></a
           >
