@@ -1,37 +1,108 @@
 name: Portfolio browser checks
+
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
   browser:
-    runs-on: ubuntu-latest
+    # Match the supported Ubuntu image for the locked Playwright version.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Prepare diagnostic logs
+        run: |
+          mkdir -p ci-logs
+          git rev-parse HEAD > ci-logs/commit.txt
+          cat /etc/os-release > ci-logs/runner.txt
+
+      - name: Set up Ruby 3.3
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
-          bundler-cache: true
-      - uses: actions/setup-node@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: npm
-      - uses: actions/setup-python@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-      - run: npm ci
-      - run: sudo apt-get update && sudo apt-get install -y imagemagick
-      - run: bundle exec jekyll build
+
+      - name: Record runtime versions
+        run: |
+          {
+            ruby --version
+            bundle --version
+            node --version
+            npm --version
+            python --version
+          } | tee ci-logs/versions.txt
+
+      - name: Install Ruby dependencies
+        run: |
+          set -o pipefail
+          bundle config set --local path vendor/bundle
+          bundle install --jobs 4 --retry 3 2>&1 | tee ci-logs/bundle-install.log
+
+      - name: Install JavaScript dependencies
+        run: |
+          set -o pipefail
+          npm ci 2>&1 | tee ci-logs/npm-ci.log
+
+      - name: Install ImageMagick
+        run: |
+          set -o pipefail
+          sudo apt-get update 2>&1 | tee ci-logs/apt-update.log
+          sudo apt-get install -y imagemagick 2>&1 | tee ci-logs/imagemagick.log
+
+      - name: Build Jekyll site
         env:
           JEKYLL_ENV: production
-      - run: npx playwright install --with-deps chromium
-      - run: npx playwright test --config test/portfolio.config.js
-      - uses: actions/upload-artifact@v4
-        if: failure()
+        run: |
+          set -o pipefail
+          bundle exec jekyll build --trace 2>&1 | tee ci-logs/jekyll-build.log
+
+      - name: Install Playwright Chromium and dependencies
+        run: |
+          set -o pipefail
+          npx playwright install --with-deps chromium 2>&1 | tee ci-logs/playwright-install.log
+
+      - name: Run existing portfolio browser tests
+        env:
+          PLAYWRIGHT_HTML_OPEN: never
+        run: |
+          set -o pipefail
+          npx playwright test --config test/portfolio.config.js --workers=1 --reporter=line,html --trace=retain-on-failure 2>&1 | tee ci-logs/browser-tests.log
+
+      - name: Upload logs and browser reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
         with:
-          name: browser-test-results
-          path: test-results/
+          name: browser-check-diagnostics
+          path: |
+            ci-logs/
+            test-results/
+            playwright-report/
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Explain how to inspect a failure
+        if: failure()
+        run: |
+          echo "::error::A browser-check step failed. Open the failed named step above, or download the browser-check-diagnostics artifact for its log."
