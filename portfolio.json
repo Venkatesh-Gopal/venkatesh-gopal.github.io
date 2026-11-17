@@ -1,0 +1,715 @@
+{
+  "en": {
+    "nav": ["Home", "Projects", "Experience", "Skills", "Contact"],
+    "skip": "Skip to content",
+    "role": "Mechanical Engineer",
+    "region": "BASED IN EINDHOVEN",
+    "availability": "Based in Eindhoven · Open to roles & freelance collaborations",
+    "theme": "Switch colour theme",
+    "footer": "Mechanical design · Simulation · Validation",
+    "eyebrow": "MECHANICAL ENGINEERING / DESIGN · SIMULATION · VALIDATION",
+    "headline": "Own the challenge.<br><em>Engineer the outcome.</em>",
+    "intro": "I’m Venkatesh Gopal, a mechanical engineer with an M.Sc. in Computational Sciences in Engineering from TU Braunschweig, Germany.",
+    "view": "Explore my work",
+    "contact": "Let’s connect",
+    "focus": "DESIGN. SIMULATE. TEST. IMPROVE.",
+    "mesh": "Illustrative mesh · not simulation results",
+    "selected": "Selected work",
+    "selected_desc": "Engineering questions explored through modelling, material behaviour, and experimental evidence.",
+    "all": "View all projects",
+    "read": "Explore the project",
+    "about_title": "Engineering grounded in evidence.",
+    "about_body": "My background brings together mechanical design, industrial simulation, and applied research. I hold an MSc in Computational Sciences in Engineering from TU Braunschweig, where I also worked as a Research Associate.",
+    "about_end": "I’m interested in mechanical engineering, simulation, and R&D opportunities in the Netherlands and Germany.",
+    "projects_title": "Models with a purpose.",
+    "projects_intro": "Questions worth exploring. My work connects numerical modelling with material behaviour and experimental evidence to investigate how structures carry loads, how interfaces fail, and what measurements can reveal.",
+    "experience_title": "From the model to the mechanical detail.",
+    "experience_intro": "My experience combines industrial engineering, applied research, and hands-on investigation. Across these settings, I have worked on structural behaviour, material modelling, mechanical design, and the workflows that connect them.",
+    "work_label": "PROFESSIONAL EXPERIENCE",
+    "education_label": "EDUCATION",
+    "interests_title": "Where I want to contribute",
+    "interests_body": "Mechanical engineering, simulation, and R&D roles where design questions, physical behaviour, and computational methods come together.",
+    "skills_title": "Engineering across disciplines.",
+    "skills_intro": "FEA, mechanical design, Python automation, CFD, and surrogate modelling—connecting numerical methods with practical engineering problems across industries.",
+    "languages": "Languages",
+    "language_values": [
+      ["English", "C1"],
+      ["German", "B2 · DSH-1"],
+      ["Dutch", "A1 · Learning"]
+    ],
+    "contact_title": "Let’s talk engineering.",
+    "contact_intro": "Have a mechanical design question, a simulation challenge, or an opportunity where I could contribute? I’m interested in engineering roles and freelance collaborations connecting design, analysis, experimental validation, and CAE automation.",
+    "contact_label": "GET IN TOUCH",
+    "github": "Explore GitHub",
+    "contact_body": "Tell me what you’re building, what you’re trying to understand, or where the engineering challenge sits. Let’s find a useful next step.",
+    "opportunities": "Areas of interest",
+    "opp_values": [
+      "Mechanical design and product development",
+      "Structural and thermomechanical analysis",
+      "Nonlinear simulation and explicit dynamics",
+      "Material modelling and experimental validation",
+      "Python automation for engineering workflows"
+    ],
+    "back": "All projects",
+    "overview": "Project overview",
+    "methods": "Technical focus",
+    "related": "More projects",
+    "notfound": "Page not found",
+    "notfoundbody": "This page may have moved. Return to the portfolio to continue.",
+    "home": "Back to Home",
+    "projects": [
+      {
+        "slug": "adhesive-fracture",
+        "title": "Understanding fracture in reinforced adhesives",
+        "category": "COMPUTATIONAL FRACTURE",
+        "short": "Exploring crack initiation and propagation through extended finite element modelling.",
+        "body": "This project investigates the fracture behaviour of fibre-reinforced adhesives using the extended finite element method, or XFEM. The focus is on examining the mechanical response of adhesive materials and the development of cracks.",
+        "tags": ["XFEM", "Abaqus", "Adhesives", "Fracture mechanics"],
+        "focus": [
+          "Examine the mechanical response of the adhesive system under loading.",
+          "Use XFEM to investigate crack initiation and propagation.",
+          "Interpret the predicted response alongside the assumptions behind the analysis."
+        ],
+        "question": "How can numerical modelling help explain where cracking begins and how it develops in a reinforced adhesive material?",
+        "significance": "Understanding fracture helps engineers evaluate how adhesive systems carry load and where failure may develop. The model becomes useful when its predictions are connected with the material, loading conditions, and evidence available."
+      },
+      {
+        "slug": "honeycomb",
+        "title": "Honeycomb paperboard: testing and simulation",
+        "category": "MATERIAL MODELLING / PACKAGING MECHANICS",
+        "short": "Material testing, LS-DYNA compression modelling and parameter calibration in LS-OPT for BSH dishwasher packaging.",
+        "body": "For my master’s thesis at BSH, I investigated the mechanical behaviour of honeycomb paperboard for dishwasher packaging. I characterised the liner and core paper, compared two LS-DYNA material models and assessed the response of the assembled board under compression.",
+        "tags": ["LS-DYNA", "MAT 58 / MAT 274", "LS-OPT", "Surrogate modelling"],
+        "focus": [
+          "Directional paper characterisation.",
+          "Comparison of two constitutive models at paper and board levels.",
+          "Surrogate-based inverse identification of material parameters."
+        ],
+        "question": "How well do material models calibrated at paper level reproduce the compression response of a honeycomb board?",
+        "contributions": [
+          "Performed tensile and compression tests on liner and core paper in the machine and cross directions, together with out-of-plane compression tests on honeycomb board.",
+          "Developed and checked MAT 58 and MAT 274 material cards using experimental curves and single-element simulations.",
+          "Built honeycomb board compression models and compared their force–displacement curves with experiments.",
+          "Used metamodel-based parameter calibration in LS-OPT to address the mismatch obtained with MAT 58."
+        ],
+        "significance": "The board-level comparison favoured MAT 274 for the investigated compression case. It also showed why agreement with paper tests alone does not establish a reliable prediction of the board’s crushing response.",
+        "case_study": {
+          "eyebrow": "MASTER’S THESIS / BSH DISHWASHER PACKAGING",
+          "intro": "I investigated honeycomb paperboard for dishwasher packaging at BSH, combining material testing, LS-DYNA simulations and parameter calibration with LS-OPT.",
+          "illustration": "Schematic honeycomb structure. Illustration, not simulation output.",
+          "work_title": "My contribution",
+          "work": "I characterised liner and core paper, developed MAT 58 and MAT 274 material cards, and compared single-element and honeycomb board simulations with experiments. I also applied surrogate-based inverse modelling to calibrate MAT 58 parameters.",
+          "setup_title": "Study at a glance",
+          "setup_headers": ["Item", "Scope"],
+          "setup_rows": [
+            ["Application", "Paper-based protective packaging for dishwashers."],
+            ["Experiments", "Liner and core paper in MD/CD tension and compression; board compression normal to its plane."],
+            ["Board specimen", "100 × 100 × 45 mm."],
+            ["Simulation", "LS-DYNA: MAT 58 (Laminated Composite Fabric) and MAT 274 (Paper)."],
+            ["Calibration", "LS-OPT: D-optimal sampling, metamodels, Curve Mapping and SRSM refinement."]
+          ],
+          "results_title": "Main findings",
+          "results_headers": ["Model", "Comparison with experiments"],
+          "results_rows": [
+            ["MAT 58", "Captured the broad compression stages but substantially underpredicted the initial peak and much of the plateau force."],
+            [
+              "MAT 274",
+              "Gave a closer initial peak and plateau response. Differences remained after the peak and during the transition to densification."
+            ]
+          ],
+          "conclusion": "MAT 274 was the stronger starting point for the investigated compression case. Material-level agreement alone did not establish the board’s crushing response.",
+          "calibration_title": "Surrogate-based parameter calibration",
+          "calibration": "To address the MAT 58 mismatch, I used bounded material parameters and D-optimal sampling to define LS-DYNA evaluations. LS-OPT built metamodels from those results and used Curve Mapping to assess agreement with the experimental target. The described SRSM workflow refined the search region through domain reduction.",
+          "calibration_limit": "The supplied material documents the method, without a final parameter set or quantified optimisation improvement.",
+          "details_title": "Scope and sources",
+          "details": [
+            "These findings concern specimen compression. They do not establish whole-dishwasher drop performance. Humidity and air inside the cells remained further research topics.",
+            "The presentation reports five paper tests in each direction and five selected board tests, with averaged curves. MD denotes machine direction; CD denotes cross direction.",
+            "Source: Venkatesh Gopal, master’s thesis presentation, slides 11–26; Section 5.5, “Optimization of Parameters in LS-OPT”. The formulation comparisons are not identified as before-and-after optimisation results.",
+            "Curve Mapping measures mismatch with experiments. Surrogate prediction accuracy requires separate solver comparisons."
+          ]
+        }
+      },
+      {
+        "slug": "steel-repair",
+        "title": "A closer look at steel repairs",
+        "category": "STRUCTURAL MONITORING",
+        "short": "Exploring distributed fibre optic sensing to investigate the behaviour of steel patch repairs.",
+        "body": "This project concerns monitoring steel patch repairs using distributed fibre optic sensing. It brings together structural mechanics and experimental observations to investigate how repaired structures behave and how measurements can support their interpretation.",
+        "tags": ["Steel repairs", "Fibre optic sensing", "Experimental comparison"],
+        "focus": [
+          "Consider the steel patch repair as a structural system responding to load.",
+          "Explore distributed fibre optic sensing as a method for monitoring structural response.",
+          "Connect experimental observations with the mechanics of the repaired structure."
+        ],
+        "question": "How can distributed measurements help us understand the response of a repaired steel structure under load?",
+        "significance": "Measurements become useful when they help explain structural behaviour. This project connects a sensing approach with an engineering application, focusing on what observations can reveal about the response of a repair."
+      }
+    ],
+    "intro_more": "I tackle engineering problems through design, simulation, testing, and automation—connecting physical behaviour with practical decisions that move development forward.",
+    "personality": "Curious about what bends, what breaks, and what we can build better.",
+    "figure_note": "Good questions make better models.",
+    "focus_values": "Mechanical design · Structural analysis · Experimental validation · Python automation",
+    "about_more": "My experience spans machine structures, heat-pump components, bonded joints, and protective packaging. Across these applications, I focus on turning a complicated engineering question into analysis that supports a useful next step.",
+    "about_values": "I value clear assumptions, careful validation, and findings that people can understand and act on.",
+    "capabilities_title": "What I bring",
+    "capabilities": [
+      [
+        "Understand the behaviour.",
+        "Investigate how structures, materials, and interfaces respond to mechanical and thermal loading—from deformation and contact to impact and failure."
+      ],
+      [
+        "Connect predictions with evidence.",
+        "Use material testing and experimental observations to assess model behaviour, examine assumptions, and understand where predictions are useful."
+      ],
+      [
+        "Make the workflow work better.",
+        "Develop Python tools for model preparation and result evaluation, reducing repetitive tasks and making analysis easier to repeat and review."
+      ]
+    ],
+    "project_broad_title": "A broader engineering background",
+    "project_broad_body": "Beyond these projects, my experience includes mechanical component design, thermomechanical analysis, physical testing, and Python tools for CAE workflows.",
+    "question_label": "The engineering question",
+    "significance_label": "Why it matters",
+    "contribution_label": "My contribution",
+    "project_cta": "Discuss a related engineering challenge",
+    "development_label": "ONGOING PROFESSIONAL DEVELOPMENT",
+    "working_title": "How I work",
+    "working_values": [
+      "Clarify the question.",
+      "Make the assumptions visible.",
+      "Compare predictions with evidence.",
+      "Communicate what the findings mean.",
+      "Improve the process where it helps."
+    ],
+    "certifications_title": "Selected training",
+    "certifications": [
+      ["2022", "ANSYS LS-DYNA: Explicit Structural Mechanics", "CADFEM"],
+      ["2022", "Preprocessing using ANSA", "Orville Academy / Udemy"]
+    ],
+    "email_label": "Send an email",
+    "linkedin_label": "Connect on LinkedIn",
+    "region_body": "Interested in opportunities in the Netherlands and Germany.",
+    "closing_title": "Let’s build on that.",
+    "closing_body": "Have a design question, a simulation challenge, or an engineering opportunity? Let’s talk about where I can contribute.",
+    "footer_note": "Good questions. Careful engineering.",
+    "browser_titles": {
+      "about": "Venkatesh Gopal · Mechanical Engineer · Design, Simulation & Validation",
+      "projects": "Engineering Projects · Venkatesh Gopal",
+      "experience": "Industry & Research Experience · Venkatesh Gopal",
+      "skills": "Engineering Skills & Methods · Venkatesh Gopal",
+      "contact": "Contact · Venkatesh Gopal"
+    },
+    "meta_description": "Mechanical engineer in Eindhoven connecting design, structural simulation, physical testing, and Python automation to support better engineering decisions.",
+    "jobs": [
+      {
+        "dates": "03/2026",
+        "title": "Mechanical CAD Engineer · Short-term contract",
+        "company": "Aurora Netherlands B.V. · Netherlands",
+        "bullets": [
+          "Investigated thermal-expansion mismatch and assembly clearances in heat-pump components, supporting assessment of mechanical risks and a longstanding customer issue.",
+          "Developed mechanical component models and manufacturing drawings in SolidWorks."
+        ]
+      },
+      {
+        "dates": "11/2023–11/2024",
+        "title": "Research Associate",
+        "company": "Institute for Joining and Welding · TU Braunschweig · Germany",
+        "bullets": [
+          "Investigated structural response, thermomechanical behaviour, and fatigue in bonded steel and composite systems.",
+          "Developed ANSYS and Abaqus finite element models, including XFEM investigations of critical interfaces.",
+          "Connected experimental inputs with numerical modelling and documented assumptions for technical review.",
+          "Automated Abaqus result evaluation using Python."
+        ]
+      },
+      {
+        "dates": "04/2022–06/2023",
+        "title": "Engineering internship & master’s thesis",
+        "company": "BSH Hausgeräte GmbH · Germany",
+        "bullets": [
+          "Investigated material and structural behaviour relevant to dishwasher packaging under transport, drop, and impact loading.",
+          "Characterised paper and honeycomb paperboard through tensile and compression tests.",
+          "Calibrated nonlinear LS-DYNA material models and compared numerical responses with experimental results.",
+          "Prepared and evaluated finite element models to support product and packaging assessment."
+        ]
+      },
+      {
+        "dates": "10/2018–09/2023",
+        "title": "Research & Scientific Assistant · Part-time",
+        "company": "Various institutes · TU Braunschweig · Germany",
+        "bullets": [
+          "Supported linear, nonlinear, and dynamic finite element analyses using ANSYS and LS-DYNA.",
+          "Prepared models, defined materials and loading conditions, and compared numerical results with experimental measurements.",
+          "Developed Python tools for simulation preparation and evaluation.",
+          "Additional work included parametric CAD, laser-ablation experiments, and CFD investigations with ANSYS Fluent."
+        ]
+      },
+      {
+        "dates": "06/2014–12/2015",
+        "title": "Mechanical Design Engineer",
+        "company": "Maruti Brick Machine Manufacturing · India",
+        "bullets": [
+          "Designed load-bearing machine structures with attention to operating loads, fabrication, and manufacturability.",
+          "Used finite element analysis to identify critical stresses and support structural design improvements."
+        ]
+      }
+    ],
+    "education": [
+      ["2023", "MSc · Computational Sciences in Engineering", "TU Braunschweig · Germany"],
+      ["2014", "BEng · Mechanical Engineering", "Dr. Mahalingam College of Engineering and Technology · India"]
+    ],
+    "development_date": "12/2024–present",
+    "development_body": "Continued development in structural FEM, nonlinear mechanics, material behaviour, and validation, alongside Python workflows for model preparation and simulation post-processing.",
+    "skills_tools_label": "Tools & technologies",
+    "skills_methods_label": "Methods & applications",
+    "skill_cards": [
+      {
+        "number": "01",
+        "title": "FEA & Structural Simulation",
+        "description": "Investigating how components and structures respond to mechanical and thermal loading.",
+        "tools": ["ANSYS Mechanical", "Abaqus/CAE", "LS-DYNA"],
+        "methods": [
+          "Static & dynamic analysis",
+          "Nonlinear FEA",
+          "Explicit dynamics",
+          "Drop & impact",
+          "Thermomechanical analysis",
+          "Fatigue assessment"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Mechanical Design & CAD",
+        "description": "Translating engineering requirements into component models, drawings, and practical design improvements.",
+        "tools": ["SolidWorks", "CATIA V5", "Siemens NX", "Creo"],
+        "methods": ["3D modelling", "Manufacturing drawings", "GD&T", "Tolerance assessment", "Design for manufacturing", "Load-bearing structures"]
+      },
+      {
+        "number": "03",
+        "title": "Python & CAE Automation",
+        "description": "Reducing repetitive simulation tasks and making engineering workflows easier to repeat and review.",
+        "tools": ["Python", "MATLAB", "Git"],
+        "methods": ["Model preparation", "Result extraction", "Post-processing", "Engineering data analysis", "Parametric workflows"]
+      },
+      {
+        "number": "04",
+        "title": "CFD Simulation",
+        "description": "Experience investigating flow in microfluidic glass channels, supported by parametric CAD and numerical studies.",
+        "tools": ["ANSYS Fluent"],
+        "methods": ["Flow simulation", "Microfluidic applications", "Parametric geometry", "Parameter studies", "Results evaluation"]
+      },
+      {
+        "title": "AI & Surrogate Modelling",
+        "description": "Surrogate-based optimisation for material calibration, alongside AI-assisted approaches to engineering workflows.",
+        "tools": ["LS-OPT", "Python"],
+        "methods": ["Surrogate modelling", "Surrogate-based optimisation", "Material-parameter calibration", "AI-assisted engineering workflows"],
+        "number": "05"
+      },
+      {
+        "number": "06",
+        "title": "Materials & Failure",
+        "description": "Connecting material response, interfaces, and failure mechanisms with suitable numerical models.",
+        "tools": ["Abaqus XFEM", "LS-DYNA", "LS-OPT", "UMAT application"],
+        "methods": [
+          "Material characterisation",
+          "Model calibration",
+          "Direction-dependent behaviour",
+          "Plasticity & damage",
+          "Crack initiation & propagation",
+          "Adhesives & composites"
+        ]
+      },
+      {
+        "number": "07",
+        "title": "Testing & Validation",
+        "description": "Using physical evidence to assess predictions and understand the limits of a model.",
+        "tools": [],
+        "methods": [
+          "Tensile & compression tests",
+          "Physical drop tests",
+          "FEM–test comparison",
+          "Assumption review",
+          "Technical documentation",
+          "Prototyping & 3D printing"
+        ]
+      },
+      {
+        "number": "08",
+        "title": "CAE Model Preparation & Evaluation",
+        "description": "Preparing simulation models and interpreting their results, from meshing through technical reporting.",
+        "tools": ["HyperMesh", "HyperGraph"],
+        "methods": ["Meshing", "Contacts & boundary conditions", "Load-case definition", "Preprocessing", "Post-processing", "Results interpretation"]
+      }
+    ],
+    "hero_expertise": ["FEA & CFD", "Mechanical Design", "Python Automation", "AI & Surrogate Modelling"],
+    "hero_domains": "Different industries. The same commitment to sound engineering—from automotive and aerospace to home appliances, energy systems, and beyond.",
+    "hero_contact": "Let’s build something better",
+    "hero_eyebrow": "MECHANICAL ENGINEER / COMPUTATIONAL ENGINEER",
+    "hero_evidence": "My experience spans material-model calibration, drop-test simulation, structural analysis, and Python-based CAE automation. I bring a questioning mindset, a structured approach, and a focus on making the findings useful.",
+    "hero_approach": "My approach: take ownership, challenge assumptions, and turn insight into action."
+  },
+  "de": {
+    "nav": ["Startseite", "Projekte", "Berufserfahrung", "Kompetenzen", "Kontakt"],
+    "skip": "Zum Inhalt springen",
+    "role": "Maschinenbauingenieur",
+    "region": "STANDORT EINDHOVEN",
+    "availability": "Eindhoven · Offen für Stellen & freiberufliche Zusammenarbeit",
+    "theme": "Farbschema wechseln",
+    "footer": "Konstruktion · Simulation · Validierung",
+    "eyebrow": "MASCHINENBAU / KONSTRUKTION · SIMULATION · VALIDIERUNG",
+    "headline": "Herausforderungen angehen.<br><em>Lösungen entwickeln.</em>",
+    "intro": "Ich bin Venkatesh Gopal, Maschinenbauingenieur mit einem M.Sc. in Computational Sciences in Engineering von der TU Braunschweig, Deutschland.",
+    "view": "Meine Arbeit entdecken",
+    "contact": "Kontakt aufnehmen",
+    "focus": "KONSTRUIEREN. SIMULIEREN. PRÜFEN. VERBESSERN.",
+    "mesh": "Schematisches Netz · keine Simulationsergebnisse",
+    "selected": "Ausgewählte Projekte",
+    "selected_desc": "Technische Fragestellungen im Zusammenspiel von Modellierung, Werkstoffverhalten und experimentellen Erkenntnissen.",
+    "all": "Alle Projekte ansehen",
+    "read": "Projekt entdecken",
+    "about_title": "Ingenieurarbeit auf fundierter Grundlage.",
+    "about_body": "Mein Hintergrund verbindet mechanische Konstruktion, industrielle Simulation und angewandte Forschung. Ich habe einen MSc in Computational Sciences in Engineering an der TU Braunschweig erworben und dort als wissenschaftlicher Mitarbeiter gearbeitet.",
+    "about_end": "Ich interessiere mich für Positionen im Maschinenbau, in der Simulation sowie in Forschung und Entwicklung in den Niederlanden und Deutschland.",
+    "projects_title": "Modelle mit einer klaren Aufgabe.",
+    "projects_intro": "Fragestellungen, die eine genaue Untersuchung verdienen. Meine Arbeit verbindet numerische Modellierung mit Werkstoffverhalten und experimentellen Erkenntnissen: Wie tragen Strukturen Lasten? Wie versagen Grenzflächen? Was zeigen Messungen?",
+    "experience_title": "Vom Modell bis zum konstruktiven Detail.",
+    "experience_intro": "Meine Erfahrung verbindet industrielle Entwicklung, angewandte Forschung und praktische Untersuchungen. Im Mittelpunkt stehen Strukturverhalten, Werkstoffmodellierung, mechanische Konstruktion und die dazugehörigen Arbeitsabläufe.",
+    "work_label": "BERUFSERFAHRUNG",
+    "education_label": "STUDIUM",
+    "interests_title": "Hier möchte ich beitragen",
+    "interests_body": "Positionen im Maschinenbau, in der Simulation sowie in Forschung und Entwicklung, bei denen konstruktive Fragestellungen, physikalisches Verhalten und numerische Methoden zusammenkommen.",
+    "skills_title": "Ingenieurkompetenz über Fachgrenzen hinweg.",
+    "skills_intro": "FEM, mechanische Konstruktion, Python-Automatisierung, CFD und Ersatzmodellierung: numerische Methoden für praktische ingenieurtechnische Fragestellungen in verschiedenen Branchen.",
+    "languages": "Sprachen",
+    "language_values": [
+      ["Englisch", "C1"],
+      ["Deutsch", "B2 · DSH-1"],
+      ["Niederländisch", "A1 · Im Aufbau"]
+    ],
+    "contact_title": "Sprechen wir über Technik.",
+    "contact_intro": "Sie haben eine konstruktive Fragestellung, eine Simulationsaufgabe oder eine passende berufliche Möglichkeit? Ich interessiere mich für Stellen und freiberufliche Zusammenarbeit an der Schnittstelle von Konstruktion, Analyse, experimenteller Validierung und CAE-Automatisierung.",
+    "contact_label": "KONTAKT AUFNEHMEN",
+    "github": "GitHub entdecken",
+    "contact_body": "Erzählen Sie mir, was Sie entwickeln, was Sie verstehen möchten oder wo die technische Herausforderung liegt. Finden wir gemeinsam einen sinnvollen nächsten Schritt.",
+    "opportunities": "Interessengebiete",
+    "opp_values": [
+      "Mechanische Konstruktion und Produktentwicklung",
+      "Struktur- und thermomechanische Analyse",
+      "Nichtlineare Simulation und explizite Dynamik",
+      "Werkstoffmodellierung und experimentelle Validierung",
+      "Python-Automatisierung für technische Arbeitsabläufe"
+    ],
+    "back": "Alle Projekte",
+    "overview": "Projektüberblick",
+    "methods": "Technische Schwerpunkte",
+    "related": "Weitere Projekte",
+    "notfound": "Seite nicht gefunden",
+    "notfoundbody": "Diese Seite wurde möglicherweise verschoben. Kehren Sie zum Portfolio zurück.",
+    "home": "Zurück zur Startseite",
+    "projects": [
+      {
+        "slug": "adhesive-fracture",
+        "title": "Bruchverhalten faserverstärkter Klebstoffe verstehen",
+        "category": "NUMERISCHE BRUCHMECHANIK",
+        "short": "Rissinitiierung und Rissausbreitung mit der erweiterten Finite-Elemente-Methode untersuchen.",
+        "body": "Dieses Projekt untersucht das Bruchverhalten faserverstärkter Klebstoffe mit der erweiterten Finite-Elemente-Methode, kurz XFEM. Im Mittelpunkt stehen die mechanische Reaktion der Klebstoffe und die Entwicklung von Rissen.",
+        "tags": ["XFEM", "Abaqus", "Klebstoffe", "Bruchmechanik"],
+        "focus": [
+          "Die mechanische Reaktion des Klebstoffsystems unter Belastung untersuchen.",
+          "Rissinitiierung und -ausbreitung mit XFEM analysieren.",
+          "Die prognostizierte Reaktion im Zusammenhang mit den Modellannahmen einordnen."
+        ],
+        "question": "Wie kann numerische Modellierung erklären, wo Risse in einem faserverstärkten Klebstoff entstehen und wie sie sich entwickeln?",
+        "significance": "Ein besseres Verständnis des Bruchverhaltens hilft, die Lastübertragung und mögliche Versagensstellen in Klebstoffsystemen zu bewerten. Aussagekräftig wird das Modell durch den Bezug zu Werkstoff, Belastung und verfügbaren Versuchsdaten."
+      },
+      {
+        "slug": "honeycomb",
+        "title": "Papierwabenplatten: Versuche und Simulation",
+        "category": "MATERIALMODELLIERUNG / VERPACKUNGSMECHANIK",
+        "short": "Materialversuche, LS-DYNA-Drucksimulationen und Parameterkalibrierung mit LS-OPT für BSH-Geschirrspülerverpackungen.",
+        "body": "In meiner Masterarbeit bei BSH untersuchte ich das mechanische Verhalten von Papierwabenplatten für Geschirrspülerverpackungen. Ich charakterisierte Decklagen- und Kernpapier, verglich zwei LS-DYNA-Materialmodelle und bewertete das Druckverhalten der gesamten Wabenplatte.",
+        "tags": ["LS-DYNA", "MAT 58 / MAT 274", "LS-OPT", "Ersatzmodellierung"],
+        "focus": [
+          "Richtungsabhängige Papiercharakterisierung.",
+          "Vergleich zweier Materialformulierungen auf Papier- und Plattenebene.",
+          "Ersatzmodellbasierte inverse Identifikation von Materialparametern."
+        ],
+        "question": "Wie gut bilden auf Papierebene kalibrierte Materialmodelle die Druckantwort einer Wabenplatte ab?",
+        "contributions": [
+          "Durchführung von Zug- und Druckversuchen an Decklagen- und Kernpapier in Maschinen- und Querrichtung sowie Druckversuchen senkrecht zur Plattenebene.",
+          "Entwicklung und Prüfung der Materialkarten MAT 58 und MAT 274 anhand experimenteller Kurven und Einzelelementsimulationen.",
+          "Aufbau von Druckmodellen der Wabenplatte und Vergleich der berechneten Kraft-Weg-Kurven mit Versuchen.",
+          "Einsatz einer metamodelbasierten Parameterkalibrierung mit LS-OPT zur Untersuchung der Abweichungen bei MAT 58."
+        ],
+        "significance": "Der Vergleich auf Plattenebene fiel für den untersuchten Drucklastfall zugunsten von MAT 274 aus. Er zeigte auch, warum eine Übereinstimmung mit Papierversuchen allein noch keine zuverlässige Vorhersage der Stauchantwort der Platte belegt.",
+        "case_study": {
+          "eyebrow": "MASTERARBEIT / BSH-GESCHIRRSPÜLERVERPACKUNGEN",
+          "intro": "Bei BSH untersuchte ich Papierwabenplatten für Geschirrspülerverpackungen. Dazu verband ich Materialversuche, LS-DYNA-Simulationen und die Parameterkalibrierung mit LS-OPT.",
+          "illustration": "Schematische Wabenstruktur. Illustration, kein Simulationsergebnis.",
+          "work_title": "Mein Beitrag",
+          "work": "Ich charakterisierte Decklagen- und Kernpapier, entwickelte die Materialkarten MAT 58 und MAT 274 und verglich Einzelelement- und Wabenplattensimulationen mit Versuchen. Zusätzlich setzte ich eine ersatzmodellbasierte inverse Modellierung zur Kalibrierung der MAT-58-Parameter ein.",
+          "setup_title": "Untersuchung im Überblick",
+          "setup_headers": ["Aspekt", "Umfang"],
+          "setup_rows": [
+            ["Anwendung", "Papierbasierte Schutzverpackungen für Geschirrspüler."],
+            ["Versuche", "Decklagen- und Kernpapier unter Zug und Druck in MD/CD; Plattendruck senkrecht zur Plattenebene."],
+            ["Plattenprobe", "100 × 100 × 45 mm."],
+            ["Simulation", "LS-DYNA: MAT 58 (Laminated Composite Fabric) und MAT 274 (Paper)."],
+            ["Kalibrierung", "LS-OPT: D-optimale Versuchsplanung, Metamodelle, Curve Mapping und SRSM-Verfeinerung."]
+          ],
+          "results_title": "Wesentliche Ergebnisse",
+          "results_headers": ["Modell", "Vergleich mit Versuchen"],
+          "results_rows": [
+            [
+              "MAT 58",
+              "Erfasste die grundsätzlichen Stauchphasen, unterschätzte jedoch die anfängliche Kraftspitze und weite Teile der Plateaukraft deutlich."
+            ],
+            [
+              "MAT 274",
+              "Bildete die anfängliche Spitze und das Plateau besser ab. Abweichungen blieben nach der Spitze und beim Übergang zur Verdichtung."
+            ]
+          ],
+          "conclusion": "MAT 274 war für den untersuchten Drucklastfall der geeignetere Ausgangspunkt. Eine Übereinstimmung auf Materialebene belegte allein noch keine korrekte Stauchantwort der Platte.",
+          "calibration_title": "Ersatzmodellbasierte Parameterkalibrierung",
+          "calibration": "Um die Abweichungen bei MAT 58 zu verringern, definierte ich Parametergrenzen und wählte mit einer D-optimalen Versuchsplanung LS-DYNA-Berechnungen aus. LS-OPT erstellte daraus Metamodelle und bewertete die Übereinstimmung mit der experimentellen Zielkurve über Curve Mapping. Der beschriebene SRSM-Ablauf verfeinerte den Suchbereich durch Bereichsverkleinerung.",
+          "calibration_limit": "Die bereitgestellten Unterlagen dokumentieren das Verfahren, enthalten jedoch keinen abschließenden Parametersatz und keine bezifferte Optimierungsverbesserung.",
+          "details_title": "Geltungsbereich und Quellen",
+          "details": [
+            "Die Ergebnisse betreffen die Stauchung von Proben. Sie belegen nicht das Fallverhalten eines vollständigen Geschirrspülers. Feuchtigkeit und Luft in den Zellen blieben weitere Untersuchungsfelder.",
+            "Die Präsentation nennt fünf Papierversuche je Richtung und fünf ausgewählte Plattenversuche mit gemittelten Kurven. MD bezeichnet die Maschinenrichtung, CD die Querrichtung.",
+            "Quelle: Venkatesh Gopal, Präsentation zur Masterarbeit, Folien 11–26; Abschnitt 5.5, „Optimization of Parameters in LS-OPT“. Die Materialmodellvergleiche sind nicht als Ergebnisse vor und nach einer Optimierung gekennzeichnet.",
+            "Curve Mapping bewertet die Abweichung vom Versuch. Die Vorhersagegenauigkeit des Ersatzmodells erfordert gesonderte Solververgleiche."
+          ]
+        }
+      },
+      {
+        "slug": "steel-repair",
+        "title": "Stahlreparaturen genauer betrachten",
+        "category": "STRUKTURÜBERWACHUNG",
+        "short": "Verteilte faseroptische Sensorik zur Untersuchung des Verhaltens von Reparaturen mit Stahlpatches.",
+        "body": "Dieses Projekt befasst sich mit der Überwachung von Reparaturen mit Stahlpatches durch verteilte faseroptische Sensorik. Es verbindet Strukturmechanik und experimentelle Beobachtungen, um das Verhalten reparierter Strukturen und die Aussagekraft der Messungen zu untersuchen.",
+        "tags": ["Stahlreparaturen", "Faseroptische Sensorik", "Experimenteller Vergleich"],
+        "focus": [
+          "Die Reparatur mit Stahlpatches als belastetes Struktursystem betrachten.",
+          "Verteilte faseroptische Sensorik als Methode zur Überwachung des Strukturverhaltens untersuchen.",
+          "Experimentelle Beobachtungen mit der Mechanik der reparierten Struktur verbinden."
+        ],
+        "question": "Wie können verteilte Messungen helfen, die Reaktion einer reparierten Stahlstruktur unter Belastung zu verstehen?",
+        "significance": "Messungen werden dann nützlich, wenn sie Strukturverhalten erklären. Dieses Projekt verbindet einen Sensorikansatz mit einer ingenieurtechnischen Anwendung und untersucht, was Beobachtungen über das Verhalten einer Reparatur aussagen können."
+      }
+    ],
+    "intro_more": "Ich gehe technische Herausforderungen mit Konstruktion, Simulation, Versuchen und Automatisierung an. Dabei verbinde ich physikalisches Verhalten mit praktischen Entscheidungen, die die Entwicklung voranbringen.",
+    "personality": "Neugierig darauf, was sich verformt, was versagt und was wir besser bauen können.",
+    "figure_note": "Gute Fragen führen zu besseren Modellen.",
+    "focus_values": "Mechanische Konstruktion · Strukturanalyse · Experimentelle Validierung · Python-Automatisierung",
+    "about_more": "Meine Erfahrung reicht von Maschinenstrukturen und Wärmepumpenkomponenten bis zu Klebverbindungen und Schutzverpackungen. Dabei geht es mir darum, komplexe Fragestellungen in Analysen zu übersetzen, die einen sinnvollen nächsten Schritt ermöglichen.",
+    "about_values": "Ich lege Wert auf nachvollziehbare Annahmen, sorgfältige Validierung und Ergebnisse, die sich verständlich vermitteln und praktisch nutzen lassen.",
+    "capabilities_title": "Was ich einbringe",
+    "capabilities": [
+      [
+        "Verhalten verstehen.",
+        "Untersuchen, wie Strukturen, Werkstoffe und Grenzflächen auf mechanische und thermische Belastungen reagieren: von Verformung und Kontakt bis zu Stoß und Versagen."
+      ],
+      [
+        "Prognosen mit Versuchen verbinden.",
+        "Werkstoffprüfungen und experimentelle Beobachtungen nutzen, um Modellverhalten zu bewerten, Annahmen zu hinterfragen und die Aussagekraft von Prognosen einzuordnen."
+      ],
+      [
+        "Arbeitsabläufe verbessern.",
+        "Python-Werkzeuge für Modellvorbereitung und Ergebnisauswertung entwickeln, um wiederkehrende Aufgaben zu reduzieren und Analysen leichter reproduzierbar zu machen."
+      ]
+    ],
+    "project_broad_title": "Ein breiter ingenieurtechnischer Hintergrund",
+    "project_broad_body": "Über diese Projekte hinaus umfasst meine Erfahrung die Konstruktion mechanischer Komponenten, thermomechanische Analysen, praktische Versuche und Python-Werkzeuge für CAE-Arbeitsabläufe.",
+    "question_label": "Die technische Fragestellung",
+    "significance_label": "Warum das wichtig ist",
+    "contribution_label": "Mein Beitrag",
+    "project_cta": "Über eine verwandte Fragestellung sprechen",
+    "development_label": "LAUFENDE FACHLICHE WEITERBILDUNG",
+    "working_title": "Meine Arbeitsweise",
+    "working_values": [
+      "Die Fragestellung klären.",
+      "Annahmen nachvollziehbar machen.",
+      "Prognosen mit Versuchen vergleichen.",
+      "Die Bedeutung der Ergebnisse vermitteln.",
+      "Abläufe dort verbessern, wo es hilft."
+    ],
+    "certifications_title": "Ausgewählte Weiterbildungen",
+    "certifications": [
+      ["2022", "ANSYS LS-DYNA: Explizite Strukturmechanik", "CADFEM"],
+      ["2022", "Preprocessing using ANSA", "Orville Academy / Udemy"]
+    ],
+    "email_label": "E-Mail schreiben",
+    "linkedin_label": "Auf LinkedIn vernetzen",
+    "region_body": "Interessiert an Möglichkeiten in den Niederlanden und Deutschland.",
+    "closing_title": "Darauf lässt sich aufbauen.",
+    "closing_body": "Eine konstruktive Frage, eine Simulationsaufgabe oder eine passende Stelle? Sprechen wir darüber, wo ich einen Beitrag leisten kann.",
+    "footer_note": "Gute Fragen. Sorgfältige Ingenieurarbeit.",
+    "browser_titles": {
+      "about": "Venkatesh Gopal · Maschinenbauingenieur · Konstruktion, Simulation & Validierung",
+      "projects": "Ingenieurprojekte · Venkatesh Gopal",
+      "experience": "Berufserfahrung in Industrie & Forschung · Venkatesh Gopal",
+      "skills": "Kompetenzen & Methoden · Venkatesh Gopal",
+      "contact": "Kontakt · Venkatesh Gopal"
+    },
+    "meta_description": "Maschinenbauingenieur in Eindhoven: Konstruktion, Struktursimulation, Versuche und Python-Automatisierung für fundierte technische Entscheidungen.",
+    "jobs": [
+      {
+        "dates": "03/2026",
+        "title": "Konstruktionsingenieur · Kurzzeitvertrag",
+        "company": "Aurora Netherlands B.V. · Niederlande",
+        "bullets": [
+          "Analysierte Unterschiede in der Wärmeausdehnung und Montagespiele von Wärmepumpenkomponenten zur Bewertung mechanischer Risiken und einer langjährigen Kundenreklamation.",
+          "Erstellte mechanische Bauteilmodelle und Fertigungszeichnungen in SolidWorks."
+        ]
+      },
+      {
+        "dates": "11/2023–11/2024",
+        "title": "Wissenschaftlicher Mitarbeiter",
+        "company": "Institut für Füge- und Schweißtechnik · TU Braunschweig · Deutschland",
+        "bullets": [
+          "Untersuchte Strukturverhalten, thermomechanisches Verhalten und Ermüdung geklebter Stahl- und Verbundwerkstoffsysteme.",
+          "Entwickelte FEM-Modelle in ANSYS und Abaqus, einschließlich XFEM-Untersuchungen kritischer Grenzflächen.",
+          "Überführte experimentelle Eingangsgrößen in numerische Modelle und dokumentierte Modellannahmen für die technische Bewertung.",
+          "Automatisierte die Abaqus-Ergebnisauswertung mit Python."
+        ]
+      },
+      {
+        "dates": "04/2022–06/2023",
+        "title": "Praktikum & Masterarbeit",
+        "company": "BSH Hausgeräte GmbH · Deutschland",
+        "bullets": [
+          "Untersuchte Werkstoff- und Strukturverhalten von Geschirrspülerverpackungen unter Transport-, Fall- und Stoßbelastungen.",
+          "Charakterisierte Papier und Wabenpappe durch Zug- und Druckversuche.",
+          "Kalibrierte nichtlineare Materialmodelle in LS-DYNA und verglich numerische Antworten mit Versuchsergebnissen.",
+          "Erstellte und bewertete FEM-Modelle zur Untersuchung von Produkten und Verpackungen."
+        ]
+      },
+      {
+        "dates": "10/2018–09/2023",
+        "title": "Wissenschaftliche Hilfskraft · Teilzeit",
+        "company": "Verschiedene Institute · TU Braunschweig · Deutschland",
+        "bullets": [
+          "Bearbeitete lineare, nichtlineare und dynamische FEM-Analysen mit ANSYS und LS-DYNA.",
+          "Erstellte Modelle, definierte Werkstoffe und Lastfälle und verglich numerische Ergebnisse mit experimentellen Messungen.",
+          "Entwickelte Python-Werkzeuge zur Simulationsvorbereitung und -auswertung.",
+          "Weitere Aufgaben umfassten parametrisches CAD, Laserablationsversuche und CFD-Untersuchungen mit ANSYS Fluent."
+        ]
+      },
+      {
+        "dates": "06/2014–12/2015",
+        "title": "Maschinenbauingenieur",
+        "company": "Maruti Brick Machine Manufacturing · Indien",
+        "bullets": [
+          "Dimensionierte tragende Maschinenstrukturen unter Berücksichtigung von Betriebslasten und fertigungsgerechter Gestaltung.",
+          "Nutzte FEM zur Ermittlung kritischer Spannungen und zur Ableitung konstruktiver Verbesserungen."
+        ]
+      }
+    ],
+    "education": [
+      ["2023", "MSc · Computational Sciences in Engineering", "TU Braunschweig · Deutschland"],
+      ["2014", "BEng · Maschinenbau", "Dr. Mahalingam College of Engineering and Technology · Indien"]
+    ],
+    "development_date": "12/2024–heute",
+    "development_body": "Eigenständige Weiterbildung in Struktur-FEM, nichtlinearer Mechanik, Werkstoffverhalten und Validierung sowie Entwicklung von Python-Arbeitsabläufen zur Modellvorbereitung und Ergebnisauswertung.",
+    "skills_tools_label": "Werkzeuge & Technologien",
+    "skills_methods_label": "Methoden & Anwendungen",
+    "skill_cards": [
+      {
+        "number": "01",
+        "title": "FEM & Struktursimulation",
+        "description": "Untersuchung des Verhaltens von Bauteilen und Strukturen unter mechanischer und thermischer Belastung.",
+        "tools": ["ANSYS Mechanical", "Abaqus/CAE", "LS-DYNA"],
+        "methods": [
+          "Statische & dynamische Analyse",
+          "Nichtlineare FEM",
+          "Explizite Dynamik",
+          "Fall- & Stoßanalysen",
+          "Thermomechanische Analyse",
+          "Ermüdungsbewertung"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Konstruktion & CAD",
+        "description": "Technische Anforderungen in Bauteilmodelle, Zeichnungen und praktische Konstruktionsverbesserungen übersetzen.",
+        "tools": ["SolidWorks", "CATIA V5", "Siemens NX", "Creo"],
+        "methods": [
+          "3D-Modellierung",
+          "Fertigungszeichnungen",
+          "Form- & Lagetoleranzen",
+          "Toleranzbewertung",
+          "Fertigungsgerechte Gestaltung",
+          "Tragende Strukturen"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Python & CAE-Automatisierung",
+        "description": "Wiederkehrende Simulationsaufgaben reduzieren und technische Arbeitsabläufe nachvollziehbarer gestalten.",
+        "tools": ["Python", "MATLAB", "Git"],
+        "methods": ["Modellvorbereitung", "Ergebnisextraktion", "Postprocessing", "Technische Datenanalyse", "Parametrische Arbeitsabläufe"]
+      },
+      {
+        "number": "04",
+        "title": "Strömungssimulation / CFD",
+        "description": "Erfahrung mit Strömungsuntersuchungen in mikrofluidischen Glaskanälen, unterstützt durch parametrisches CAD und numerische Studien.",
+        "tools": ["ANSYS Fluent"],
+        "methods": ["Strömungssimulation", "Mikrofluidische Anwendungen", "Parametrische Geometrie", "Parameterstudien", "Ergebnisauswertung"]
+      },
+      {
+        "title": "KI & Ersatzmodellierung",
+        "description": "Ersatzmodellbasierte Optimierung zur Materialkalibrierung sowie KI-gestützte Ansätze für technische Arbeitsabläufe.",
+        "tools": ["LS-OPT", "Python"],
+        "methods": [
+          "Ersatzmodellierung",
+          "Ersatzmodellbasierte Optimierung",
+          "Kalibrierung von Materialparametern",
+          "KI-gestützte technische Arbeitsabläufe"
+        ],
+        "number": "05"
+      },
+      {
+        "number": "06",
+        "title": "Werkstoffe & Versagen",
+        "description": "Werkstoffverhalten, Grenzflächen und Versagensmechanismen mit geeigneten numerischen Modellen verbinden.",
+        "tools": ["Abaqus XFEM", "LS-DYNA", "LS-OPT", "UMAT-Anwendung"],
+        "methods": [
+          "Werkstoffcharakterisierung",
+          "Modellkalibrierung",
+          "Richtungsabhängiges Verhalten",
+          "Plastizität & Schädigung",
+          "Rissinitiierung & -ausbreitung",
+          "Klebstoffe & Verbundwerkstoffe"
+        ]
+      },
+      {
+        "number": "07",
+        "title": "Versuche & Validierung",
+        "description": "Prognosen anhand physischer Versuche bewerten und die Grenzen eines Modells einordnen.",
+        "tools": [],
+        "methods": [
+          "Zug- & Druckversuche",
+          "Physische Falltests",
+          "FEM-Versuchs-Abgleich",
+          "Prüfung von Modellannahmen",
+          "Technische Dokumentation",
+          "Prototypenbau & 3D-Druck"
+        ]
+      },
+      {
+        "number": "08",
+        "title": "CAE-Modellvorbereitung & Auswertung",
+        "description": "Simulationsmodelle vorbereiten und Ergebnisse einordnen: von der Vernetzung bis zum technischen Bericht.",
+        "tools": ["HyperMesh", "HyperGraph"],
+        "methods": ["Vernetzung", "Kontakte & Randbedingungen", "Lastfalldefinition", "Preprocessing", "Postprocessing", "Ergebnisinterpretation"]
+      }
+    ],
+    "hero_expertise": ["FEM & CFD", "Mechanische Konstruktion", "Python-Automatisierung", "KI & Ersatzmodellierung"],
+    "hero_domains": "Unterschiedliche Branchen. Derselbe Anspruch an fundierte Ingenieurarbeit: von Automobilindustrie und Luftfahrt bis zu Hausgeräten, Energiesystemen und darüber hinaus.",
+    "hero_contact": "Gemeinsam etwas verbessern",
+    "hero_eyebrow": "MASCHINENBAUINGENIEUR / COMPUTATIONAL ENGINEER",
+    "hero_evidence": "Meine Erfahrung umfasst die Kalibrierung von Materialmodellen, Falltestsimulationen, Strukturanalysen und Python-basierte CAE-Automatisierung. Ich hinterfrage Annahmen, arbeite strukturiert und lege Wert auf praktisch nutzbare Ergebnisse.",
+    "hero_approach": "Meine Arbeitsweise: Verantwortung übernehmen, Annahmen hinterfragen und Erkenntnisse in konkrete Schritte übersetzen."
+  }
+}
