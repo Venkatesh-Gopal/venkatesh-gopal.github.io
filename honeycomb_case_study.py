@@ -57,10 +57,6 @@ def render_honeycomb(lang, data, project, base="{{ site.baseurl }}"):
         f'<p class="honeycomb-note">{escape(c["calibration_limit"])}</p>',
     )
     content += (
-        '<details class="honeycomb-sources">'
-        f'<summary>{escape(c["details_title"])}</summary><ul>'
-        + "".join(f"<li>{escape(note)}</li>" for note in c["details"])
-        + "</ul></details>"
         '<section class="project-significance">'
         f'<a class="text-link" href="{base}{prefix}/contact/">{escape(data["project_cta"])} ↗</a>'
         "</section></div>"
