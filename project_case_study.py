@@ -19,6 +19,8 @@ def table(headers, rows):
 def render_project_case_study(lang, data, project, base="{{ site.baseurl }}"):
     c = project["case_study"]
     prefix = "/de" if lang == "de" else ""
+    poster_url = f'{base}/assets/portfolio/project-posters/{project["slug"]}.png'
+    poster_label = "Poster in voller Größe öffnen" if lang == "de" else "Open full-size poster"
     return (
         f'<a class="back-link" href="{base}{prefix}/projects/">← {escape(data["back"])}</a>'
         '<section class="page-heading compact-case-heading">'
@@ -26,9 +28,11 @@ def render_project_case_study(lang, data, project, base="{{ site.baseurl }}"):
         f'<h1>{escape(project["title"])}</h1>'
         f'<p class="lead">{escape(c["intro"])}</p></section>'
         '<div class="compact-case"><section class="detail-grid">'
-        '<figure class="detail-art">'
-        f'<img src="{base}/assets/portfolio/{project["slug"]}.svg" alt="{escape(c["caption"])}" width="600" height="360" />'
-        f'<figcaption>{escape(c["caption"])}</figcaption></figure>'
+        '<figure class="detail-art project-poster">'
+        f'<a href="{poster_url}" target="_blank" rel="noopener" aria-label="{poster_label}">'
+        f'<img src="{poster_url}" alt="{escape(c["caption"])}" width="2048" height="1531" decoding="async" /></a>'
+        f'<figcaption>{escape(c["caption"])}'
+        f'<a class="poster-fullsize" href="{poster_url}" target="_blank" rel="noopener">{poster_label} <span aria-hidden="true">↗</span></a></figcaption></figure>'
         f'<div><h2>{escape(c["focus_title"])}</h2><p>{escape(c["focus"])}</p>'
         '<ul class="tags">'
         + "".join(f"<li>{escape(tag)}</li>" for tag in project["tags"])
