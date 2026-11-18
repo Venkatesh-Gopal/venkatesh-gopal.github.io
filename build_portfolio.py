@@ -5,6 +5,7 @@ import html
 import json
 from honeycomb_case_study import render_honeycomb
 from project_case_study import render_project_case_study
+from project_images import card_image
 
 SOURCE_DIRECTORY = Path(__file__).resolve().parent
 ROOT = SOURCE_DIRECTORY if (SOURCE_DIRECTORY / '_data').is_dir() else SOURCE_DIRECTORY.parent
@@ -30,7 +31,7 @@ def cards(lang, omitted=None):
         if p['slug'] == omitted:
             continue
         output += f'''<a class="project-card" href="{link(lang, 'projects/' + p['slug'])}">
-        <div class="card-art art-{i} project-poster" aria-hidden="true"><img src="{BASE}/assets/portfolio/project-posters/{p['slug']}.png" alt="" width="2048" height="1531" loading="lazy" decoding="async"></div>
+        <div class="card-art art-{i} project-poster" aria-hidden="true">{card_image(p, BASE)}</div>
         <div class="card-copy"><p class="eyebrow">{esc(p['category'])}</p><h3>{esc(p['title'])}</h3><p>{esc(p['short'])}</p><span class="text-link">{esc(d['read'])} <span aria-hidden="true">↗</span></span></div></a>'''
     return output + '</div>'
 
@@ -111,7 +112,7 @@ sitemap: {'false' if key=='404' else 'true'}
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(browser_title)}"><meta property="og:description" content="{esc(description,quote=True)}"><meta property="og:url" content="{{{{ site.url }}}}{BASE}{url}">
 <link rel="icon" href="{BASE}/assets/portfolio/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{BASE}/assets/portfolio/portfolio.css">{f'<link rel="stylesheet" href="{BASE}/assets/portfolio/honeycomb/case-study.css">' if key == 'projects/honeycomb' else ''}
-{f'<link rel="stylesheet" href="{BASE}/assets/portfolio/case-study-compact.css">' if key in ('projects/adhesive-fracture', 'projects/steel-repair') else ''}<script src="{BASE}/assets/portfolio/portfolio.js" defer></script>
+{f'<link rel="stylesheet" href="{BASE}/assets/portfolio/case-study-compact.css">' if key in ('projects/adhesive-fracture', 'projects/steel-repair') else ''}{f'<link rel="stylesheet" href="{BASE}/assets/portfolio/project-posters.css">' if key == 'projects' or key.startswith('projects/') else ''}<script src="{BASE}/assets/portfolio/portfolio.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">{esc(d['skip'])}</a>
