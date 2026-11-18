@@ -1,7 +1,6 @@
 """Concise renderer for the fracture and bonded-steel case studies."""
 
 from html import escape
-from project_images import project_poster
 
 
 def table(headers, rows):
@@ -27,8 +26,10 @@ def render_project_case_study(lang, data, project, base="{{ site.baseurl }}"):
         f'<h1>{escape(project["title"])}</h1>'
         f'<p class="lead">{escape(c["intro"])}</p></section>'
         '<div class="compact-case"><section class="detail-grid">'
-        + project_poster(project, c["caption"], lang, base)
-        + f'<div><h2>{escape(c["focus_title"])}</h2><p>{escape(c["focus"])}</p>'
+        '<figure class="detail-art">'
+        f'<img src="{base}/assets/portfolio/{project["slug"]}.svg" alt="{escape(c["caption"])}" width="600" height="360" />'
+        f'<figcaption>{escape(c["caption"])}</figcaption></figure>'
+        f'<div><h2>{escape(c["focus_title"])}</h2><p>{escape(c["focus"])}</p>'
         '<ul class="tags">'
         + "".join(f"<li>{escape(tag)}</li>" for tag in project["tags"])
         + '</ul></div></section><section class="compact-case-section" id="setup">'
