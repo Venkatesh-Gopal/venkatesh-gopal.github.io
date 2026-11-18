@@ -1,7 +1,6 @@
 """Render a concise honeycomb case study inside the existing portfolio shell."""
 
 from html import escape
-from project_images import project_poster
 
 
 def table(headers, rows):
@@ -36,8 +35,10 @@ def render_honeycomb(lang, data, project, base="{{ site.baseurl }}"):
         f'<p class="lead">{escape(c["intro"])}</p></section>'
         '<div class="honeycomb-content">'
         '<section class="detail-grid honeycomb-overview">'
-        + project_poster(project, c["illustration"], lang, base)
-        + f'<div><h2>{escape(c["work_title"])}</h2><p>{escape(c["work"])}</p>'
+        '<figure class="detail-art">'
+        f'<img src="{base}/assets/portfolio/honeycomb.svg" alt="{escape(c["illustration"])}" width="600" height="360" />'
+        f'<figcaption>{escape(c["illustration"])}</figcaption></figure>'
+        f'<div><h2>{escape(c["work_title"])}</h2><p>{escape(c["work"])}</p>'
         '<ul class="tags">'
         + "".join(f"<li>{escape(tag)}</li>" for tag in project["tags"])
         + "</ul></div></section>"
