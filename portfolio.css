@@ -1283,39 +1283,83 @@ h3 {
   max-width: 62ch;
 }
 
-/* Scientific project posters: show the complete supplied image. */
+/* Project posters scale within their cards and detail-page grid tracks. */
 .card-art.project-poster {
+  width: 100%;
   height: auto;
   aspect-ratio: 2048 / 1531;
+  flex-shrink: 0;
+  background: var(--surface);
 }
 .card-art.project-poster img {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 2048 / 1531;
+  height: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
+.project-grid > *,
+.project-card .card-copy,
+.compact-case,
+.honeycomb-content,
+.compact-case .detail-grid,
+.honeycomb-content .detail-grid,
+.compact-case .detail-grid > *,
+.honeycomb-content .detail-grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+.compact-case .detail-grid,
+.honeycomb-content .detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.project-card .card-copy h3,
+.project-card .card-copy .eyebrow {
+  overflow-wrap: anywhere;
+}
 .detail-art.project-poster {
+  width: 100%;
+  max-width: 718px;
+  min-width: 0;
   overflow: hidden;
+  justify-self: center;
 }
 .detail-art.project-poster > a {
   display: block;
+  width: 100%;
+  max-width: 100%;
 }
 .detail-art.project-poster img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 .detail-art.project-poster figcaption {
   background: var(--surface);
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 .detail-art.project-poster .poster-fullsize {
   display: block;
   width: fit-content;
+  max-width: 100%;
   margin-top: 8px;
   font-size: 12px;
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+@media (min-width: 651px) and (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .compact-case .detail-grid,
+  .honeycomb-content .detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
 }

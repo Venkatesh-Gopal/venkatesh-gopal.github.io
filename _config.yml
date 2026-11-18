@@ -218,6 +218,23 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  # Publish project pages from _pages; ignore duplicate top-level uploads.
+  - "portfolio-de-projects (4).html"
+  - "portfolio-de-projects-adhesive-fracture (5).html"
+  - "portfolio-de-projects-adhesive-fracture.html"
+  - "portfolio-de-projects-honeycomb (6).html"
+  - "portfolio-de-projects-honeycomb.html"
+  - "portfolio-de-projects-steel-repair (7).html"
+  - "portfolio-de-projects-steel-repair.html"
+  - "portfolio-de-projects.html"
+  - "portfolio-en-projects (8).html"
+  - "portfolio-en-projects-adhesive-fracture (9).html"
+  - "portfolio-en-projects-adhesive-fracture.html"
+  - "portfolio-en-projects-honeycomb (10).html"
+  - "portfolio-en-projects-honeycomb.html"
+  - "portfolio-en-projects-steel-repair (11).html"
+  - "portfolio-en-projects-steel-repair.html"
+  - "portfolio-en-projects.html"
   - _pages/About.md
   - _pages/Projects.md
   - _pages/experience.md
