@@ -30,6 +30,7 @@ sitemap: true
     <link rel="icon" href="{{ site.baseurl }}/assets/portfolio/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/portfolio.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/case-study-compact.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/project-posters.css" />
     <script src="{{ site.baseurl }}/assets/portfolio/portfolio.js" defer></script>
   </head>
   <body>
@@ -72,22 +73,20 @@ sitemap: true
       <div class="compact-case">
         <section class="detail-grid">
           <figure class="detail-art project-poster">
-            <a
-              href="{{ site.baseurl }}/assets/portfolio/project-posters/steel-repair.png"
-              target="_blank"
-              rel="noopener"
-              aria-label="Open full-size poster"
+            <a href="{{ site.baseurl }}/assets/portfolio/steel-repair-full.png" target="_blank" rel="noopener" aria-label="Open full-size poster"
               ><img
-                src="{{ site.baseurl }}/assets/portfolio/project-posters/steel-repair.png"
+                src="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png 718w, {{ site.baseurl }}/assets/portfolio/steel-repair-card-2x.png 1436w"
+                sizes="(max-width: 780px) calc(100vw - 40px), (max-width: 900px) 718px, 50vw"
                 alt="Project poster: bonded steel reinforcement, experimental strain evidence and thermal experiment–simulation comparison."
-                width="2048"
-                height="1531"
+                width="718"
+                height="537"
                 decoding="async"
             /></a>
             <figcaption>
               Project poster: bonded steel reinforcement, experimental strain evidence and thermal experiment–simulation comparison.<a
                 class="poster-fullsize"
-                href="{{ site.baseurl }}/assets/portfolio/project-posters/steel-repair.png"
+                href="{{ site.baseurl }}/assets/portfolio/steel-repair-full.png"
                 target="_blank"
                 rel="noopener"
                 >Open full-size poster <span aria-hidden="true">↗</span></a
@@ -183,10 +182,12 @@ sitemap: true
           <a class="project-card" href="{{ site.baseurl }}/projects/adhesive-fracture/">
             <div class="card-art art-0 project-poster" aria-hidden="true">
               <img
-                src="{{ site.baseurl }}/assets/portfolio/project-posters/adhesive-fracture.png"
+                src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png 718w, {{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png 1436w"
+                sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
                 alt=""
-                width="2048"
-                height="1531"
+                width="718"
+                height="537"
                 loading="lazy"
                 decoding="async"
               />
@@ -202,10 +203,12 @@ sitemap: true
           ><a class="project-card" href="{{ site.baseurl }}/projects/honeycomb/">
             <div class="card-art art-1 project-poster" aria-hidden="true">
               <img
-                src="{{ site.baseurl }}/assets/portfolio/project-posters/honeycomb.png"
+                src="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png 718w, {{ site.baseurl }}/assets/portfolio/honeycomb-card-2x.png 1436w"
+                sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
                 alt=""
-                width="2048"
-                height="1531"
+                width="718"
+                height="537"
                 loading="lazy"
                 decoding="async"
               />
