@@ -76,7 +76,7 @@
           "intro": "Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.",
           "focus_title": "Analysis focus",
           "focus": "Compare predicted crack paths and tensile responses with experiments across four fibre orientations. Examine where the directional material description captures the behaviour and where it needs improvement.",
-          "caption": "Schematic fracture illustration. Not simulation output.",
+          "caption": "Project poster: application, XFEM specimen, crack-path comparison and tensile stress–strain response.",
           "setup_title": "Study at a glance",
           "setup_headers": ["Item", "Scope"],
           "setup_rows": [
@@ -119,7 +119,7 @@
         "case_study": {
           "eyebrow": "MASTER’S THESIS / BSH DISHWASHER PACKAGING",
           "intro": "Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material behaviour, demonstrated through a honeycomb paperboard study.",
-          "illustration": "Schematic honeycomb structure. Illustration, not simulation output.",
+          "illustration": "Project poster: packaging application, compression test, finite element model and MAT 274 experiment–simulation comparison.",
           "work_title": "My contribution",
           "work": "I characterised liner and core paper, developed MAT 58 and MAT 274 material cards, and compared single-element and honeycomb board simulations with experiments. I also applied surrogate-based inverse modelling to calibrate MAT 58 parameters.",
           "setup_title": "Study at a glance",
@@ -164,7 +164,7 @@
           "intro": "Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the application.",
           "focus_title": "My contribution",
           "focus": "My documented scope covered mechanical and thermal–mechanical FEM. The study concerns load transfer and deformation in bonded structures; published strain measurements provide the experimental research context.",
-          "caption": "Schematic steel-patch illustration. Not simulation output.",
+          "caption": "Project poster: bonded steel reinforcement, experimental strain evidence and thermal experiment–simulation comparison.",
           "setup_title": "Project at a glance",
           "setup_headers": ["Item", "Scope"],
           "setup_rows": [
@@ -464,7 +464,7 @@
           "intro": "Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.",
           "focus_title": "Analyseschwerpunkt",
           "focus": "Vergleich berechneter Risspfade und Zugantworten mit Versuchen für vier Faserorientierungen. Bewertung, wo die richtungsabhängige Materialbeschreibung das Verhalten erfasst und wo sie verbessert werden muss.",
-          "caption": "Schematische Bruchdarstellung. Kein Simulationsergebnis.",
+          "caption": "Projektposter: Anwendung, XFEM-Probe, Risspfadvergleich und Spannungs-Dehnungs-Verhalten im Zugversuch.",
           "setup_title": "Untersuchung im Überblick",
           "setup_headers": ["Aspekt", "Umfang"],
           "setup_rows": [
@@ -507,7 +507,7 @@
         "case_study": {
           "eyebrow": "MASTERARBEIT / BSH-GESCHIRRSPÜLERVERPACKUNGEN",
           "intro": "Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten.",
-          "illustration": "Schematische Wabenstruktur. Illustration, kein Simulationsergebnis.",
+          "illustration": "Projektposter: Verpackungsanwendung, Druckversuch, FE-Modell und Versuchs-Simulations-Vergleich mit MAT 274.",
           "work_title": "Mein Beitrag",
           "work": "Ich charakterisierte Decklagen- und Kernpapier, entwickelte die Materialkarten MAT 58 und MAT 274 und verglich Einzelelement- und Wabenplattensimulationen mit Versuchen. Zusätzlich setzte ich eine ersatzmodellbasierte inverse Modellierung zur Kalibrierung der MAT-58-Parameter ein.",
           "setup_title": "Untersuchung im Überblick",
@@ -555,7 +555,7 @@
           "intro": "Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von Stahlverstärkungen.",
           "focus_title": "Mein Beitrag",
           "focus": "Mein dokumentierter Aufgabenbereich umfasste mechanische und thermomechanische FEM. Im Mittelpunkt stehen Lastübertragung und Verformung geklebter Strukturen. Veröffentlichte Dehnungsmessungen bilden den experimentellen Forschungskontext.",
-          "caption": "Schematische Stahlpatch-Darstellung. Kein Simulationsergebnis.",
+          "caption": "Projektposter: geklebte Stahlverstärkung, experimentelle Dehnungsmessungen und thermischer Versuchs-Simulations-Vergleich.",
           "setup_title": "Projekt im Überblick",
           "setup_headers": ["Aspekt", "Umfang"],
           "setup_rows": [

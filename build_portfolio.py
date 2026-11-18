@@ -6,7 +6,8 @@ import json
 from honeycomb_case_study import render_honeycomb
 from project_case_study import render_project_case_study
 
-ROOT = Path(__file__).resolve().parents[1]
+SOURCE_DIRECTORY = Path(__file__).resolve().parent
+ROOT = SOURCE_DIRECTORY if (SOURCE_DIRECTORY / '_data').is_dir() else SOURCE_DIRECTORY.parent
 DATA = json.loads((ROOT / '_data/portfolio.json').read_text())
 esc = html.escape
 KEYS = ['about', 'projects', 'experience', 'skills', 'contact']
@@ -29,7 +30,7 @@ def cards(lang, omitted=None):
         if p['slug'] == omitted:
             continue
         output += f'''<a class="project-card" href="{link(lang, 'projects/' + p['slug'])}">
-        <div class="card-art art-{i}" aria-hidden="true"><span>0{i+1}</span><img src="{BASE}/assets/portfolio/{p['slug']}.svg" alt="" width="600" height="360" loading="lazy"></div>
+        <div class="card-art art-{i} project-poster" aria-hidden="true"><img src="{BASE}/assets/portfolio/project-posters/{p['slug']}.png" alt="" width="2048" height="1531" loading="lazy" decoding="async"></div>
         <div class="card-copy"><p class="eyebrow">{esc(p['category'])}</p><h3>{esc(p['title'])}</h3><p>{esc(p['short'])}</p><span class="text-link">{esc(d['read'])} <span aria-hidden="true">↗</span></span></div></a>'''
     return output + '</div>'
 

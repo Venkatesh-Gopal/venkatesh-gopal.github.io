@@ -27,6 +27,8 @@ def section(anchor, number, title, content):
 def render_honeycomb(lang, data, project, base="{{ site.baseurl }}"):
     c = project["case_study"]
     prefix = "/de" if lang == "de" else ""
+    poster_url = f'{base}/assets/portfolio/project-posters/{project["slug"]}.png'
+    poster_label = "Poster in voller Größe öffnen" if lang == "de" else "Open full-size poster"
     content = (
         f'<a class="back-link" href="{base}{prefix}/projects/">← {escape(data["back"])}</a>'
         '<section class="page-heading honeycomb-heading">'
@@ -35,9 +37,11 @@ def render_honeycomb(lang, data, project, base="{{ site.baseurl }}"):
         f'<p class="lead">{escape(c["intro"])}</p></section>'
         '<div class="honeycomb-content">'
         '<section class="detail-grid honeycomb-overview">'
-        '<figure class="detail-art">'
-        f'<img src="{base}/assets/portfolio/honeycomb.svg" alt="{escape(c["illustration"])}" width="600" height="360" />'
-        f'<figcaption>{escape(c["illustration"])}</figcaption></figure>'
+        '<figure class="detail-art project-poster">'
+        f'<a href="{poster_url}" target="_blank" rel="noopener" aria-label="{poster_label}">'
+        f'<img src="{poster_url}" alt="{escape(c["illustration"])}" width="2048" height="1531" decoding="async" /></a>'
+        f'<figcaption>{escape(c["illustration"])}'
+        f'<a class="poster-fullsize" href="{poster_url}" target="_blank" rel="noopener">{poster_label} <span aria-hidden="true">↗</span></a></figcaption></figure>'
         f'<div><h2>{escape(c["work_title"])}</h2><p>{escape(c["work"])}</p>'
         '<ul class="tags">'
         + "".join(f"<li>{escape(tag)}</li>" for tag in project["tags"])
