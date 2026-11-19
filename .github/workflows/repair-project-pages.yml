@@ -1,0 +1,184 @@
+name: Repair and publish project pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: repair-project-pages
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out the current main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Restore uploaded files to their active locations
+        shell: python
+        run: |
+          import json
+          import os
+          import shutil
+          from pathlib import Path
+
+          destinations = [
+              "_data/portfolio.json",
+              "_pages/portfolio-de-about.html",
+              "_pages/portfolio-de-projects-adhesive-fracture.html",
+              "_pages/portfolio-de-projects-honeycomb.html",
+              "_pages/portfolio-de-projects-steel-repair.html",
+              "_pages/portfolio-de-projects.html",
+              "_pages/portfolio-en-about.html",
+              "_pages/portfolio-en-projects-adhesive-fracture.html",
+              "_pages/portfolio-en-projects-honeycomb.html",
+              "_pages/portfolio-en-projects-steel-repair.html",
+              "_pages/portfolio-en-projects.html",
+              "assets/portfolio/adhesive-fracture-card-2x.png",
+              "assets/portfolio/adhesive-fracture-card.png",
+              "assets/portfolio/honeycomb-card-2x.png",
+              "assets/portfolio/honeycomb-card.png",
+              "assets/portfolio/project-posters.css",
+              "assets/portfolio/steel-repair-card-2x.png",
+              "assets/portfolio/steel-repair-card.png",
+              "bin/build_portfolio.py",
+              "bin/project_case_study.py",
+              "bin/project_images.py",
+          ]
+          missing = [Path(name).name for name in destinations if not Path(Path(name).name).is_file()]
+          if missing:
+              raise SystemExit("Required uploaded files are missing: " + ", ".join(missing))
+          for name in destinations:
+              destination = Path(name)
+              source = Path(destination.name)
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(source, destination)
+              print(f"Restored {source} -> {destination}")
+          manifest = Path(os.environ["RUNNER_TEMP"]) / "project-repair-paths.json"
+          manifest.write_text(json.dumps(destinations))
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install JavaScript dependencies
+        run: npm ci
+
+      - name: Regenerate and format the website pages
+        run: |
+          python3 bin/build_portfolio.py
+          npx prettier _data/portfolio.json '_pages/portfolio-*.html' _pages/404.md --write
+          npm run lint:style-contract
+          node --check assets/portfolio/portfolio.js
+          git diff --check
+
+      - name: Set up Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Install site build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          python3 -m pip install --upgrade nbconvert
+
+      - name: Build and check the complete site
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build
+          python3 test/check_portfolio.py _site
+
+      - name: Commit only the repaired project files
+        shell: python
+        run: |
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+
+          manifest = Path(os.environ["RUNNER_TEMP"]) / "project-repair-paths.json"
+          destinations = json.loads(manifest.read_text())
+          subprocess.run(["git", "add", "--", *destinations], check=True)
+          result = subprocess.run(["git", "diff", "--cached", "--quiet"])
+          if result.returncode == 1:
+              subprocess.run([
+                  "git",
+                  "-c", "user.name=github-actions[bot]",
+                  "-c", "user.email=41898282+github-actions[bot]@users.noreply.github.com",
+                  "commit", "-m", "fix: restore project posters and concise case studies",
+              ], check=True)
+              subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
+          elif result.returncode != 0:
+              raise SystemExit(result.returncode)
+          else:
+              print("The active project files already match the uploaded update.")
+
+      - name: Wait for any older deployment to finish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 60); do
+            active_runs=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow deploy.yml --branch main --limit 20 --json status --jq '[.[] | select(.status != "completed")] | length')
+            if [ "$active_runs" -eq 0 ]; then
+              exit 0
+            fi
+            echo "Waiting for an older deployment to finish before publishing the repair."
+            sleep 10
+          done
+          echo "::error::An older deployment is still running. Re-run this repair after it finishes."
+          exit 1
+
+      - name: Run the existing deployment and wait for its result
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          source_sha=$(git rev-parse HEAD)
+          gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY" --ref main
+          for attempt in $(seq 1 20); do
+            deployment_id=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow deploy.yml --branch main --commit "$source_sha" --event workflow_dispatch --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+            if [ -n "$deployment_id" ]; then
+              echo "Waiting for deployment run $deployment_id."
+              for check in $(seq 1 180); do
+                outcome=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$deployment_id" --jq 'if .status == "completed" then .conclusion else "pending" end')
+                case "$outcome" in
+                  success) exit 0 ;;
+                  pending) sleep 10 ;;
+                  *)
+                    echo "::error::Deployment finished with: $outcome. Check the Deploy site workflow."
+                    exit 1
+                    ;;
+                esac
+              done
+              echo "::error::Deployment has not finished after 30 minutes. Check the Deploy site workflow."
+              exit 1
+            fi
+            sleep 3
+          done
+          echo "::error::The deployment was requested, but its run could not be found. Check the Deploy site workflow."
+          exit 1
+
+      - name: Record the verified build and deployment
+        run: |
+          echo "## Project repair completed" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Restored 21 project files to their active folders." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Built the complete Jekyll site and passed its portfolio checks." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Committed the repaired source and completed the existing deployment workflow." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Review https://venkatesh-gopal.github.io/projects/ and https://venkatesh-gopal.github.io/de/projects/." >> "$GITHUB_STEP_SUMMARY"
