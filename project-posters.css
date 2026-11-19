@@ -1,4 +1,4 @@
-/* Exact 718 × 537 poster previews; originals open through the full-size links. */
+/* Keep each complete scientific poster visible at its original proportions. */
 .card-art.project-poster {
   width: 100%;
   height: auto;
@@ -10,61 +10,72 @@
   display: block;
   width: 100%;
   height: 100%;
-  max-width: 100%;
   object-fit: contain;
 }
 .project-grid > *,
 .project-card .card-copy,
-.compact-case,
-.honeycomb-content,
-.compact-case .detail-grid,
-.honeycomb-content .detail-grid,
-.compact-case .detail-grid > *,
-.honeycomb-content .detail-grid > * {
+.compact-case .detail-grid > * {
   min-width: 0;
-  max-width: 100%;
-}
-.compact-case .detail-grid,
-.honeycomb-content .detail-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .project-card .card-copy h3,
-.project-card .card-copy .eyebrow {
+.project-card .card-copy .eyebrow,
+.compact-case-heading h1 {
   overflow-wrap: anywhere;
+}
+.compact-case .detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .detail-art.project-poster {
   width: 100%;
   max-width: 718px;
-  min-width: 0;
   overflow: hidden;
   justify-self: center;
+  background: var(--surface);
 }
-.detail-art.project-poster > a {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
+.detail-art.project-poster > a,
 .detail-art.project-poster img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
-  object-fit: contain;
 }
 .detail-art.project-poster figcaption {
-  background: var(--surface);
   color: var(--muted);
-  overflow-wrap: anywhere;
+  font-size: 14px;
 }
-.detail-art.project-poster .poster-fullsize {
+.poster-fullsize {
   display: block;
   width: fit-content;
-  max-width: 100%;
   margin-top: 8px;
-  font-size: 12px;
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.compact-case-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin-top: 36px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.compact-case-points h2 {
+  margin-bottom: 16px;
+}
+.compact-case-points ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+.compact-case-points li + li {
+  margin-top: 10px;
+}
+.compact-case-note {
+  max-width: 900px;
+  margin-top: 24px;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+  font-size: 14px;
+  color: var(--muted);
 }
 @media (min-width: 651px) and (max-width: 1000px) {
   .project-grid {
@@ -73,7 +84,7 @@
 }
 @media (max-width: 900px) {
   .compact-case .detail-grid,
-  .honeycomb-content .detail-grid {
+  .compact-case-points {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
   }
