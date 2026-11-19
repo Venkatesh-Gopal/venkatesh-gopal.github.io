@@ -1282,3 +1282,13 @@ h3 {
   color: var(--accent);
   max-width: 62ch;
 }
+
+/* Remove the homepage illustration panel */
+.hero-figure {
+  display: none;
+}
+
+/* Let the introduction use one column */
+.hero {
+  grid-template-columns: minmax(0, 1fr);
+}
