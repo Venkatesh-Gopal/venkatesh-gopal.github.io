@@ -185,12 +185,11 @@
       "Communicate what the findings mean.",
       "Improve the process where it helps."
     ],
-    "certifications_title": "Certifications",
-"certifications": [
-  ["2022", "ANSYS LS-DYNA: Explicit Structural Mechanics", "CADFEM"],
-  ["2022", "Preprocessing using ANSA", "Orville Academy / Udemy"],
-  ["Dec 2021", "Machine Learning A-Z: Hands-On Python & R in Data Science", "Udemy"]
-],
+    "certifications_title": "Selected training",
+    "certifications": [
+      ["2022", "ANSYS LS-DYNA: Explicit Structural Mechanics", "CADFEM"],
+      ["2022", "Preprocessing using ANSA", "Orville Academy / Udemy"]
+    ],
     "email_label": "Send an email",
     "linkedin_label": "Connect on LinkedIn",
     "region_body": "Interested in opportunities in the Netherlands and Germany.",
