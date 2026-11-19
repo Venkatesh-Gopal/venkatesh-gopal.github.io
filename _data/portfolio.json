@@ -30,7 +30,7 @@
     "interests_title": "Where I want to contribute",
     "interests_body": "Mechanical engineering, simulation, and R&D roles where design questions, physical behaviour, and computational methods come together.",
     "skills_title": "Engineering across disciplines.",
-    "skills_intro": "FEA, mechanical design, Python automation, CFD, and surrogate modelling, connecting numerical methods with practical engineering problems across industries.",
+    "skills_intro": "FEA, mechanical design, Python automation, CFD, and surrogate modelling—connecting numerical methods with practical engineering problems across industries.",
     "languages": "Languages",
     "language_values": [
       ["English", "C1"],
@@ -149,7 +149,7 @@
         }
       }
     ],
-    "intro_more": "I tackle engineering problems through design, simulation, testing, and automation, connecting physical behaviour with practical decisions that move development forward.",
+    "intro_more": "I tackle engineering problems through design, simulation, testing, and automation—connecting physical behaviour with practical decisions that move development forward.",
     "personality": "Curious about what bends, what breaks, and what we can build better.",
     "figure_note": "Good questions make better models.",
     "focus_values": "Mechanical design · Structural analysis · Experimental validation · Python automation",
@@ -159,7 +159,7 @@
     "capabilities": [
       [
         "Understand the behaviour.",
-        "Investigate how structures, materials, and interfaces respond to mechanical and thermal loading, from deformation and contact to impact and failure."
+        "Investigate how structures, materials, and interfaces respond to mechanical and thermal loading—from deformation and contact to impact and failure."
       ],
       [
         "Connect predictions with evidence.",
