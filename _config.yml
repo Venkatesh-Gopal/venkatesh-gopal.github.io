@@ -218,7 +218,9 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  # Publish project pages from _pages; ignore duplicate top-level uploads.
+  - "portfolio-en-about.html"
+  - "portfolio-de-about.html"
+  # Publish portfolio pages from _pages; ignore duplicate top-level uploads.
   - "portfolio-de-projects (4).html"
   - "portfolio-de-projects-adhesive-fracture (5).html"
   - "portfolio-de-projects-adhesive-fracture.html"
