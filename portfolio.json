@@ -21,8 +21,8 @@
     "about_title": "Engineering grounded in evidence.",
     "about_body": "My background brings together mechanical design, industrial simulation, and applied research. I hold an MSc in Computational Sciences in Engineering from TU Braunschweig, where I also worked as a Research Associate.",
     "about_end": "I’m interested in mechanical engineering, simulation, and R&D opportunities in the Netherlands and Germany.",
-    "projects_title": "Models with a purpose.",
-    "projects_intro": "Questions worth exploring. My work connects numerical modelling with material behaviour and experimental evidence to investigate how structures carry loads, how interfaces fail, and what measurements can reveal.",
+    "projects_title": "Engineering projects",
+    "projects_intro": "Three studies connecting simulation, material testing and experimental evidence.",
     "experience_title": "From the model to the mechanical detail.",
     "experience_intro": "My experience combines industrial engineering, applied research, and hands-on investigation. Across these settings, I have worked on structural behaviour, material modelling, mechanical design, and the workflows that connect them.",
     "work_label": "PROFESSIONAL EXPERIENCE",
@@ -61,9 +61,9 @@
       {
         "slug": "adhesive-fracture",
         "title": "Fracture Modelling & Failure Assessment",
-        "category": "STRUCTURAL INTEGRITY / COMPUTATIONAL FRACTURE",
-        "short": "Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.",
-        "body": "This project investigates the fracture behaviour of fibre-reinforced adhesives using the extended finite element method, or XFEM. The focus is on examining the mechanical response of adhesive materials and the development of cracks.",
+        "category": "COMPUTATIONAL FRACTURE",
+        "short": "Abaqus XFEM study of crack growth in fibre-reinforced adhesives.",
+        "body": "Compared experimental and simulated stress–strain responses and crack paths at four fibre orientations: 0°, 30°, 60° and 90°.",
         "tags": ["Abaqus", "XFEM", "Fracture mechanics", "Material behaviour"],
         "focus": [
           "Examine the mechanical response of the adhesive system under loading.",
@@ -73,35 +73,26 @@
         "question": "How can numerical modelling help explain where cracking begins and how it develops in a reinforced adhesive material?",
         "significance": "Understanding fracture helps engineers evaluate how adhesive systems carry load and where failure may develop. The model becomes useful when its predictions are connected with the material, loading conditions, and evidence available.",
         "case_study": {
-          "intro": "Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.",
-          "focus_title": "Analysis focus",
-          "focus": "Compare predicted crack paths and tensile responses with experiments across four fibre orientations. Examine where the directional material description captures the behaviour and where it needs improvement.",
-          "caption": "Schematic fracture illustration. Not simulation output.",
-          "setup_title": "Study at a glance",
-          "setup_headers": ["Item", "Scope"],
-          "setup_rows": [
-            ["Material", "Epoxy adhesive containing short glass fibres."],
-            ["Model", "Notched material specimen analysed with 3D Abaqus XFEM."],
-            ["Orientations", "0°, 30°, 60° and 90°."],
-            ["Comparisons", "Crack paths and tensile stress–strain response."]
+          "caption": "Experimental crack paths, XFEM predictions and stress–strain comparison.",
+          "approach": [
+            "Analyse a notched adhesive specimen with 3D Abaqus XFEM.",
+            "Compare tensile response and crack direction across the four orientations."
           ],
-          "results_title": "Main findings",
-          "result_headers": ["Comparison", "Finding"],
-          "result_rows": [
-            ["Crack paths", "Qualitative correspondence at 0° and 90°; substantial discrepancies at 30° and 60°."],
-            ["Tensile response", "Predicted strains differed substantially from the experimental measurements."]
+          "findings": [
+            "Simulated failure strains were lower than the experimental values.",
+            "Angled crack paths at 30° and 60° were not reproduced."
           ],
-          "conclusion_title": "Engineering interpretation",
-          "conclusion": "The simplified directional stiffness description was a priority for improvement. The comparison shows why a plausible crack path alone is insufficient to establish the model’s predictive quality.",
-          "note": "Results refer to the published specimen study, which credits J. Philipp with the XFEM simulation. The model represents adhesive material, rather than a complete bonded blade."
+          "note": "Published specimen study; the source credits J. Philipp with the XFEM simulation.",
+          "approach_title": "Approach",
+          "findings_title": "Key findings"
         }
       },
       {
         "slug": "honeycomb",
         "title": "Material Characterisation & Nonlinear Simulation",
-        "category": "MATERIAL MODELLING / PACKAGING MECHANICS",
-        "short": "Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material behaviour, demonstrated through a honeycomb paperboard study.",
-        "body": "For my master’s thesis at BSH, I investigated the mechanical behaviour of honeycomb paperboard for dishwasher packaging. I characterised the liner and core paper, compared two LS-DYNA material models and assessed the response of the assembled board under compression.",
+        "category": "MATERIAL MODELLING / PACKAGING",
+        "short": "Paper testing, LS-DYNA modelling and LS-OPT calibration for packaging.",
+        "body": "My master’s thesis at BSH investigated honeycomb paperboard for dishwasher packaging through paper characterisation and board compression testing.",
         "tags": ["LS-DYNA", "MAT 58 / MAT 274", "LS-OPT", "Surrogate modelling"],
         "focus": [
           "Directional paper characterisation.",
@@ -117,41 +108,23 @@
         ],
         "significance": "The board-level comparison favoured MAT 274 for the investigated compression case. It also showed why agreement with paper tests alone does not establish a reliable prediction of the board’s crushing response.",
         "case_study": {
-          "eyebrow": "MASTER’S THESIS / BSH DISHWASHER PACKAGING",
-          "intro": "Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material behaviour, demonstrated through a honeycomb paperboard study.",
-          "illustration": "Schematic honeycomb structure. Illustration, not simulation output.",
-          "work_title": "My contribution",
-          "work": "I characterised liner and core paper, developed MAT 58 and MAT 274 material cards, and compared single-element and honeycomb board simulations with experiments. I also applied surrogate-based inverse modelling to calibrate MAT 58 parameters.",
-          "setup_title": "Study at a glance",
-          "setup_headers": ["Item", "Scope"],
-          "setup_rows": [
-            ["Application", "Paper-based protective packaging for dishwashers."],
-            ["Experiments", "Liner and core paper in MD/CD tension and compression; board compression normal to its plane."],
-            ["Board specimen", "100 × 100 × 45 mm."],
-            ["Simulation", "LS-DYNA: MAT 58 (Laminated Composite Fabric) and MAT 274 (Paper)."],
-            ["Calibration", "LS-OPT: D-optimal sampling, metamodels, Curve Mapping and SRSM refinement."]
+          "caption": "Packaging application, compression testing and experiment–simulation comparison.",
+          "approach": [
+            "Characterise liner and core paper in tension and compression.",
+            "Compare MAT 58 and MAT 274 in LS-DYNA; calibrate MAT 58 parameters using LS-OPT."
           ],
-          "results_title": "Main findings",
-          "results_headers": ["Model", "Comparison with experiments"],
-          "results_rows": [
-            ["MAT 58", "Captured the broad compression stages but substantially underpredicted the initial peak and much of the plateau force."],
-            [
-              "MAT 274",
-              "Gave a closer initial peak and plateau response. Differences remained after the peak and during the transition to densification."
-            ]
-          ],
-          "conclusion": "MAT 274 was the stronger starting point for the investigated compression case. Material-level agreement alone did not establish the board’s crushing response.",
-          "calibration_title": "Surrogate-based parameter calibration",
-          "calibration": "To address the MAT 58 mismatch, I used bounded material parameters and D-optimal sampling to define LS-DYNA evaluations. LS-OPT built metamodels from those results and used Curve Mapping to assess agreement with the experimental target. The described SRSM workflow refined the search region through domain reduction.",
-          "calibration_limit": "The supplied material documents the method, without a final parameter set or quantified optimisation improvement."
+          "findings": ["MAT 274 broadly reproduced the board’s crushing plateau.", "Differences remained during early crushing and densification."],
+          "note": "The LS-OPT calibration method is documented; its final improvement is not quantified.",
+          "approach_title": "Approach",
+          "findings_title": "Key findings"
         }
       },
       {
         "slug": "steel-repair",
         "title": "Structural & Thermomechanical Analysis",
-        "category": "BONDED STRUCTURES / MECHANICAL AND THERMAL ANALYSIS",
-        "short": "Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the application.",
-        "body": "This project concerns monitoring steel patch repairs using distributed fibre optic sensing. It brings together structural mechanics and experimental observations to investigate how repaired structures behave and how measurements can support their interpretation.",
+        "category": "STRUCTURAL AND THERMAL ANALYSIS",
+        "short": "Load transfer, defect sensing and thermal response of bonded steel reinforcement.",
+        "body": "Mechanical and thermal–mechanical FEM of bonded steel reinforcement, interpreted alongside distributed fibre optic strain measurements.",
         "tags": ["FEM", "Bonded structures", "Thermal loading", "Structural mechanics"],
         "focus": [
           "Consider the steel patch repair as a structural system responding to load.",
@@ -161,27 +134,18 @@
         "question": "How can distributed measurements help us understand the response of a repaired steel structure under load?",
         "significance": "Measurements become useful when they help explain structural behaviour. This project connects a sensing approach with an engineering application, focusing on what observations can reveal about the response of a repair.",
         "case_study": {
-          "intro": "Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the application.",
-          "focus_title": "My contribution",
-          "focus": "My documented scope covered mechanical and thermal–mechanical FEM. The study concerns load transfer and deformation in bonded structures; published strain measurements provide the experimental research context.",
-          "caption": "Schematic steel-patch illustration. Not simulation output.",
-          "setup_title": "Project at a glance",
-          "setup_headers": ["Item", "Scope"],
-          "setup_rows": [
-            ["Application", "Bonded steel-patch reinforcement of steel structures."],
-            ["Analysis scope", "Mechanical and thermal–mechanical finite element modelling."],
-            ["Research context", "Distributed fibre optic sensing of strain in a repaired structure."],
-            ["Engineering question", "How do loading, load transfer and local damage affect the repair’s response?"]
+          "caption": "Tensile setup, fibre sensing, strain profiles and thermal comparison.",
+          "approach": [
+            "Investigate load transfer and deformation in the bonded repair.",
+            "Compare temperature histories at T1–T4 under thermal loading."
           ],
-          "results_title": "Findings from the experimental context",
-          "result_headers": ["Observation", "Engineering relevance"],
-          "result_rows": [
-            ["Load redistribution", "Published strain measurements illustrate how the response varies along the bonded repair."],
-            ["Progressive damage", "Published observations show damage development that must be considered when interpreting local strain changes."]
+          "findings": [
+            "Strain profiles show load redistribution and local changes associated with bond defects.",
+            "Temperature histories compare experimental and simulated thermal responses."
           ],
-          "conclusion_title": "Engineering focus",
-          "conclusion": "Connect structural response with the mechanics of the bonded repair. Distinguish changes caused by loading from those associated with damage when interpreting the measurements.",
-          "note": "The observations above are published experimental context. The supplied project material contains no numerical FEM result plots or quantified model-validation outcome."
+          "note": "The published strain measurements provide the experimental research context.",
+          "approach_title": "Approach",
+          "findings_title": "Key findings"
         }
       }
     ],
@@ -237,7 +201,10 @@
       "projects": "Engineering Projects · Venkatesh Gopal",
       "experience": "Industry & Research Experience · Venkatesh Gopal",
       "skills": "Engineering Skills & Methods · Venkatesh Gopal",
-      "contact": "Contact · Venkatesh Gopal"
+      "contact": "Contact · Venkatesh Gopal",
+      "projects/adhesive-fracture": "Fracture Modelling & Failure Assessment · Venkatesh Gopal",
+      "projects/honeycomb": "Material Characterisation & Nonlinear Simulation · Venkatesh Gopal",
+      "projects/steel-repair": "Structural & Thermomechanical Analysis · Venkatesh Gopal"
     },
     "meta_description": "Mechanical engineer in Eindhoven connecting design, structural simulation, physical testing, and Python automation to support better engineering decisions.",
     "jobs": [
@@ -409,8 +376,8 @@
     "about_title": "Ingenieurarbeit auf fundierter Grundlage.",
     "about_body": "Mein Hintergrund verbindet mechanische Konstruktion, industrielle Simulation und angewandte Forschung. Ich habe einen MSc in Computational Sciences in Engineering an der TU Braunschweig erworben und dort als wissenschaftlicher Mitarbeiter gearbeitet.",
     "about_end": "Ich interessiere mich für Positionen im Maschinenbau, in der Simulation sowie in Forschung und Entwicklung in den Niederlanden und Deutschland.",
-    "projects_title": "Modelle mit einer klaren Aufgabe.",
-    "projects_intro": "Fragestellungen, die eine genaue Untersuchung verdienen. Meine Arbeit verbindet numerische Modellierung mit Werkstoffverhalten und experimentellen Erkenntnissen: Wie tragen Strukturen Lasten? Wie versagen Grenzflächen? Was zeigen Messungen?",
+    "projects_title": "Ingenieurprojekte",
+    "projects_intro": "Drei Studien verbinden Simulation, Werkstoffversuche und experimentelle Erkenntnisse.",
     "experience_title": "Vom Modell bis zum konstruktiven Detail.",
     "experience_intro": "Meine Erfahrung verbindet industrielle Entwicklung, angewandte Forschung und praktische Untersuchungen. Im Mittelpunkt stehen Strukturverhalten, Werkstoffmodellierung, mechanische Konstruktion und die dazugehörigen Arbeitsabläufe.",
     "work_label": "BERUFSERFAHRUNG",
@@ -449,9 +416,9 @@
       {
         "slug": "adhesive-fracture",
         "title": "Bruchmodellierung & Versagensbewertung",
-        "category": "STRUKTURINTEGRITÄT / NUMERISCHE BRUCHMECHANIK",
-        "short": "Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.",
-        "body": "Dieses Projekt untersucht das Bruchverhalten faserverstärkter Klebstoffe mit der erweiterten Finite-Elemente-Methode, kurz XFEM. Im Mittelpunkt stehen die mechanische Reaktion der Klebstoffe und die Entwicklung von Rissen.",
+        "category": "NUMERISCHE BRUCHMECHANIK",
+        "short": "Rissausbreitung in faserverstärkten Klebstoffen mit Abaqus XFEM.",
+        "body": "Vergleich experimenteller und simulierter Spannungs-Dehnungs-Kurven sowie Risspfade bei vier Faserorientierungen: 0°, 30°, 60° und 90°.",
         "tags": ["Abaqus", "XFEM", "Bruchmechanik", "Werkstoffverhalten"],
         "focus": [
           "Die mechanische Reaktion des Klebstoffsystems unter Belastung untersuchen.",
@@ -461,35 +428,26 @@
         "question": "Wie kann numerische Modellierung erklären, wo Risse in einem faserverstärkten Klebstoff entstehen und wie sie sich entwickeln?",
         "significance": "Ein besseres Verständnis des Bruchverhaltens hilft, die Lastübertragung und mögliche Versagensstellen in Klebstoffsystemen zu bewerten. Aussagekräftig wird das Modell durch den Bezug zu Werkstoff, Belastung und verfügbaren Versuchsdaten.",
         "case_study": {
-          "intro": "Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.",
-          "focus_title": "Analyseschwerpunkt",
-          "focus": "Vergleich berechneter Risspfade und Zugantworten mit Versuchen für vier Faserorientierungen. Bewertung, wo die richtungsabhängige Materialbeschreibung das Verhalten erfasst und wo sie verbessert werden muss.",
-          "caption": "Schematische Bruchdarstellung. Kein Simulationsergebnis.",
-          "setup_title": "Untersuchung im Überblick",
-          "setup_headers": ["Aspekt", "Umfang"],
-          "setup_rows": [
-            ["Werkstoff", "Epoxidklebstoff mit kurzen Glasfasern."],
-            ["Modell", "Gekerbte Materialprobe, untersucht mit 3D-XFEM in Abaqus."],
-            ["Orientierungen", "0°, 30°, 60° und 90°."],
-            ["Vergleiche", "Risspfade und Spannungs-Dehnungs-Verhalten unter Zug."]
+          "caption": "Experimentelle Risspfade, XFEM-Prognosen und Spannungs-Dehnungs-Vergleich.",
+          "approach": [
+            "Eine gekerbte Klebstoffprobe mit 3D-Abaqus-XFEM untersuchen.",
+            "Zugverhalten und Rissrichtung bei den vier Faserorientierungen vergleichen."
           ],
-          "results_title": "Wesentliche Ergebnisse",
-          "result_headers": ["Vergleich", "Ergebnis"],
-          "result_rows": [
-            ["Risspfade", "Qualitative Übereinstimmung bei 0° und 90°; deutliche Abweichungen bei 30° und 60°."],
-            ["Zugantwort", "Die berechneten Dehnungen wichen deutlich von den experimentellen Messungen ab."]
+          "findings": [
+            "Die simulierten Bruchdehnungen lagen unter den experimentellen Werten.",
+            "Schräge Risspfade bei 30° und 60° wurden nicht wiedergegeben."
           ],
-          "conclusion_title": "Technische Einordnung",
-          "conclusion": "Die vereinfachte Beschreibung der richtungsabhängigen Steifigkeit war ein Ansatzpunkt für Verbesserungen. Ein plausibler Risspfad allein belegt noch keine ausreichende Vorhersagequalität des Modells.",
-          "note": "Die Ergebnisse stammen aus der veröffentlichten Probenstudie, die J. Philipp die XFEM-Simulation zuordnet. Das Modell bildet Klebstoffmaterial ab, kein vollständiges geklebtes Rotorblatt."
+          "note": "Veröffentlichte Probenstudie; die Quelle nennt J. Philipp als Verantwortlichen für die XFEM-Simulation.",
+          "approach_title": "Vorgehen",
+          "findings_title": "Zentrale Ergebnisse"
         }
       },
       {
         "slug": "honeycomb",
         "title": "Werkstoffcharakterisierung & nichtlineare Simulation",
-        "category": "MATERIALMODELLIERUNG / VERPACKUNGSMECHANIK",
-        "short": "Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten.",
-        "body": "In meiner Masterarbeit bei BSH untersuchte ich das mechanische Verhalten von Papierwabenplatten für Geschirrspülerverpackungen. Ich charakterisierte Decklagen- und Kernpapier, verglich zwei LS-DYNA-Materialmodelle und bewertete das Druckverhalten der gesamten Wabenplatte.",
+        "category": "MATERIALMODELLIERUNG / VERPACKUNG",
+        "short": "Papierversuche, LS-DYNA-Modellierung und LS-OPT-Kalibrierung für Verpackungen.",
+        "body": "Meine Masterarbeit bei BSH untersuchte Papierwabenplatten für Geschirrspülerverpackungen anhand von Papiercharakterisierung und Plattendruckversuchen.",
         "tags": ["LS-DYNA", "MAT 58 / MAT 274", "LS-OPT", "Ersatzmodellierung"],
         "focus": [
           "Richtungsabhängige Papiercharakterisierung.",
@@ -505,44 +463,26 @@
         ],
         "significance": "Der Vergleich auf Plattenebene fiel für den untersuchten Drucklastfall zugunsten von MAT 274 aus. Er zeigte auch, warum eine Übereinstimmung mit Papierversuchen allein noch keine zuverlässige Vorhersage der Stauchantwort der Platte belegt.",
         "case_study": {
-          "eyebrow": "MASTERARBEIT / BSH-GESCHIRRSPÜLERVERPACKUNGEN",
-          "intro": "Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen Materialverhaltens am Beispiel von Papierwabenplatten.",
-          "illustration": "Schematische Wabenstruktur. Illustration, kein Simulationsergebnis.",
-          "work_title": "Mein Beitrag",
-          "work": "Ich charakterisierte Decklagen- und Kernpapier, entwickelte die Materialkarten MAT 58 und MAT 274 und verglich Einzelelement- und Wabenplattensimulationen mit Versuchen. Zusätzlich setzte ich eine ersatzmodellbasierte inverse Modellierung zur Kalibrierung der MAT-58-Parameter ein.",
-          "setup_title": "Untersuchung im Überblick",
-          "setup_headers": ["Aspekt", "Umfang"],
-          "setup_rows": [
-            ["Anwendung", "Papierbasierte Schutzverpackungen für Geschirrspüler."],
-            ["Versuche", "Decklagen- und Kernpapier unter Zug und Druck in MD/CD; Plattendruck senkrecht zur Plattenebene."],
-            ["Plattenprobe", "100 × 100 × 45 mm."],
-            ["Simulation", "LS-DYNA: MAT 58 (Laminated Composite Fabric) und MAT 274 (Paper)."],
-            ["Kalibrierung", "LS-OPT: D-optimale Versuchsplanung, Metamodelle, Curve Mapping und SRSM-Verfeinerung."]
+          "caption": "Verpackungsanwendung, Druckversuch und Vergleich von Experiment und Simulation.",
+          "approach": [
+            "Deck- und Kernpapier in Zug- und Druckversuchen charakterisieren.",
+            "MAT 58 und MAT 274 in LS-DYNA vergleichen; MAT-58-Parameter mit LS-OPT kalibrieren."
           ],
-          "results_title": "Wesentliche Ergebnisse",
-          "results_headers": ["Modell", "Vergleich mit Versuchen"],
-          "results_rows": [
-            [
-              "MAT 58",
-              "Erfasste die grundsätzlichen Stauchphasen, unterschätzte jedoch die anfängliche Kraftspitze und weite Teile der Plateaukraft deutlich."
-            ],
-            [
-              "MAT 274",
-              "Bildete die anfängliche Spitze und das Plateau besser ab. Abweichungen blieben nach der Spitze und beim Übergang zur Verdichtung."
-            ]
+          "findings": [
+            "MAT 274 bildete das Stauchplateau der Wabenplatte weitgehend ab.",
+            "Abweichungen blieben beim Stauchbeginn und bei der Verdichtung."
           ],
-          "conclusion": "MAT 274 war für den untersuchten Drucklastfall der geeignetere Ausgangspunkt. Eine Übereinstimmung auf Materialebene belegte allein noch keine korrekte Stauchantwort der Platte.",
-          "calibration_title": "Ersatzmodellbasierte Parameterkalibrierung",
-          "calibration": "Um die Abweichungen bei MAT 58 zu verringern, definierte ich Parametergrenzen und wählte mit einer D-optimalen Versuchsplanung LS-DYNA-Berechnungen aus. LS-OPT erstellte daraus Metamodelle und bewertete die Übereinstimmung mit der experimentellen Zielkurve über Curve Mapping. Der beschriebene SRSM-Ablauf verfeinerte den Suchbereich durch Bereichsverkleinerung.",
-          "calibration_limit": "Die bereitgestellten Unterlagen dokumentieren das Verfahren, enthalten jedoch keinen abschließenden Parametersatz und keine bezifferte Optimierungsverbesserung."
+          "note": "Die LS-OPT-Kalibrierungsmethode ist dokumentiert; ihre abschließende Verbesserung ist nicht quantifiziert.",
+          "approach_title": "Vorgehen",
+          "findings_title": "Zentrale Ergebnisse"
         }
       },
       {
         "slug": "steel-repair",
         "title": "Strukturmechanische & thermomechanische Analyse",
-        "category": "GEKLEBTE STRUKTUREN / MECHANISCHE UND THERMISCHE ANALYSE",
-        "short": "Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von Stahlverstärkungen.",
-        "body": "Dieses Projekt befasst sich mit der Überwachung von Reparaturen mit Stahlpatches durch verteilte faseroptische Sensorik. Es verbindet Strukturmechanik und experimentelle Beobachtungen, um das Verhalten reparierter Strukturen und die Aussagekraft der Messungen zu untersuchen.",
+        "category": "STRUKTURMECHANIK UND THERMISCHE ANALYSE",
+        "short": "Lastübertragung, Defekterkennung und thermisches Verhalten geklebter Stahlverstärkungen.",
+        "body": "Mechanische und thermomechanische FEM geklebter Stahlverstärkungen, eingeordnet anhand verteilter faseroptischer Dehnungsmessungen.",
         "tags": ["FEM", "Geklebte Strukturen", "Thermische Belastung", "Strukturmechanik"],
         "focus": [
           "Die Reparatur mit Stahlpatches als belastetes Struktursystem betrachten.",
@@ -552,30 +492,18 @@
         "question": "Wie können verteilte Messungen helfen, die Reaktion einer reparierten Stahlstruktur unter Belastung zu verstehen?",
         "significance": "Messungen werden dann nützlich, wenn sie Strukturverhalten erklären. Dieses Projekt verbindet einen Sensorikansatz mit einer ingenieurtechnischen Anwendung und untersucht, was Beobachtungen über das Verhalten einer Reparatur aussagen können.",
         "case_study": {
-          "intro": "Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von Stahlverstärkungen.",
-          "focus_title": "Mein Beitrag",
-          "focus": "Mein dokumentierter Aufgabenbereich umfasste mechanische und thermomechanische FEM. Im Mittelpunkt stehen Lastübertragung und Verformung geklebter Strukturen. Veröffentlichte Dehnungsmessungen bilden den experimentellen Forschungskontext.",
-          "caption": "Schematische Stahlpatch-Darstellung. Kein Simulationsergebnis.",
-          "setup_title": "Projekt im Überblick",
-          "setup_headers": ["Aspekt", "Umfang"],
-          "setup_rows": [
-            ["Anwendung", "Verstärkung von Stahlstrukturen durch geklebte Stahlpatches."],
-            ["Analyseumfang", "Mechanische und thermomechanische Finite-Elemente-Modellierung."],
-            ["Forschungskontext", "Verteilte faseroptische Dehnungsmessung an einer reparierten Struktur."],
-            ["Fragestellung", "Wie beeinflussen Belastung, Lastübertragung und lokale Schädigung das Verhalten der Reparatur?"]
+          "caption": "Zugversuch, faseroptische Sensorik, Dehnungsprofile und thermischer Vergleich.",
+          "approach": [
+            "Lastübertragung und Verformung der geklebten Verstärkung untersuchen.",
+            "Temperaturverläufe an T1–T4 unter thermischer Belastung vergleichen."
           ],
-          "results_title": "Erkenntnisse aus dem experimentellen Kontext",
-          "result_headers": ["Beobachtung", "Technische Bedeutung"],
-          "result_rows": [
-            ["Lastumlagerung", "Veröffentlichte Dehnungsmessungen verdeutlichen die örtlichen Unterschiede entlang der geklebten Reparatur."],
-            [
-              "Fortschreitende Schädigung",
-              "Veröffentlichte Beobachtungen zeigen eine Schadensentwicklung, die bei der Deutung lokaler Dehnungsänderungen berücksichtigt werden muss."
-            ]
+          "findings": [
+            "Dehnungsprofile zeigen Lastumlagerungen und lokale Änderungen im Zusammenhang mit Klebfugendefekten.",
+            "Temperaturverläufe stellen experimentelle und simulierte thermische Reaktionen gegenüber."
           ],
-          "conclusion_title": "Technischer Schwerpunkt",
-          "conclusion": "Das Strukturverhalten mit der Mechanik der geklebten Reparatur verbinden. Bei der Auswertung der Messungen zwischen belastungsbedingten Änderungen und Einflüssen der Schädigung unterscheiden.",
-          "note": "Die genannten Beobachtungen bilden veröffentlichten experimentellen Kontext ab. Die bereitgestellten Projektunterlagen enthalten keine numerischen FEM-Ergebnisgrafiken und kein beziffertes Validierungsergebnis."
+          "note": "Veröffentlichte Dehnungsmessungen bilden den experimentellen Forschungskontext.",
+          "approach_title": "Vorgehen",
+          "findings_title": "Zentrale Ergebnisse"
         }
       }
     ],
@@ -631,7 +559,10 @@
       "projects": "Ingenieurprojekte · Venkatesh Gopal",
       "experience": "Berufserfahrung in Industrie & Forschung · Venkatesh Gopal",
       "skills": "Kompetenzen & Methoden · Venkatesh Gopal",
-      "contact": "Kontakt · Venkatesh Gopal"
+      "contact": "Kontakt · Venkatesh Gopal",
+      "projects/adhesive-fracture": "Bruchmodellierung & Versagensbewertung · Venkatesh Gopal",
+      "projects/honeycomb": "Werkstoffcharakterisierung & nichtlineare Simulation · Venkatesh Gopal",
+      "projects/steel-repair": "Strukturmechanische & thermomechanische Analyse · Venkatesh Gopal"
     },
     "meta_description": "Maschinenbauingenieur in Eindhoven: Konstruktion, Struktursimulation, Versuche und Python-Automatisierung für fundierte technische Entscheidungen.",
     "jobs": [

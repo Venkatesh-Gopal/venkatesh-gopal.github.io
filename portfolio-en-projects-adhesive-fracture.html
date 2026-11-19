@@ -12,24 +12,18 @@ sitemap: true
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fracture Modelling &amp; Failure Assessment · Venkatesh Gopal</title>
-    <meta
-      name="description"
-      content="Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study."
-    />
+    <meta name="description" content="Abaqus XFEM study of crack growth in fibre-reinforced adhesives." />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/projects/adhesive-fracture/" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/projects/adhesive-fracture/" />
     <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de/projects/adhesive-fracture/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Fracture Modelling &amp; Failure Assessment · Venkatesh Gopal" />
-    <meta
-      property="og:description"
-      content="Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study."
-    />
+    <meta property="og:description" content="Abaqus XFEM study of crack growth in fibre-reinforced adhesives." />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/projects/adhesive-fracture/" />
     <link rel="icon" href="{{ site.baseurl }}/assets/portfolio/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/portfolio.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/case-study-compact.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/project-posters.css" />
     <script src="{{ site.baseurl }}/assets/portfolio/portfolio.js" defer></script>
   </head>
   <body>
@@ -62,29 +56,40 @@ sitemap: true
     <main id="main" tabindex="-1" class="container">
       <a class="back-link" href="{{ site.baseurl }}/projects/">← All projects</a>
       <section class="page-heading compact-case-heading">
-        <p class="eyebrow">STRUCTURAL INTEGRITY / COMPUTATIONAL FRACTURE</p>
+        <p class="eyebrow">COMPUTATIONAL FRACTURE</p>
         <h1>Fracture Modelling &amp; Failure Assessment</h1>
-        <p class="lead">
-          Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.
-        </p>
+        <p class="lead">Abaqus XFEM study of crack growth in fibre-reinforced adhesives.</p>
       </section>
       <div class="compact-case">
         <section class="detail-grid">
-          <figure class="detail-art">
-            <img
-              src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture.svg"
-              alt="Schematic fracture illustration. Not simulation output."
-              width="600"
-              height="360"
-            />
-            <figcaption>Schematic fracture illustration. Not simulation output.</figcaption>
+          <figure class="detail-art project-poster">
+            <a
+              href="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size poster"
+              ><img
+                src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png 718w, {{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png 1436w"
+                sizes="(max-width: 900px) calc(100vw - 40px), 50vw"
+                alt="Experimental crack paths, XFEM predictions and stress–strain comparison."
+                width="718"
+                height="537"
+                decoding="async"
+            /></a>
+            <figcaption>
+              Experimental crack paths, XFEM predictions and stress–strain comparison.<a
+                class="poster-fullsize"
+                href="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png"
+                target="_blank"
+                rel="noopener"
+                >Open full-size poster</a
+              >
+            </figcaption>
           </figure>
           <div>
-            <h2>Analysis focus</h2>
-            <p>
-              Compare predicted crack paths and tensile responses with experiments across four fibre orientations. Examine where the directional
-              material description captures the behaviour and where it needs improvement.
-            </p>
+            <h2>Project overview</h2>
+            <p>Compared experimental and simulated stress–strain responses and crack paths at four fibre orientations: 0°, 30°, 60° and 90°.</p>
             <ul class="tags">
               <li>Abaqus</li>
               <li>XFEM</li>
@@ -93,102 +98,63 @@ sitemap: true
             </ul>
           </div>
         </section>
-        <section class="compact-case-section" id="setup">
-          <h2>Study at a glance</h2>
-          <div class="compact-case-table">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Item</th>
-                  <th scope="col">Scope</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Material</td>
-                  <td>Epoxy adhesive containing short glass fibres.</td>
-                </tr>
-                <tr>
-                  <td>Model</td>
-                  <td>Notched material specimen analysed with 3D Abaqus XFEM.</td>
-                </tr>
-                <tr>
-                  <td>Orientations</td>
-                  <td>0°, 30°, 60° and 90°.</td>
-                </tr>
-                <tr>
-                  <td>Comparisons</td>
-                  <td>Crack paths and tensile stress–strain response.</td>
-                </tr>
-              </tbody>
-            </table>
+        <section class="compact-case-points">
+          <div>
+            <h2>Approach</h2>
+            <ul>
+              <li>Analyse a notched adhesive specimen with 3D Abaqus XFEM.</li>
+              <li>Compare tensile response and crack direction across the four orientations.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Key findings</h2>
+            <ul>
+              <li>Simulated failure strains were lower than the experimental values.</li>
+              <li>Angled crack paths at 30° and 60° were not reproduced.</li>
+            </ul>
           </div>
         </section>
-        <section class="compact-case-section" id="findings">
-          <h2>Main findings</h2>
-          <div class="compact-case-table">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Comparison</th>
-                  <th scope="col">Finding</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Crack paths</td>
-                  <td>Qualitative correspondence at 0° and 90°; substantial discrepancies at 30° and 60°.</td>
-                </tr>
-                <tr>
-                  <td>Tensile response</td>
-                  <td>Predicted strains differed substantially from the experimental measurements.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <section class="compact-case-section" id="interpretation">
-          <h2>Engineering interpretation</h2>
-          <p>
-            The simplified directional stiffness description was a priority for improvement. The comparison shows why a plausible crack path alone is
-            insufficient to establish the model’s predictive quality.
-          </p>
-          <p class="compact-case-note">
-            Results refer to the published specimen study, which credits J. Philipp with the XFEM simulation. The model represents adhesive material,
-            rather than a complete bonded blade.
-          </p>
-        </section>
-        <section class="project-significance">
-          <a class="text-link" href="{{ site.baseurl }}/contact/">Discuss a related engineering challenge ↗</a>
-        </section>
+        <p class="compact-case-note">Published specimen study; the source credits J. Philipp with the XFEM simulation.</p>
       </div>
       <section class="section">
         <h2>More projects</h2>
         <div class="project-grid">
           <a class="project-card" href="{{ site.baseurl }}/projects/honeycomb/">
-            <div class="card-art art-1" aria-hidden="true">
-              <span>02</span><img src="{{ site.baseurl }}/assets/portfolio/honeycomb.svg" alt="" width="600" height="360" loading="lazy" />
+            <div class="card-art project-poster art-1" aria-hidden="true">
+              <img
+                src="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png 718w, {{ site.baseurl }}/assets/portfolio/honeycomb-card-2x.png 1436w"
+                sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+                alt=""
+                width="718"
+                height="537"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="card-copy">
-              <p class="eyebrow">MATERIAL MODELLING / PACKAGING MECHANICS</p>
+              <p class="eyebrow">MATERIAL MODELLING / PACKAGING</p>
               <h3>Material Characterisation &amp; Nonlinear Simulation</h3>
-              <p>
-                Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material
-                behaviour, demonstrated through a honeycomb paperboard study.
-              </p>
+              <p>Paper testing, LS-DYNA modelling and LS-OPT calibration for packaging.</p>
               <span class="text-link">Explore the project <span aria-hidden="true">↗</span></span>
             </div></a
           ><a class="project-card" href="{{ site.baseurl }}/projects/steel-repair/">
-            <div class="card-art art-2" aria-hidden="true">
-              <span>03</span><img src="{{ site.baseurl }}/assets/portfolio/steel-repair.svg" alt="" width="600" height="360" loading="lazy" />
+            <div class="card-art project-poster art-2" aria-hidden="true">
+              <img
+                src="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png 718w, {{ site.baseurl }}/assets/portfolio/steel-repair-card-2x.png 1436w"
+                sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+                alt=""
+                width="718"
+                height="537"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="card-copy">
-              <p class="eyebrow">BONDED STRUCTURES / MECHANICAL AND THERMAL ANALYSIS</p>
+              <p class="eyebrow">STRUCTURAL AND THERMAL ANALYSIS</p>
               <h3>Structural &amp; Thermomechanical Analysis</h3>
-              <p>
-                Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the
-                application.
-              </p>
+              <p>Load transfer, defect sensing and thermal response of bonded steel reinforcement.</p>
               <span class="text-link">Explore the project <span aria-hidden="true">↗</span></span>
             </div></a
           >

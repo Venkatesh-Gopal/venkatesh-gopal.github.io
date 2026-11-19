@@ -12,24 +12,18 @@ sitemap: true
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bruchmodellierung &amp; Versagensbewertung · Venkatesh Gopal</title>
-    <meta
-      name="description"
-      content="Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben."
-    />
+    <meta name="description" content="Rissausbreitung in faserverstärkten Klebstoffen mit Abaqus XFEM." />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/de/projects/adhesive-fracture/" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/projects/adhesive-fracture/" />
     <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de/projects/adhesive-fracture/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Bruchmodellierung &amp; Versagensbewertung · Venkatesh Gopal" />
-    <meta
-      property="og:description"
-      content="Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben."
-    />
+    <meta property="og:description" content="Rissausbreitung in faserverstärkten Klebstoffen mit Abaqus XFEM." />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/de/projects/adhesive-fracture/" />
     <link rel="icon" href="{{ site.baseurl }}/assets/portfolio/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/portfolio.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/case-study-compact.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/project-posters.css" />
     <script src="{{ site.baseurl }}/assets/portfolio/portfolio.js" defer></script>
   </head>
   <body>
@@ -62,28 +56,41 @@ sitemap: true
     <main id="main" tabindex="-1" class="container">
       <a class="back-link" href="{{ site.baseurl }}/de/projects/">← Alle Projekte</a>
       <section class="page-heading compact-case-heading">
-        <p class="eyebrow">STRUKTURINTEGRITÄT / NUMERISCHE BRUCHMECHANIK</p>
+        <p class="eyebrow">NUMERISCHE BRUCHMECHANIK</p>
         <h1>Bruchmodellierung &amp; Versagensbewertung</h1>
-        <p class="lead">
-          Bewertung von Rissinitiierung, Rissausbreitung und Materialantwort mit Abaqus XFEM am Beispiel verstärkter Klebstoffproben.
-        </p>
+        <p class="lead">Rissausbreitung in faserverstärkten Klebstoffen mit Abaqus XFEM.</p>
       </section>
       <div class="compact-case">
         <section class="detail-grid">
-          <figure class="detail-art">
-            <img
-              src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture.svg"
-              alt="Schematische Bruchdarstellung. Kein Simulationsergebnis."
-              width="600"
-              height="360"
-            />
-            <figcaption>Schematische Bruchdarstellung. Kein Simulationsergebnis.</figcaption>
+          <figure class="detail-art project-poster">
+            <a
+              href="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png"
+              target="_blank"
+              rel="noopener"
+              aria-label="Poster in voller Größe öffnen"
+              ><img
+                src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png 718w, {{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png 1436w"
+                sizes="(max-width: 900px) calc(100vw - 40px), 50vw"
+                alt="Experimentelle Risspfade, XFEM-Prognosen und Spannungs-Dehnungs-Vergleich."
+                width="718"
+                height="537"
+                decoding="async"
+            /></a>
+            <figcaption>
+              Experimentelle Risspfade, XFEM-Prognosen und Spannungs-Dehnungs-Vergleich.<a
+                class="poster-fullsize"
+                href="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png"
+                target="_blank"
+                rel="noopener"
+                >Poster in voller Größe öffnen</a
+              >
+            </figcaption>
           </figure>
           <div>
-            <h2>Analyseschwerpunkt</h2>
+            <h2>Projektüberblick</h2>
             <p>
-              Vergleich berechneter Risspfade und Zugantworten mit Versuchen für vier Faserorientierungen. Bewertung, wo die richtungsabhängige
-              Materialbeschreibung das Verhalten erfasst und wo sie verbessert werden muss.
+              Vergleich experimenteller und simulierter Spannungs-Dehnungs-Kurven sowie Risspfade bei vier Faserorientierungen: 0°, 30°, 60° und 90°.
             </p>
             <ul class="tags">
               <li>Abaqus</li>
@@ -93,102 +100,63 @@ sitemap: true
             </ul>
           </div>
         </section>
-        <section class="compact-case-section" id="setup">
-          <h2>Untersuchung im Überblick</h2>
-          <div class="compact-case-table">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Aspekt</th>
-                  <th scope="col">Umfang</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Werkstoff</td>
-                  <td>Epoxidklebstoff mit kurzen Glasfasern.</td>
-                </tr>
-                <tr>
-                  <td>Modell</td>
-                  <td>Gekerbte Materialprobe, untersucht mit 3D-XFEM in Abaqus.</td>
-                </tr>
-                <tr>
-                  <td>Orientierungen</td>
-                  <td>0°, 30°, 60° und 90°.</td>
-                </tr>
-                <tr>
-                  <td>Vergleiche</td>
-                  <td>Risspfade und Spannungs-Dehnungs-Verhalten unter Zug.</td>
-                </tr>
-              </tbody>
-            </table>
+        <section class="compact-case-points">
+          <div>
+            <h2>Vorgehen</h2>
+            <ul>
+              <li>Eine gekerbte Klebstoffprobe mit 3D-Abaqus-XFEM untersuchen.</li>
+              <li>Zugverhalten und Rissrichtung bei den vier Faserorientierungen vergleichen.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Zentrale Ergebnisse</h2>
+            <ul>
+              <li>Die simulierten Bruchdehnungen lagen unter den experimentellen Werten.</li>
+              <li>Schräge Risspfade bei 30° und 60° wurden nicht wiedergegeben.</li>
+            </ul>
           </div>
         </section>
-        <section class="compact-case-section" id="findings">
-          <h2>Wesentliche Ergebnisse</h2>
-          <div class="compact-case-table">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Vergleich</th>
-                  <th scope="col">Ergebnis</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Risspfade</td>
-                  <td>Qualitative Übereinstimmung bei 0° und 90°; deutliche Abweichungen bei 30° und 60°.</td>
-                </tr>
-                <tr>
-                  <td>Zugantwort</td>
-                  <td>Die berechneten Dehnungen wichen deutlich von den experimentellen Messungen ab.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <section class="compact-case-section" id="interpretation">
-          <h2>Technische Einordnung</h2>
-          <p>
-            Die vereinfachte Beschreibung der richtungsabhängigen Steifigkeit war ein Ansatzpunkt für Verbesserungen. Ein plausibler Risspfad allein
-            belegt noch keine ausreichende Vorhersagequalität des Modells.
-          </p>
-          <p class="compact-case-note">
-            Die Ergebnisse stammen aus der veröffentlichten Probenstudie, die J. Philipp die XFEM-Simulation zuordnet. Das Modell bildet
-            Klebstoffmaterial ab, kein vollständiges geklebtes Rotorblatt.
-          </p>
-        </section>
-        <section class="project-significance">
-          <a class="text-link" href="{{ site.baseurl }}/de/contact/">Über eine verwandte Fragestellung sprechen ↗</a>
-        </section>
+        <p class="compact-case-note">Veröffentlichte Probenstudie; die Quelle nennt J. Philipp als Verantwortlichen für die XFEM-Simulation.</p>
       </div>
       <section class="section">
         <h2>Weitere Projekte</h2>
         <div class="project-grid">
           <a class="project-card" href="{{ site.baseurl }}/de/projects/honeycomb/">
-            <div class="card-art art-1" aria-hidden="true">
-              <span>02</span><img src="{{ site.baseurl }}/assets/portfolio/honeycomb.svg" alt="" width="600" height="360" loading="lazy" />
+            <div class="card-art project-poster art-1" aria-hidden="true">
+              <img
+                src="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png 718w, {{ site.baseurl }}/assets/portfolio/honeycomb-card-2x.png 1436w"
+                sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+                alt=""
+                width="718"
+                height="537"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="card-copy">
-              <p class="eyebrow">MATERIALMODELLIERUNG / VERPACKUNGSMECHANIK</p>
+              <p class="eyebrow">MATERIALMODELLIERUNG / VERPACKUNG</p>
               <h3>Werkstoffcharakterisierung &amp; nichtlineare Simulation</h3>
-              <p>
-                Verbindung von Werkstoffversuchen, FEM und ersatzmodellbasierter Parameterkalibrierung zur Untersuchung nichtlinearen
-                Materialverhaltens am Beispiel von Papierwabenplatten.
-              </p>
+              <p>Papierversuche, LS-DYNA-Modellierung und LS-OPT-Kalibrierung für Verpackungen.</p>
               <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
             </div></a
           ><a class="project-card" href="{{ site.baseurl }}/de/projects/steel-repair/">
-            <div class="card-art art-2" aria-hidden="true">
-              <span>03</span><img src="{{ site.baseurl }}/assets/portfolio/steel-repair.svg" alt="" width="600" height="360" loading="lazy" />
+            <div class="card-art project-poster art-2" aria-hidden="true">
+              <img
+                src="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png"
+                srcset="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png 718w, {{ site.baseurl }}/assets/portfolio/steel-repair-card-2x.png 1436w"
+                sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+                alt=""
+                width="718"
+                height="537"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="card-copy">
-              <p class="eyebrow">GEKLEBTE STRUKTUREN / MECHANISCHE UND THERMISCHE ANALYSE</p>
+              <p class="eyebrow">STRUKTURMECHANIK UND THERMISCHE ANALYSE</p>
               <h3>Strukturmechanische &amp; thermomechanische Analyse</h3>
-              <p>
-                Untersuchung von Lastübertragung und Verformung geklebter Strukturen unter mechanischer und thermischer Belastung am Beispiel von
-                Stahlverstärkungen.
-              </p>
+              <p>Lastübertragung, Defekterkennung und thermisches Verhalten geklebter Stahlverstärkungen.</p>
               <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
             </div></a
           >

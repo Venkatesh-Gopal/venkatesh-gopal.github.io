@@ -1,0 +1,13 @@
+PROJECTS UPDATE — NOT YET PUBLISHED
+
+This package updates the existing Venkatesh Gopal site. It does not replace the entire website.
+
+1. Extract this ZIP. Copy its _data, _pages, assets, bin, and .github folders into your existing repository, keeping their folder structure and replacing matching files. Do not put their individual files in the repository top folder.
+2. Commit the changes to main and push.
+3. Wait for the Deploy site GitHub Action to finish, then reload /projects/ and /de/projects/.
+
+The update changes the three project titles, uses the scientific poster images instead of SVG illustrations, shortens each case study to approximately 110 words, and rebuilds the portfolio during deployment.
+
+Future content edits belong in _data/portfolio.json. The active pages are _pages/portfolio-*.html. Top-level duplicate HTML files are excluded from the existing build.
+
+Validated: all 16 bilingual routes and their links; formatting; starter style contract; JavaScript syntax. Full Jekyll and browser rendering were not verified here because Ruby and the preview relay are unavailable.

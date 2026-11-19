@@ -12,23 +12,18 @@ sitemap: true
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Engineering Projects · Venkatesh Gopal</title>
-    <meta
-      name="description"
-      content="Questions worth exploring. My work connects numerical modelling with material behaviour and experimental evidence to investigate how structures carry loads, how interfaces fail, and what measurements can reveal."
-    />
+    <meta name="description" content="Three studies connecting simulation, material testing and experimental evidence." />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/projects/" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/projects/" />
     <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de/projects/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Engineering Projects · Venkatesh Gopal" />
-    <meta
-      property="og:description"
-      content="Questions worth exploring. My work connects numerical modelling with material behaviour and experimental evidence to investigate how structures carry loads, how interfaces fail, and what measurements can reveal."
-    />
+    <meta property="og:description" content="Three studies connecting simulation, material testing and experimental evidence." />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/projects/" />
     <link rel="icon" href="{{ site.baseurl }}/assets/portfolio/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/portfolio.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/project-posters.css" />
     <script src="{{ site.baseurl }}/assets/portfolio/portfolio.js" defer></script>
   </head>
   <body>
@@ -61,49 +56,65 @@ sitemap: true
     <main id="main" tabindex="-1" class="container">
       <section class="page-heading">
         <p class="eyebrow">MECHANICAL ENGINEERING / DESIGN · SIMULATION · VALIDATION</p>
-        <h1>Models with a purpose.</h1>
-        <p class="lead">
-          Questions worth exploring. My work connects numerical modelling with material behaviour and experimental evidence to investigate how
-          structures carry loads, how interfaces fail, and what measurements can reveal.
-        </p>
+        <h1>Engineering projects</h1>
+        <p class="lead">Three studies connecting simulation, material testing and experimental evidence.</p>
       </section>
       <div class="project-grid">
         <a class="project-card" href="{{ site.baseurl }}/projects/adhesive-fracture/">
-          <div class="card-art art-0" aria-hidden="true">
-            <span>01</span><img src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture.svg" alt="" width="600" height="360" loading="lazy" />
+          <div class="card-art project-poster art-0" aria-hidden="true">
+            <img
+              src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png"
+              srcset="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png 718w, {{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png 1436w"
+              sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+              alt=""
+              width="718"
+              height="537"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="card-copy">
-            <p class="eyebrow">STRUCTURAL INTEGRITY / COMPUTATIONAL FRACTURE</p>
+            <p class="eyebrow">COMPUTATIONAL FRACTURE</p>
             <h3>Fracture Modelling &amp; Failure Assessment</h3>
-            <p>
-              Assessing crack initiation, propagation and material response with Abaqus XFEM, using reinforced adhesive specimens as the case study.
-            </p>
+            <p>Abaqus XFEM study of crack growth in fibre-reinforced adhesives.</p>
             <span class="text-link">Explore the project <span aria-hidden="true">↗</span></span>
           </div></a
         ><a class="project-card" href="{{ site.baseurl }}/projects/honeycomb/">
-          <div class="card-art art-1" aria-hidden="true">
-            <span>02</span><img src="{{ site.baseurl }}/assets/portfolio/honeycomb.svg" alt="" width="600" height="360" loading="lazy" />
+          <div class="card-art project-poster art-1" aria-hidden="true">
+            <img
+              src="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png"
+              srcset="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png 718w, {{ site.baseurl }}/assets/portfolio/honeycomb-card-2x.png 1436w"
+              sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+              alt=""
+              width="718"
+              height="537"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="card-copy">
-            <p class="eyebrow">MATERIAL MODELLING / PACKAGING MECHANICS</p>
+            <p class="eyebrow">MATERIAL MODELLING / PACKAGING</p>
             <h3>Material Characterisation &amp; Nonlinear Simulation</h3>
-            <p>
-              Combining physical testing, finite element modelling and surrogate-based parameter calibration to investigate nonlinear material
-              behaviour, demonstrated through a honeycomb paperboard study.
-            </p>
+            <p>Paper testing, LS-DYNA modelling and LS-OPT calibration for packaging.</p>
             <span class="text-link">Explore the project <span aria-hidden="true">↗</span></span>
           </div></a
         ><a class="project-card" href="{{ site.baseurl }}/projects/steel-repair/">
-          <div class="card-art art-2" aria-hidden="true">
-            <span>03</span><img src="{{ site.baseurl }}/assets/portfolio/steel-repair.svg" alt="" width="600" height="360" loading="lazy" />
+          <div class="card-art project-poster art-2" aria-hidden="true">
+            <img
+              src="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png"
+              srcset="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png 718w, {{ site.baseurl }}/assets/portfolio/steel-repair-card-2x.png 1436w"
+              sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+              alt=""
+              width="718"
+              height="537"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="card-copy">
-            <p class="eyebrow">BONDED STRUCTURES / MECHANICAL AND THERMAL ANALYSIS</p>
+            <p class="eyebrow">STRUCTURAL AND THERMAL ANALYSIS</p>
             <h3>Structural &amp; Thermomechanical Analysis</h3>
-            <p>
-              Investigating load transfer and deformation in bonded structures under mechanical and thermal loading, with steel reinforcement as the
-              application.
-            </p>
+            <p>Load transfer, defect sensing and thermal response of bonded steel reinforcement.</p>
             <span class="text-link">Explore the project <span aria-hidden="true">↗</span></span>
           </div></a
         >
