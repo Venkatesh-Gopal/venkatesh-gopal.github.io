@@ -3,7 +3,8 @@
 from pathlib import Path
 import html
 import json
-from honeycomb_case_study import render_honeycomb
+from project_case_study import render_project_case_study
+from project_images import card_image
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / '_data/portfolio.json').read_text())
@@ -28,7 +29,7 @@ def cards(lang, omitted=None):
         if p['slug'] == omitted:
             continue
         output += f'''<a class="project-card" href="{link(lang, 'projects/' + p['slug'])}">
-        <div class="card-art art-{i}" aria-hidden="true"><span>0{i+1}</span><img src="{BASE}/assets/portfolio/{p['slug']}.svg" alt="" width="600" height="360" loading="lazy"></div>
+        <div class="card-art project-poster art-{i}" aria-hidden="true">{card_image(p, BASE)}</div>
         <div class="card-copy"><p class="eyebrow">{esc(p['category'])}</p><h3>{esc(p['title'])}</h3><p>{esc(p['short'])}</p><span class="text-link">{esc(d['read'])} <span aria-hidden="true">↗</span></span></div></a>'''
     return output + '</div>'
 
@@ -59,8 +60,8 @@ def body(lang, key):
     if key.startswith('projects/'):
         slug=key.split('/')[1]
         p=next(x for x in d['projects'] if x['slug']==slug)
-        if slug == 'honeycomb' and p.get('case_study'):
-            return render_honeycomb(lang, d, p, BASE) + f'<section class="section"><h2>{esc(d["related"])}</h2>{cards(lang, slug)}</section>'
+        if p.get('case_study'):
+            return render_project_case_study(lang, d, p, BASE) + f'<section class="section"><h2>{esc(d["related"])}</h2>{cards(lang, slug)}</section>'
         contribution=f'<section class="focus-panel"><h2>{esc(d["contribution_label"])}</h2>{bullet_list(p["contributions"])}</section>' if p.get('contributions') else ''
         return f'<a class="back-link" href="{link(lang,"projects")}">← {esc(d["back"])}</a>'+heading(p['category'],p['title'],p['short'])+f'''<section class="question-panel"><p class="eyebrow">{esc(d['question_label'])}</p><h2>{esc(p['question'])}</h2></section><section class="detail-grid"><figure class="detail-art"><img src="{BASE}/assets/portfolio/{slug}.svg" alt="" width="600" height="360"><figcaption>{esc(d['mesh'])}</figcaption></figure><div><h2>{esc(d['overview'])}</h2><p>{esc(p['body'])}</p>{tags(p['tags'])}</div></section>'''+contribution+f'''<section class="focus-panel"><h2>{esc(d['methods'])}</h2>{bullet_list(p['focus'])}</section><section class="project-significance"><h2>{esc(d['significance_label'])}</h2><p>{esc(p['significance'])}</p><a class="text-link" href="{link(lang,'contact')}">{esc(d['project_cta'])} ↗</a></section><section class="section"><h2>{esc(d['related'])}</h2>{cards(lang,slug)}</section>'''
     if key == 'experience':
@@ -106,7 +107,7 @@ sitemap: {'false' if key=='404' else 'true'}
 <link rel="canonical" href="{{{{ site.url }}}}{BASE}{url}">{alternate}
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(browser_title)}"><meta property="og:description" content="{esc(description,quote=True)}"><meta property="og:url" content="{{{{ site.url }}}}{BASE}{url}">
 <link rel="icon" href="{BASE}/assets/portfolio/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{BASE}/assets/portfolio/portfolio.css">{f'<link rel="stylesheet" href="{BASE}/assets/portfolio/honeycomb/case-study.css">' if key == 'projects/honeycomb' else ''}
+<link rel="stylesheet" href="{BASE}/assets/portfolio/portfolio.css">{f'<link rel="stylesheet" href="{BASE}/assets/portfolio/project-posters.css">' if key == 'about' or key == 'projects' or key.startswith('projects/') else ''}
 <script src="{BASE}/assets/portfolio/portfolio.js" defer></script>
 </head>
 <body>

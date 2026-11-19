@@ -12,23 +12,18 @@ sitemap: true
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ingenieurprojekte · Venkatesh Gopal</title>
-    <meta
-      name="description"
-      content="Fragestellungen, die eine genaue Untersuchung verdienen. Meine Arbeit verbindet numerische Modellierung mit Werkstoffverhalten und experimentellen Erkenntnissen: Wie tragen Strukturen Lasten? Wie versagen Grenzflächen? Was zeigen Messungen?"
-    />
+    <meta name="description" content="Drei Studien verbinden Simulation, Werkstoffversuche und experimentelle Erkenntnisse." />
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/de/projects/" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/projects/" />
     <link rel="alternate" hreflang="de" href="{{ site.url }}{{ site.baseurl }}/de/projects/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ingenieurprojekte · Venkatesh Gopal" />
-    <meta
-      property="og:description"
-      content="Fragestellungen, die eine genaue Untersuchung verdienen. Meine Arbeit verbindet numerische Modellierung mit Werkstoffverhalten und experimentellen Erkenntnissen: Wie tragen Strukturen Lasten? Wie versagen Grenzflächen? Was zeigen Messungen?"
-    />
+    <meta property="og:description" content="Drei Studien verbinden Simulation, Werkstoffversuche und experimentelle Erkenntnisse." />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/de/projects/" />
     <link rel="icon" href="{{ site.baseurl }}/assets/portfolio/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/portfolio.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/portfolio/project-posters.css" />
     <script src="{{ site.baseurl }}/assets/portfolio/portfolio.js" defer></script>
   </head>
   <body>
@@ -61,41 +56,65 @@ sitemap: true
     <main id="main" tabindex="-1" class="container">
       <section class="page-heading">
         <p class="eyebrow">MASCHINENBAU / KONSTRUKTION · SIMULATION · VALIDIERUNG</p>
-        <h1>Modelle mit einer klaren Aufgabe.</h1>
-        <p class="lead">
-          Fragestellungen, die eine genaue Untersuchung verdienen. Meine Arbeit verbindet numerische Modellierung mit Werkstoffverhalten und
-          experimentellen Erkenntnissen: Wie tragen Strukturen Lasten? Wie versagen Grenzflächen? Was zeigen Messungen?
-        </p>
+        <h1>Ingenieurprojekte</h1>
+        <p class="lead">Drei Studien verbinden Simulation, Werkstoffversuche und experimentelle Erkenntnisse.</p>
       </section>
       <div class="project-grid">
         <a class="project-card" href="{{ site.baseurl }}/de/projects/adhesive-fracture/">
-          <div class="card-art art-0" aria-hidden="true">
-            <span>01</span><img src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture.svg" alt="" width="600" height="360" loading="lazy" />
+          <div class="card-art project-poster art-0" aria-hidden="true">
+            <img
+              src="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png"
+              srcset="{{ site.baseurl }}/assets/portfolio/adhesive-fracture-card.png 718w, {{ site.baseurl }}/assets/portfolio/adhesive-fracture-card-2x.png 1436w"
+              sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+              alt=""
+              width="718"
+              height="537"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="card-copy">
             <p class="eyebrow">NUMERISCHE BRUCHMECHANIK</p>
-            <h3>Bruchverhalten faserverstärkter Klebstoffe verstehen</h3>
-            <p>Rissinitiierung und Rissausbreitung mit der erweiterten Finite-Elemente-Methode untersuchen.</p>
+            <h3>Bruchmodellierung &amp; Versagensbewertung</h3>
+            <p>Rissausbreitung in faserverstärkten Klebstoffen mit Abaqus XFEM.</p>
             <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
           </div></a
         ><a class="project-card" href="{{ site.baseurl }}/de/projects/honeycomb/">
-          <div class="card-art art-1" aria-hidden="true">
-            <span>02</span><img src="{{ site.baseurl }}/assets/portfolio/honeycomb.svg" alt="" width="600" height="360" loading="lazy" />
+          <div class="card-art project-poster art-1" aria-hidden="true">
+            <img
+              src="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png"
+              srcset="{{ site.baseurl }}/assets/portfolio/honeycomb-card.png 718w, {{ site.baseurl }}/assets/portfolio/honeycomb-card-2x.png 1436w"
+              sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+              alt=""
+              width="718"
+              height="537"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="card-copy">
-            <p class="eyebrow">MATERIALMODELLIERUNG / VERPACKUNGSMECHANIK</p>
-            <h3>Papierwabenplatten: Versuche und Simulation</h3>
-            <p>Materialversuche, LS-DYNA-Drucksimulationen und Parameterkalibrierung mit LS-OPT für BSH-Geschirrspülerverpackungen.</p>
+            <p class="eyebrow">MATERIALMODELLIERUNG / VERPACKUNG</p>
+            <h3>Werkstoffcharakterisierung &amp; nichtlineare Simulation</h3>
+            <p>Papierversuche, LS-DYNA-Modellierung und LS-OPT-Kalibrierung für Verpackungen.</p>
             <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
           </div></a
         ><a class="project-card" href="{{ site.baseurl }}/de/projects/steel-repair/">
-          <div class="card-art art-2" aria-hidden="true">
-            <span>03</span><img src="{{ site.baseurl }}/assets/portfolio/steel-repair.svg" alt="" width="600" height="360" loading="lazy" />
+          <div class="card-art project-poster art-2" aria-hidden="true">
+            <img
+              src="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png"
+              srcset="{{ site.baseurl }}/assets/portfolio/steel-repair-card.png 718w, {{ site.baseurl }}/assets/portfolio/steel-repair-card-2x.png 1436w"
+              sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 33vw"
+              alt=""
+              width="718"
+              height="537"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div class="card-copy">
-            <p class="eyebrow">STRUKTURÜBERWACHUNG</p>
-            <h3>Stahlreparaturen genauer betrachten</h3>
-            <p>Verteilte faseroptische Sensorik zur Untersuchung des Verhaltens von Reparaturen mit Stahlpatches.</p>
+            <p class="eyebrow">STRUKTURMECHANIK UND THERMISCHE ANALYSE</p>
+            <h3>Strukturmechanische &amp; thermomechanische Analyse</h3>
+            <p>Lastübertragung, Defekterkennung und thermisches Verhalten geklebter Stahlverstärkungen.</p>
             <span class="text-link">Projekt entdecken <span aria-hidden="true">↗</span></span>
           </div></a
         >
